@@ -1,0 +1,38 @@
+id:
+title:
+date:
+course_id:
+status:
+
+summary:
+
+speaker_ids:
+  - 
+
+tags:
+  - 
+
+materials:
+  slides:
+    - title:
+      file:
+  extra_pdfs:
+    - title:
+      file:
+
+problem_list:
+  - title:
+    url:
+    comment:
+
+practice_contests:
+  - title:
+    url:
+    comment:
+
+extra_notes:
+  - 
+
+photos:
+  - file:
+    comment:

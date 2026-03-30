@@ -1,0 +1,34 @@
+id: 2025-04-01-segment-tree
+title: Segment Tree
+date: 2025-04-01
+course_id: curso-avanzado-2025
+status: published
+
+summary: Introduccion y aplicaciones de segment tree.
+
+speaker_ids:
+  - juan-perez
+
+tags:
+  - segment-tree
+  - data-structures
+
+materials:
+  slides:
+    - title: Slides
+      file: slides.pdf
+
+problem_list:
+  - title: Range Sum Query
+    url: https://codeforces.com
+    comment: ejemplo de practica
+
+practice_contests:
+  - title: Contest Segment Tree
+    url: https://codeforces.com
+    comment: set recomendado
+
+extra_notes:
+  - Implementar versiones iterativa y recursiva.
+
+photos: []

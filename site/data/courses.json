@@ -1,0 +1,25 @@
+[
+  {
+    "id": "curso-inicial-2024",
+    "title": "Curso Inicial 2024",
+    "year": "2024",
+    "description": "Curso introductorio.",
+    "status": "active",
+    "tags": [
+      "inicial"
+    ],
+    "path": "data/years/2024/curso-inicial-2024"
+  },
+  {
+    "id": "curso-avanzado-2025",
+    "title": "Curso Avanzado 2025",
+    "year": "2025",
+    "description": "Curso avanzado enfocado en estructuras de datos.",
+    "status": "active",
+    "tags": [
+      "avanzado",
+      "estructuras-de-datos"
+    ],
+    "path": "data/years/2025/curso-avanzado-2025"
+  }
+]

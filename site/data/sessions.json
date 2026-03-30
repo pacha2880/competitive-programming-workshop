@@ -1,0 +1,156 @@
+[
+  {
+    "id": "2024-03-02-greedy",
+    "title": "Introduccion a Greedy",
+    "date": "2024-03-02",
+    "course_id": "curso-inicial-2024",
+    "path": "data/years/2024/curso-inicial-2024/sessions/2024-03-02-greedy",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Introduccion al enfoque greedy.",
+    "status": "published",
+    "tags": [
+      "greedy"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Slides",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [
+        {
+          "title": "Notes",
+          "file": "notes.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [
+      {
+        "title": "Problem A",
+        "file": "",
+        "url": "https://codeforces.com/problemset/problem/1/A",
+        "comment": "basico"
+      }
+    ],
+    "practice_contests": [
+      {
+        "title": "Contest Greedy",
+        "file": "",
+        "url": "https://codeforces.com",
+        "comment": "ejemplo"
+      }
+    ],
+    "extra_notes": [
+      "Practicar implementaciones simples."
+    ],
+    "photos": [
+      {
+        "file": "images/foto1.jpg",
+        "comment": "sesion"
+      }
+    ]
+  },
+  {
+    "id": "2024-03-09-bfs-dfs",
+    "title": "BFS y DFS",
+    "date": "2024-03-09",
+    "course_id": "curso-inicial-2024",
+    "path": "data/years/2024/curso-inicial-2024/sessions/2024-03-09-bfs-dfs",
+    "speaker_ids": [
+      "juan-perez",
+      "rodrigo-salguero"
+    ],
+    "summary": "Recorrido de grafos con busquedas clasicas.",
+    "status": "published",
+    "tags": [
+      "graphs",
+      "bfs",
+      "dfs"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Slides",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": []
+    },
+    "problem_list": [
+      {
+        "title": "Graph Traversal Intro",
+        "file": "",
+        "url": "https://codeforces.com",
+        "comment": "practica guiada"
+      }
+    ],
+    "practice_contests": [
+      {
+        "title": "Contest Grafos",
+        "file": "",
+        "url": "https://codeforces.com",
+        "comment": "conjunto sugerido"
+      }
+    ],
+    "extra_notes": [
+      "Repasar representaciones de grafos."
+    ],
+    "photos": []
+  },
+  {
+    "id": "2025-04-01-segment-tree",
+    "title": "Segment Tree",
+    "date": "2025-04-01",
+    "course_id": "curso-avanzado-2025",
+    "path": "data/years/2025/curso-avanzado-2025/sessions/2025-04-01-segment-tree",
+    "speaker_ids": [
+      "juan-perez"
+    ],
+    "summary": "Introduccion y aplicaciones de segment tree.",
+    "status": "published",
+    "tags": [
+      "segment-tree",
+      "data-structures"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Slides",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": []
+    },
+    "problem_list": [
+      {
+        "title": "Range Sum Query",
+        "file": "",
+        "url": "https://codeforces.com",
+        "comment": "ejemplo de practica"
+      }
+    ],
+    "practice_contests": [
+      {
+        "title": "Contest Segment Tree",
+        "file": "",
+        "url": "https://codeforces.com",
+        "comment": "set recomendado"
+      }
+    ],
+    "extra_notes": [
+      "Implementar versiones iterativa y recursiva."
+    ],
+    "photos": []
+  }
+]
