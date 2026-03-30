@@ -1,4 +1,5 @@
 const SITE_TITLE = "Taller de Programación Competitiva";
+const SITE_VERSION = "v1.2.0";
 const NAV_ITEMS = [
   { key: "home", label: "Inicio", href: "index.html" },
   { key: "years", label: "Años", href: "years.html" },
@@ -11,6 +12,16 @@ function appendChildren(parent, children = []) {
   children.flat().filter(Boolean).forEach((child) => parent.appendChild(child));
   return parent;
 }
+
+function renderSiteVersion() {
+  document.querySelectorAll("[data-site-version]").forEach((node) => {
+    node.textContent = SITE_VERSION;
+    node.setAttribute("aria-label", `Versión del sitio ${SITE_VERSION}`);
+    node.setAttribute("title", `Versión del sitio ${SITE_VERSION}`);
+  });
+}
+
+renderSiteVersion();
 
 export function el(tag, options = {}, children = []) {
   const node = document.createElement(tag);
