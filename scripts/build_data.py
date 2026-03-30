@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 from datetime import date, datetime
 from pathlib import Path
@@ -16,9 +17,103 @@ YEARS_DIR = DATA_DIR / "years"
 OUTPUT_DIR = ROOT_DIR / "site" / "data"
 
 
+def quote_yaml_string(value: str) -> str:
+    return json.dumps(value, ensure_ascii=False)
+
+
+def repair_unquoted_mapping_values(raw_text: str) -> str:
+    repaired_lines: list[str] = []
+
+    for line in raw_text.splitlines(keepends=True):
+        newline = "\r\n" if line.endswith("\r\n") else "\n"
+        stripped = line.rstrip("\r\n")
+
+        match = re.match(r"^(\s*(?:-\s+)?[A-Za-z0-9_-]+\s*:\s+)(.+)$", stripped)
+        if not match:
+            repaired_lines.append(line)
+            continue
+
+        prefix, value = match.groups()
+        value = value.rstrip()
+
+        if (
+            ": " in value
+            and not value.startswith(('"', "'", "[", "{", "|", ">"))
+            and not re.match(r"^[A-Za-z0-9_-]+\s*:$", value)
+        ):
+            repaired_lines.append(f"{prefix}{quote_yaml_string(value)}{newline}")
+            continue
+
+        repaired_lines.append(line)
+
+    return "".join(repaired_lines)
+
+
+def repair_extra_notes_yaml(raw_text: str) -> str:
+    lines = raw_text.splitlines(keepends=True)
+    repaired: list[str] = []
+    in_extra_notes = False
+    extra_notes_indent = 0
+    index = 0
+
+    while index < len(lines):
+        line = lines[index]
+        stripped = line.lstrip(" ")
+        indent = len(line) - len(stripped)
+        newline = "\r\n" if line.endswith("\r\n") else "\n"
+
+        if not in_extra_notes:
+            repaired.append(line)
+            if stripped.startswith("extra_notes:"):
+                in_extra_notes = True
+                extra_notes_indent = indent
+            index += 1
+            continue
+
+        if stripped.strip() and indent <= extra_notes_indent:
+            in_extra_notes = False
+            continue
+
+        item_match = re.match(rf"^(\s{{{extra_notes_indent + 2},}})-\s+(.*?)(\r?\n)?$", line)
+        if not item_match:
+            repaired.append(line)
+            index += 1
+            continue
+
+        item_indent = len(item_match.group(1))
+        item_text = item_match.group(2).rstrip()
+
+        if re.match(r"^[A-Za-z0-9_-]+\s*:", item_text):
+            repaired.append(line)
+            index += 1
+            continue
+
+        next_line = lines[index + 1] if index + 1 < len(lines) else ""
+        next_stripped = next_line.lstrip(" ")
+        next_indent = len(next_line) - len(next_stripped)
+        has_nested_mapping = bool(
+            next_stripped.strip()
+            and next_indent > item_indent
+            and re.match(r"^[A-Za-z0-9_-]+\s*:", next_stripped)
+        )
+
+        if has_nested_mapping:
+            repaired.append(f"{' ' * item_indent}- text: {quote_yaml_string(item_text)}{newline}")
+        else:
+            repaired.append(f"{' ' * item_indent}- {quote_yaml_string(item_text)}{newline}")
+
+        index += 1
+
+    return "".join(repaired)
+
+
 def load_yaml(path: Path) -> dict[str, Any]:
-    with path.open("r", encoding="utf-8") as handle:
-        data = yaml.safe_load(handle) or {}
+    raw_text = path.read_text(encoding="utf-8")
+    try:
+        data = yaml.safe_load(raw_text) or {}
+    except yaml.YAMLError:
+        repaired_text = repair_extra_notes_yaml(repair_unquoted_mapping_values(raw_text))
+        data = yaml.safe_load(repaired_text) or {}
     if not isinstance(data, dict):
         return {}
     return data
@@ -46,6 +141,48 @@ def normalize_string_list(value: Any) -> list[str]:
     if not isinstance(value, list):
         return []
     return [str(normalize_scalar(item, "")).strip() for item in value if str(normalize_scalar(item, "")).strip()]
+
+
+def normalize_extra_notes_and_links(value: Any) -> tuple[list[str], list[dict[str, str]]]:
+    if not isinstance(value, list):
+        return [], []
+
+    notes: list[str] = []
+    links: list[dict[str, str]] = []
+    for item in value:
+        if isinstance(item, dict):
+            text = normalize_text(
+                item.get("text", item.get("note", item.get("title", item.get("content", "")))),
+                "",
+            ).strip()
+            url = normalize_text(item.get("url", ""), "").strip()
+            comment = normalize_text(item.get("comment", ""), "").strip()
+
+            if url:
+                links.append(
+                    {
+                        "title": text or url,
+                        "file": "",
+                        "url": url,
+                        "comment": comment,
+                    }
+                )
+                continue
+
+            parts = [text]
+            if comment:
+                parts.append(f"- {comment}" if text else comment)
+
+            merged = " ".join(part for part in parts if part).strip()
+            if merged:
+                notes.append(merged)
+            continue
+
+        text = normalize_text(item, "").strip()
+        if text:
+            notes.append(text)
+
+    return notes, links
 
 
 def normalize_link_items(value: Any) -> list[dict[str, str]]:
@@ -187,9 +324,12 @@ def build_years_courses_sessions(
                 extra_pdfs = normalize_link_items(materials.get("extra_pdfs", []))
                 problem_list = normalize_link_items(session.get("problem_list", []))
                 practice_contests = normalize_link_items(session.get("practice_contests", []))
+                extra_links = normalize_link_items(session.get("extra_links", []))
+                extra_notes, links_from_notes = normalize_extra_notes_and_links(session.get("extra_notes", []))
+                extra_links.extend(links_from_notes)
                 photos = normalize_photos(session.get("photos", []))
 
-                for item in slides + extra_pdfs + photos:
+                for item in slides + extra_pdfs + extra_links + photos:
                     source_path = resolve_local_reference(item.get("file", ""), session_dir)
                     if source_path is not None:
                         copy_asset(source_path, missing_assets, copied_assets)
@@ -211,7 +351,8 @@ def build_years_courses_sessions(
                         },
                         "problem_list": problem_list,
                         "practice_contests": practice_contests,
-                        "extra_notes": normalize_string_list(session.get("extra_notes", [])),
+                        "extra_links": extra_links,
+                        "extra_notes": extra_notes,
                         "photos": photos,
                     }
                 )

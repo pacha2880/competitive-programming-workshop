@@ -1,0 +1,37 @@
+id: 2026-03-28-introduccion-g2
+title: Introduccion a la Programacion Competitiva
+date: 2026-03-28
+course_id: pupilo-2026-g2
+status: published
+
+summary: Competencias, jueces online, competencias, beneficios, requisitos, como subir un problema, lecutra y salida rápida, cálculo de complejidad notación big O.
+
+speaker_ids:
+  - nicolas-alba
+
+tags:
+  - introduccion
+
+materials:
+  slides:
+    - title: Introducción
+      file: Introduccion.pdf
+    - title: Complejidad de tiempo
+      file: ComplejidadDeTiempo.pdf
+  extra_pdfs:
+    - title: Guide to competitive programming
+      file: Antti_Laaksonen_Guide_to_Competitive_Programming_Learning_and_Improving.pdf
+    
+  
+practice_contests:
+  - title: Contest Introcucción
+    url: https://vjudge.net/contest/800884
+    comment: password: pokopia
+
+extra_links:
+  - title: Tutorial de lectura y salida rápida en Java
+    url: https://www.geeksforgeeks.org/fast-io-in-java-in-competitive-programming/
+
+extra_notes:
+  - Tambien les paso el libro que me ayudo a aprender C++ cuando solo sabia Java (Guide to competitive programming de Anttti Laaksonen). Es muy bueno ya que aprenden C++ y repasan los temas. No se asusten si aun no lo entienden del todo, este libro me sirvio por varios años.
+  - Como vimos en clase eviten usar scanner.

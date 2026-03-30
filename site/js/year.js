@@ -12,7 +12,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330b";
+} from "./shared.js?v=20260330c";
 
 async function renderYearPage() {
   const data = await loadSiteData();
@@ -22,17 +22,17 @@ async function renderYearPage() {
   if (!year) {
     setPageChrome({
       current: "years",
-      title: "Year not found",
-      subtitle: "The requested year is not present in the generated data.",
-      breadcrumbs: [{ label: "Home", href: "index.html" }, { label: "Years", href: "years.html" }, { label: "Not found" }],
-      actions: [createButtonLink("Back to years", "years.html")],
+      title: "Año no encontrado",
+      subtitle: "El año solicitado no está presente en los datos generados.",
+      breadcrumbs: [{ label: "Inicio", href: "index.html" }, { label: "Años", href: "years.html" }, { label: "No encontrado" }],
+      actions: [createButtonLink("Volver a años", "years.html")],
     });
     setMainContent(
       createNotFound(
-        "Year not found",
-        "No workshop year matched the provided id. Try returning to the year index.",
+        "Año no encontrado",
+        "Ningún año del taller coincide con el id proporcionado. Intenta volver al listado de años.",
         "years.html",
-        "Open years"
+        "Abrir años"
       )
     );
     return;
@@ -42,10 +42,10 @@ async function renderYearPage() {
 
   setPageChrome({
     current: "years",
-    title: `Year ${year.id}`,
-    subtitle: "Courses available for this workshop year.",
-    breadcrumbs: [{ label: "Home", href: "index.html" }, { label: "Years", href: "years.html" }, { label: year.id }],
-    actions: [createButtonLink("Back to years", "years.html")],
+    title: `Año ${year.id}`,
+    subtitle: "Cursos disponibles para esta gestión del taller.",
+    breadcrumbs: [{ label: "Inicio", href: "index.html" }, { label: "Años", href: "years.html" }, { label: year.id }],
+    actions: [createButtonLink("Volver a años", "years.html")],
   });
 
   const cards =
@@ -57,27 +57,26 @@ async function renderYearPage() {
             const sessions = getSessionsForCourse(data.sessions, course.id);
             return createCard({
               title: course.title,
-              meta: `${course.status || "Status not set"} | ${sessions.length} sessions`,
-              text: course.description || "No description provided.",
+              meta: `${course.status || "Estado no definido"} | ${sessions.length} sesiones`,
+              text: course.description || "Sin descripción.",
               tags: course.tags || [],
               href: pageUrl("course", { id: course.id }),
-              linkLabel: "View course",
-              footer: [el("span", { className: "card__text", text: `Course ID: ${course.id}` })],
+              linkLabel: "Ver curso",
             });
           })
         )
-      : createEmptyState("This year exists in the archive but does not contain any courses yet.");
+      : createEmptyState("Este año existe en el archivo, pero todavía no contiene cursos.");
 
-  setMainContent(createSectionCard("Courses", [cards]));
+  setMainContent(createSectionCard("Cursos", [cards]));
 }
 
 renderYearPage().catch((error) => {
   console.error(error);
   setMainContent(
-    createSectionCard("Unable to load the year page", [
+    createSectionCard("No se pudo cargar la página del año", [
       el("p", {
         className: "section-text",
-        text: "Run python scripts/build_data.py and serve the site folder to rebuild the JSON files.",
+        text: "Ejecuta python scripts/build_data.py y sirve la carpeta site para reconstruir los archivos JSON.",
       }),
     ])
   );

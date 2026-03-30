@@ -1,8 +1,8 @@
-const SITE_TITLE = "Taller de Programacion Competitiva";
+const SITE_TITLE = "Taller de Programación Competitiva";
 const NAV_ITEMS = [
-  { key: "home", label: "Home", href: "index.html" },
-  { key: "years", label: "Years", href: "years.html" },
-  { key: "speakers", label: "Instructors", href: "speakers.html" },
+  { key: "home", label: "Inicio", href: "index.html" },
+  { key: "years", label: "Años", href: "years.html" },
+  { key: "speakers", label: "Instructores", href: "speakers.html" },
 ];
 
 let dataCache = null;
@@ -40,7 +40,7 @@ export function el(tag, options = {}, children = []) {
 export async function fetchJson(name) {
   const response = await fetch(`data/${name}.json`);
   if (!response.ok) {
-    throw new Error(`Unable to load data/${name}.json`);
+    throw new Error(`No se pudo cargar data/${name}.json`);
   }
   return response.json();
 }
@@ -207,7 +207,7 @@ export function createEmptyState(message) {
   return el("section", { className: "empty-state" }, [el("p", { text: message })]);
 }
 
-export function createNotFound(title, message, href = null, linkLabel = "Back") {
+export function createNotFound(title, message, href = null, linkLabel = "Volver") {
   const actions = href ? [createButtonLink(linkLabel, href)] : [];
   return el("section", { className: "not-found stack" }, [
     el("h2", { text: title }),
@@ -242,7 +242,7 @@ export function createCard({
   text = "",
   tags = [],
   href = "",
-  linkLabel = "View details",
+  linkLabel = "Ver detalle",
   footer = [],
 }) {
   const nodes = [];
@@ -293,7 +293,7 @@ export function createResourceList(title, items, sessionPath = "") {
           ? el("a", { href, text: item.title || href, target: "_blank", rel: "noreferrer noopener" })
           : href
             ? el("a", { href, text: item.title || href })
-            : el("span", { text: item.title || "Untitled resource" });
+            : el("span", { text: item.title || "Recurso sin titulo" });
 
       const note = item.comment ? el("span", { className: "resource-note", text: ` - ${item.comment}` }) : null;
       return el("li", {}, [link, note]);
@@ -324,7 +324,7 @@ export function createPlainListSection(title, items) {
 export function createSpeakerImage(path, alt, className) {
   const normalizedPath = normalizeAssetPath(path);
   if (!normalizedPath) {
-    return el("div", { className: `${className} section-card`, text: "No photo available." });
+    return el("div", { className: `${className} section-card`, text: "No hay foto disponible." });
   }
 
   return el("div", { className }, [el("img", { src: normalizedPath, alt, className: "speaker-photo" })]);

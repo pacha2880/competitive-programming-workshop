@@ -1,0 +1,35 @@
+id: 2024-03-02-greedy
+title: Introduccion a Greedy
+date: 2024-03-02
+course_id: pupilo-2026-g1
+status: published
+
+summary: Introduccion al enfoque greedy.
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - greedy
+
+materials:
+  slides:
+    - title: Slides
+      file: slides.pdf
+  extra_pdfs:
+    - title: Notes
+      file: notes.pdf
+
+problem_list:
+  - title: Problem A
+    url: https://codeforces.com/problemset/problem/1/A
+    comment: basico
+
+practice_contests:
+  - title: Contest Greedy
+    url: https://codeforces.com
+    comment: ejemplo
+
+extra_notes:
+  - Practicar implementaciones simples.
+

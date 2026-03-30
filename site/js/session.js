@@ -16,7 +16,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330b";
+} from "./shared.js?v=20260330c";
 
 async function renderSessionPage() {
   const data = await loadSiteData();
@@ -26,17 +26,21 @@ async function renderSessionPage() {
   if (!session) {
     setPageChrome({
       current: "years",
-      title: "Session not found",
-      subtitle: "The requested session is not present in the generated data.",
-      breadcrumbs: [{ label: "Home", href: "index.html" }, { label: "Years", href: "years.html" }, { label: "Not found" }],
-      actions: [createButtonLink("Back to years", "years.html")],
+      title: "Sesión no encontrada",
+      subtitle: "La sesión solicitada no está presente en los datos generados.",
+      breadcrumbs: [
+        { label: "Inicio", href: "index.html" },
+        { label: "Años", href: "years.html" },
+        { label: "No encontrada" },
+      ],
+      actions: [createButtonLink("Volver a años", "years.html")],
     });
     setMainContent(
       createNotFound(
-        "Session not found",
-        "No session matched the provided id. Try returning to the course or year listings.",
+        "Sesión no encontrada",
+        "Ninguna sesión coincide con el id proporcionado. Intenta volver al listado de cursos o años.",
         "years.html",
-        "Open years"
+        "Abrir años"
       )
     );
     return;
@@ -53,22 +57,23 @@ async function renderSessionPage() {
   setPageChrome({
     current: "years",
     title: session.title,
-    subtitle: `${session.date || "Date pending"}${summaryLine ? ` · ${summaryLine}` : ""}`,
+    subtitle: `${session.date || "Fecha pendiente"}${summaryLine ? ` · ${summaryLine}` : ""}`,
     breadcrumbs: [
-      { label: "Home", href: "index.html" },
-      { label: "Years", href: "years.html" },
+      { label: "Inicio", href: "index.html" },
+      { label: "Años", href: "years.html" },
       course ? { label: String(course.year), href: pageUrl("year", { id: course.year }) } : null,
       course ? { label: course.title, href: pageUrl("course", { id: course.id }) } : null,
       { label: session.title },
     ].filter(Boolean),
-    actions: course ? [createButtonLink("Back to course", pageUrl("course", { id: course.id }))] : [],
+    actions: course ? [createButtonLink("Volver al curso", pageUrl("course", { id: course.id }))] : [],
   });
 
   const materialsBlocks = [
-    createResourceList("Slides", session.materials?.slides || [], session.path),
-    createResourceList("Extra PDFs", session.materials?.extra_pdfs || [], session.path),
+    createResourceList("Diapositivas", session.materials?.slides || [], session.path),
+    createResourceList("PDFs extra", session.materials?.extra_pdfs || [], session.path),
+    createResourceList("Enlaces extra", session.extra_links || [], session.path),
     Array.isArray(session.problem_list) && session.problem_list.length > 0
-      ? createSectionCard("Problem list", [
+      ? createSectionCard("Lista de problemas", [
           el(
             "ul",
             { className: "resource-list" },
@@ -76,7 +81,7 @@ async function renderSessionPage() {
               el("li", {}, [
                 el("a", {
                   href: item.url || normalizeAssetPath(item.file),
-                  text: item.title || item.url || item.file || "Problem",
+                  text: item.title || item.url || item.file || "Problema",
                   target: isExternalUrl(item.url) ? "_blank" : "",
                   rel: isExternalUrl(item.url) ? "noreferrer noopener" : "",
                 }),
@@ -87,7 +92,7 @@ async function renderSessionPage() {
         ])
       : null,
     Array.isArray(session.practice_contests) && session.practice_contests.length > 0
-      ? createSectionCard("Practice contests", [
+      ? createSectionCard("Concursos de práctica", [
           el(
             "ul",
             { className: "resource-list" },
@@ -95,7 +100,7 @@ async function renderSessionPage() {
               el("li", {}, [
                 el("a", {
                   href: item.url || normalizeAssetPath(item.file),
-                  text: item.title || item.url || item.file || "Contest",
+                  text: item.title || item.url || item.file || "Concurso",
                   target: isExternalUrl(item.url) ? "_blank" : "",
                   rel: isExternalUrl(item.url) ? "noreferrer noopener" : "",
                 }),
@@ -105,13 +110,13 @@ async function renderSessionPage() {
           ),
         ])
       : null,
-    createPlainListSection("Extra notes", session.extra_notes || []),
+    createPlainListSection("Notas extra", session.extra_notes || []),
   ].filter(Boolean);
 
   const localPhotos = Array.isArray(session.photos) ? session.photos : [];
   const photosSection =
     localPhotos.length > 0
-      ? createSectionCard("Photos", [
+      ? createSectionCard("Fotos", [
           el(
             "div",
             { className: "photo-gallery" },
@@ -129,7 +134,7 @@ async function renderSessionPage() {
   const speakersSection =
     speakerCards.length > 0
       ? createSectionCard(
-          "Speakers",
+          "Expositores",
           speakerCards.map((speaker) =>
             el("article", { className: "speaker-card section-card" }, [
               createSpeakerImage(speaker.photo, speaker.name, "speaker-card__photo"),
@@ -138,36 +143,42 @@ async function renderSessionPage() {
                 el("h3", { className: "card__title" }, [
                   el("a", { href: pageUrl("speaker", { id: speaker.id }), text: speaker.name }),
                 ]),
-                el("p", { className: "card__text", text: speaker.bio || "No biography provided." }),
-                createButtonLink("View profile", pageUrl("speaker", { id: speaker.id })),
+                el("p", { className: "card__text", text: speaker.bio || "Sin biografía." }),
+                createButtonLink("Ver perfil", pageUrl("speaker", { id: speaker.id })),
               ]),
             ])
           )
         )
-      : createSectionCard("Speakers", [el("p", { className: "section-text", text: "No speakers assigned." })]);
+      : createSectionCard("Expositores", [
+          el("p", { className: "section-text", text: "No hay expositores asignados." }),
+        ]);
 
   setMainContent(
-    el("div", { className: "stack-lg" }, [
-      createSectionCard(
-        "Materials",
-        materialsBlocks.length > 0
-          ? materialsBlocks
-          : [el("p", { className: "section-text", text: "No materials have been listed for this session." })],
-        "materials-section"
-      ),
-      photosSection,
-      speakersSection,
-    ].filter(Boolean))
+    el(
+      "div",
+      { className: "stack-lg" },
+      [
+        createSectionCard(
+          "Materiales",
+          materialsBlocks.length > 0
+            ? materialsBlocks
+            : [el("p", { className: "section-text", text: "No se listaron materiales para esta sesión." })],
+          "materials-section"
+        ),
+        photosSection,
+        speakersSection,
+      ].filter(Boolean)
+    )
   );
 }
 
 renderSessionPage().catch((error) => {
   console.error(error);
   setMainContent(
-    createSectionCard("Unable to load the session page", [
+    createSectionCard("No se pudo cargar la página de la sesión", [
       el("p", {
         className: "section-text",
-        text: "Run python scripts/build_data.py and serve the site folder to rebuild the JSON files.",
+        text: "Ejecuta python scripts/build_data.py y sirve la carpeta site para reconstruir los archivos JSON.",
       }),
     ])
   );

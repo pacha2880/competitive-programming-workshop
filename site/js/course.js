@@ -12,7 +12,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330b";
+} from "./shared.js?v=20260330c";
 
 async function renderCoursePage() {
   const data = await loadSiteData();
@@ -22,17 +22,17 @@ async function renderCoursePage() {
   if (!course) {
     setPageChrome({
       current: "years",
-      title: "Course not found",
-      subtitle: "The requested course is not present in the generated data.",
-      breadcrumbs: [{ label: "Home", href: "index.html" }, { label: "Years", href: "years.html" }, { label: "Not found" }],
-      actions: [createButtonLink("Back to years", "years.html")],
+      title: "Curso no encontrado",
+      subtitle: "El curso solicitado no está presente en los datos generados.",
+      breadcrumbs: [{ label: "Inicio", href: "index.html" }, { label: "Años", href: "years.html" }, { label: "No encontrado" }],
+      actions: [createButtonLink("Volver a años", "years.html")],
     });
     setMainContent(
       createNotFound(
-        "Course not found",
-        "No course matched the provided id. Try returning to the year or course listings.",
+        "Curso no encontrado",
+        "Ningún curso coincide con el id proporcionado. Intenta volver al listado de años o cursos.",
         "years.html",
-        "Open years"
+        "Abrir años"
       )
     );
     return;
@@ -44,14 +44,14 @@ async function renderCoursePage() {
   setPageChrome({
     current: "years",
     title: course.title,
-    subtitle: course.description || "Sessions for this course.",
+    subtitle: course.description || "Sesiones de este curso.",
     breadcrumbs: [
-      { label: "Home", href: "index.html" },
-      { label: "Years", href: "years.html" },
+      { label: "Inicio", href: "index.html" },
+      { label: "Años", href: "years.html" },
       yearExists ? { label: course.year, href: pageUrl("year", { id: course.year }) } : { label: String(course.year) },
       { label: course.title },
     ],
-    actions: [createButtonLink("Back to year", pageUrl("year", { id: course.year }))],
+    actions: [createButtonLink("Volver al año", pageUrl("year", { id: course.year }))],
   });
 
   const sessionList =
@@ -62,32 +62,32 @@ async function renderCoursePage() {
           sessions.map((session) =>
             createCard({
               title: session.title,
-              meta: session.date || "Date pending",
-              text: session.summary || "No summary provided.",
+              meta: session.date || "Fecha pendiente",
+              text: session.summary || "Sin resumen.",
               tags: session.tags || [],
               href: pageUrl("session", { id: session.id }),
-              linkLabel: "View session",
+              linkLabel: "Ver sesión",
               footer: [
                 el("span", {
                   className: "card__text",
-                  text: `Speakers: ${getSpeakerNames(session.speaker_ids, data.speakers).join(", ") || "Not assigned"}`,
+                  text: `Expositores: ${getSpeakerNames(session.speaker_ids, data.speakers).join(", ") || "No asignados"}`,
                 }),
               ],
             })
           )
         )
-      : createEmptyState("This course exists, but it does not have any sessions yet.");
+      : createEmptyState("Este curso existe, pero todavía no tiene sesiones.");
 
-  setMainContent(el("div", { className: "stack-lg" }, [createSectionCard("Sessions", [sessionList])]));
+  setMainContent(el("div", { className: "stack-lg" }, [createSectionCard("Sesiones", [sessionList])]));
 }
 
 renderCoursePage().catch((error) => {
   console.error(error);
   setMainContent(
-    createSectionCard("Unable to load the course page", [
+    createSectionCard("No se pudo cargar la página del curso", [
       el("p", {
         className: "section-text",
-        text: "Run python scripts/build_data.py and serve the site folder to rebuild the JSON files.",
+        text: "Ejecuta python scripts/build_data.py y sirve la carpeta site para reconstruir los archivos JSON.",
       }),
     ])
   );

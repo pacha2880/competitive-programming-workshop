@@ -5,16 +5,16 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330b";
+} from "./shared.js?v=20260330c";
 
 async function renderHomePage() {
   await loadSiteData();
 
   setPageChrome({
     current: "home",
-    title: "Taller de Programacion Competitiva",
-    subtitle: "Static archive of workshop sessions, materials, and instructor profiles.",
-    actions: [createButtonLink("Browse years", "years.html"), createButtonLink("Browse instructors", "speakers.html")],
+    title: "Taller de Programación Competitiva",
+    subtitle: "Archivo estático de sesiones, materiales y perfiles de instructores.",
+    actions: [createButtonLink("Ver años", "years.html"), createButtonLink("Ver instructores", "speakers.html")],
   });
   setMainContent(el("div", { className: "home-spacer" }));
 }
@@ -22,10 +22,10 @@ async function renderHomePage() {
 renderHomePage().catch((error) => {
   console.error(error);
   setMainContent(
-    createSectionCard("Unable to load the home page", [
+    createSectionCard("No se pudo cargar la página de inicio", [
       el("p", {
         className: "section-text",
-        text: "Run python scripts/build_data.py and serve the site folder to make sure the JSON files exist.",
+        text: "Ejecuta python scripts/build_data.py y sirve la carpeta site para asegurarte de que existan los archivos JSON.",
       }),
     ])
   );

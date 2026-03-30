@@ -12,6 +12,20 @@
     }
   },
   {
+    "id": "nicolas-alba",
+    "name": "Nicolas Alba",
+    "role": "Expositor",
+    "bio": "Finalista Mundial ICPC.",
+    "photo": "data/speakers/photos/nicolasalba.jpg",
+    "contacts": {
+      "codeforces": "https://codeforces.com/profile/nicolasalba",
+      "github": "https://github.com/nicolasalba",
+      "linkedin": "https://www.linkedin.com/in/nicolas-armando-alba-murillo-746b9818",
+      "email": "nicolasalbamurillo@gmail.com",
+      "telegram": "https://t.me/nicolasalba"
+    }
+  },
+  {
     "id": "rodrigo-salguero",
     "name": "Rodrigo Salguero",
     "role": "Expositor",

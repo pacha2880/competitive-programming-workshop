@@ -13,7 +13,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330b";
+} from "./shared.js?v=20260330c";
 
 async function renderSpeakerPage() {
   const data = await loadSiteData();
@@ -23,17 +23,21 @@ async function renderSpeakerPage() {
   if (!speaker) {
     setPageChrome({
       current: "speakers",
-      title: "Instructor not found",
-      subtitle: "The requested speaker is not present in the generated data.",
-      breadcrumbs: [{ label: "Home", href: "index.html" }, { label: "Instructors", href: "speakers.html" }, { label: "Not found" }],
-      actions: [createButtonLink("Back to instructors", "speakers.html")],
+      title: "Instructor no encontrado",
+      subtitle: "El instructor solicitado no está presente en los datos generados.",
+      breadcrumbs: [
+        { label: "Inicio", href: "index.html" },
+        { label: "Instructores", href: "speakers.html" },
+        { label: "No encontrado" },
+      ],
+      actions: [createButtonLink("Volver a instructores", "speakers.html")],
     });
     setMainContent(
       createNotFound(
-        "Instructor not found",
-        "No speaker matched the provided id. Try returning to the instructor directory.",
+        "Instructor no encontrado",
+        "Ningún instructor coincide con el id proporcionado. Intenta volver al directorio de instructores.",
         "speakers.html",
-        "Open instructors"
+        "Abrir instructores"
       )
     );
     return;
@@ -46,13 +50,13 @@ async function renderSpeakerPage() {
   setPageChrome({
     current: "speakers",
     title: speaker.name,
-    subtitle: "Instructor profile and teaching history.",
+    subtitle: "Perfil del instructor e historial de sesiones.",
     breadcrumbs: [
-      { label: "Home", href: "index.html" },
-      { label: "Instructors", href: "speakers.html" },
+      { label: "Inicio", href: "index.html" },
+      { label: "Instructores", href: "speakers.html" },
       { label: speaker.name },
     ],
-    actions: [createButtonLink("Back to instructors", "speakers.html")],
+    actions: [createButtonLink("Volver a instructores", "speakers.html")],
   });
 
   const contactLinks =
@@ -69,20 +73,18 @@ async function renderSpeakerPage() {
               return el("a", { className: "button-link", href, text: key, target, rel });
             })
         )
-      : el("p", { className: "section-text", text: "No contact links available." });
+      : el("p", { className: "section-text", text: "No hay enlaces de contacto disponibles." });
 
-  const profile = createSectionCard("Profile", [
+  const profile = createSectionCard("Perfil", [
     el("div", { className: "speaker-profile" }, [
       createSpeakerImage(speaker.photo, speaker.name, "speaker-profile__photo"),
       el("div", { className: "stack" }, [
         el("p", { className: "detail-card__meta", text: speaker.role || "Instructor" }),
         el("p", {
           className: "detail-card__summary",
-          text: speaker.bio || "No biography provided for this speaker.",
+          text: speaker.bio || "No se proporcionó una biografía para este instructor.",
         }),
-        createInfoGrid([
-          { label: "Sessions taught", value: sessions.length },
-        ]),
+        createInfoGrid([{ label: "Sesiones impartidas", value: sessions.length }]),
         contactLinks,
       ]),
     ]),
@@ -97,26 +99,26 @@ async function renderSpeakerPage() {
             const course = courseMap.get(session.course_id);
             return createCard({
               title: session.title,
-              meta: `${session.date || "Date pending"} | ${course?.title || session.course_id}`,
-              text: session.summary || "No summary provided.",
+              meta: `${session.date || "Fecha pendiente"} | ${course?.title || session.course_id}`,
+              text: session.summary || "Sin resumen.",
               tags: session.tags || [],
               href: pageUrl("session", { id: session.id }),
-              linkLabel: "View session",
+              linkLabel: "Ver sesión",
             });
           })
         )
-      : el("p", { className: "section-text", text: "This instructor has no linked sessions in the current data." });
+      : el("p", { className: "section-text", text: "Este instructor no tiene sesiones vinculadas en los datos actuales." });
 
-  setMainContent(el("div", { className: "stack-lg" }, [profile, createSectionCard("Sessions taught", [sessionCards])]));
+  setMainContent(el("div", { className: "stack-lg" }, [profile, createSectionCard("Sesiones impartidas", [sessionCards])]));
 }
 
 renderSpeakerPage().catch((error) => {
   console.error(error);
   setMainContent(
-    createSectionCard("Unable to load the instructor page", [
+    createSectionCard("No se pudo cargar la página del instructor", [
       el("p", {
         className: "section-text",
-        text: "Run python scripts/build_data.py and serve the site folder to rebuild the JSON files.",
+        text: "Ejecuta python scripts/build_data.py y sirve la carpeta site para reconstruir los archivos JSON.",
       }),
     ])
   );

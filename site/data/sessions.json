@@ -47,15 +47,12 @@
         "comment": "ejemplo"
       }
     ],
+    "extra_links": [],
     "extra_notes": [
-      "Practicar implementaciones simples."
+      "Practicar implementaciones simples.",
+      "Pensar en contraejemplos para cada paso greedy."
     ],
-    "photos": [
-      {
-        "file": "images/foto1.jpg",
-        "comment": "sesion"
-      }
-    ]
+    "photos": []
   },
   {
     "id": "2024-03-09-bfs-dfs",
@@ -101,6 +98,7 @@
         "comment": "conjunto sugerido"
       }
     ],
+    "extra_links": [],
     "extra_notes": [
       "Repasar representaciones de grafos."
     ],
@@ -148,8 +146,124 @@
         "comment": "set recomendado"
       }
     ],
+    "extra_links": [],
     "extra_notes": [
       "Implementar versiones iterativa y recursiva."
+    ],
+    "photos": []
+  },
+  {
+    "id": "2024-03-02-greedy",
+    "title": "Introduccion a Greedy",
+    "date": "2024-03-02",
+    "course_id": "pupilo-2026-g1",
+    "path": "data/years/2026/TPC pupilo 2026 - Grupo 1/sessions/2026-03-28-introduccion",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Introduccion al enfoque greedy.",
+    "status": "published",
+    "tags": [
+      "greedy"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Slides",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [
+        {
+          "title": "Notes",
+          "file": "notes.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [
+      {
+        "title": "Problem A",
+        "file": "",
+        "url": "https://codeforces.com/problemset/problem/1/A",
+        "comment": "basico"
+      }
+    ],
+    "practice_contests": [
+      {
+        "title": "Contest Greedy",
+        "file": "",
+        "url": "https://codeforces.com",
+        "comment": "ejemplo"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [
+      "Practicar implementaciones simples."
+    ],
+    "photos": []
+  },
+  {
+    "id": "2026-03-28-introduccion-g2",
+    "title": "Introduccion a la Programacion Competitiva",
+    "date": "2026-03-28",
+    "course_id": "pupilo-2026-g2",
+    "path": "data/years/2026/TPC pupilo 2026 - Grupo 2/sessions/2026-03-28-introduccion-g2",
+    "speaker_ids": [
+      "nicolas-alba"
+    ],
+    "summary": "Competencias, jueces online, competencias, beneficios, requisitos, como subir un problema, lecutra y salida rápida, cálculo de complejidad notación big O.",
+    "status": "published",
+    "tags": [
+      "introduccion"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Introducción",
+          "file": "Introduccion.pdf",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Complejidad de tiempo",
+          "file": "ComplejidadDeTiempo.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [
+        {
+          "title": "Guide to competitive programming",
+          "file": "Antti_Laaksonen_Guide_to_Competitive_Programming_Learning_and_Improving.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Introcucción",
+        "file": "",
+        "url": "https://vjudge.net/contest/800884",
+        "comment": "password: pokopia"
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Tutorial de lectura y salida rápida en Java",
+        "file": "",
+        "url": "https://www.geeksforgeeks.org/fast-io-in-java-in-competitive-programming/",
+        "comment": ""
+      }
+    ],
+    "extra_notes": [
+      "Tambien les paso el libro que me ayudo a aprender C++ cuando solo sabia Java (Guide to competitive programming de Anttti Laaksonen). Es muy bueno ya que aprenden C++ y repasan los temas. No se asusten si aun no lo entienden del todo, este libro me sirvio por varios años.",
+      "Como vimos en clase eviten usar scanner."
     ],
     "photos": []
   }
