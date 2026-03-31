@@ -1,0 +1,26 @@
+id: 2024-05-04-grafos-1
+title: Teoría de Grafos I
+date: 2024-05-18
+course_id: tpc-2024
+status: published
+
+summary: Grafos 1: Representación de Grafos, Búsqueda en profundidad (DFS) y búsqueda en anchura (BFS).
+speaker_ids:
+  - anghelo-pena
+
+tags:
+  - grafos
+  - dfs
+  - bfs
+
+materials:
+  slides:
+    - title: Teoría de Grafos I
+      file: "Teoría de Grafos Taller de PC UMSS.pdf"
+  
+  extra_files: []
+
+practice_contests:
+  - title: Contest de Teoría de Grafos I
+    url: https://vjudge.net/contest/629519
+    comment: password: FelizCumpleanios

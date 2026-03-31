@@ -322,6 +322,7 @@ def build_years_courses_sessions(
                     materials = {}
                 slides = normalize_link_items(materials.get("slides", []))
                 extra_pdfs = normalize_link_items(materials.get("extra_pdfs", []))
+                extra_files = normalize_link_items(materials.get("extra_files", session.get("extra_files", [])))
                 problem_list = normalize_link_items(session.get("problem_list", []))
                 practice_contests = normalize_link_items(session.get("practice_contests", []))
                 extra_links = normalize_link_items(session.get("extra_links", []))
@@ -329,7 +330,7 @@ def build_years_courses_sessions(
                 extra_links.extend(links_from_notes)
                 photos = normalize_photos(session.get("photos", []))
 
-                for item in slides + extra_pdfs + extra_links + photos:
+                for item in slides + extra_pdfs + extra_files + extra_links + photos:
                     source_path = resolve_local_reference(item.get("file", ""), session_dir)
                     if source_path is not None:
                         copy_asset(source_path, missing_assets, copied_assets)
@@ -348,6 +349,7 @@ def build_years_courses_sessions(
                         "materials": {
                             "slides": slides,
                             "extra_pdfs": extra_pdfs,
+                            "extra_files": extra_files,
                         },
                         "problem_list": problem_list,
                         "practice_contests": practice_contests,

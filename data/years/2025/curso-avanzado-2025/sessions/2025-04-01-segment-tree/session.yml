@@ -18,6 +18,8 @@ materials:
     - title: Slides
       file: slides.pdf
 
+  extra_files: []
+
 problem_list:
   - title: Range Sum Query
     url: https://codeforces.com

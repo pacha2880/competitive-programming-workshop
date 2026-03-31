@@ -27,6 +27,8 @@ materials:
     - title: Guide to competitive programming
       file: guide_to_competitive_programming.pdf
 
+  extra_files: []
+
 extra_links:
   - title: Cp-algorithms
     url: https://cp-algorithms.com/index.html

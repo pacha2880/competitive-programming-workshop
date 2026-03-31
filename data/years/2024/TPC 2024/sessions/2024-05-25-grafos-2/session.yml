@@ -1,0 +1,30 @@
+id: 2024-05-04-grafos-2
+title: Teoría de Grafos II
+date: 2024-05-18
+course_id: tpc-2024
+status: published
+
+summary: Grafos 2: Algoritmo de Dijkstra, Floyd-Warshall, Árbol de expansión mínima de Kruskal.
+speaker_ids:
+  - shamir-teran
+
+tags:
+  - grafos
+  - caminos mínimos
+  - dijkstra
+  - floyd-warshall
+  - kruskal
+
+materials:
+  slides:
+    - title: Teoría de Grafos II
+      file: "Grafos II.pdf"
+  extra_files:
+    - title: Soluciones del contest
+      file: "Soluciones Grafos II.zip"
+  
+
+practice_contests:
+  - title: Contest de Teoría de Grafos I
+    url: https://vjudge.net/contest/630501
+    comment: password: ioi2024

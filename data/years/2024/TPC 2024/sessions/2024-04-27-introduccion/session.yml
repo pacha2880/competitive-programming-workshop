@@ -1,4 +1,4 @@
-id: 2024-04-27-introduccion-g2
+id: 2024-04-27-introduccion
 title: Introduccion a la Programacion Competitiva
 date: 2024-04-27
 course_id: tpc-2024
@@ -17,8 +17,9 @@ materials:
     - title: Introducción al taller de Programación Competitiva
       file: "introdución taller de PC UMSS.pdf"
   
+  extra_files: []
+
 practice_contests:
   - title: Contest de Introcucción
     url: https://vjudge.net/contest/625425
     comment: password: vengadores
-

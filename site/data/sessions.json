@@ -1,6 +1,6 @@
 [
   {
-    "id": "2024-04-27-introduccion-g2",
+    "id": "2024-04-27-introduccion",
     "title": "Introduccion a la Programacion Competitiva",
     "date": "2024-04-27",
     "course_id": "tpc-2024",
@@ -22,7 +22,8 @@
           "comment": ""
         }
       ],
-      "extra_pdfs": []
+      "extra_pdfs": [],
+      "extra_files": []
     },
     "problem_list": [],
     "practice_contests": [
@@ -31,6 +32,185 @@
         "file": "",
         "url": "https://vjudge.net/contest/625425",
         "comment": "password: vengadores"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-05-04-estructuras",
+    "title": "Estructuras de Datos",
+    "date": "2024-05-04",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-05-04-estructuras",
+    "speaker_ids": [
+      "anghelo-pena"
+    ],
+    "summary": "Estructuras de Datos: Arreglos, Vector, Pilas, Colas, Set, Map.",
+    "status": "published",
+    "tags": [
+      "estructuras de datos",
+      "stl"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Estructuras de Datos",
+          "file": "Estructuras de datos Taller de PC UMSS.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": []
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Estructuras de Datos",
+        "file": "",
+        "url": "https://vjudge.net/contest/626716",
+        "comment": "password: SpookyMonth"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-05-11-recursividad",
+    "title": "Recursividad y Backtracking",
+    "date": "2024-05-11",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-05-11-recursividad",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Recursividad y Backtracking",
+    "status": "published",
+    "tags": [
+      "recursividad",
+      "backtracking"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Recursividad y Backtracking",
+          "file": "Recursividad y Backtracking.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": []
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Introcucción",
+        "file": "",
+        "url": "https://vjudge.net/contest/628091",
+        "comment": "password: Valluna"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [
+      "Buenas noches, una duda, Cómo debería manejar la entrada si me dice que tendrá \"Any number of lines\"?",
+      "while(cin>> N){ }"
+    ],
+    "photos": [
+      {
+        "file": "ejemplo.jpg",
+        "comment": "Any number of lines input"
+      }
+    ]
+  },
+  {
+    "id": "2024-05-04-grafos-1",
+    "title": "Teoría de Grafos I",
+    "date": "2024-05-18",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-05-18-grafos-1",
+    "speaker_ids": [
+      "anghelo-pena"
+    ],
+    "summary": "Grafos 1: Representación de Grafos, Búsqueda en profundidad (DFS) y búsqueda en anchura (BFS).",
+    "status": "published",
+    "tags": [
+      "grafos",
+      "dfs",
+      "bfs"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Teoría de Grafos I",
+          "file": "Teoría de Grafos Taller de PC UMSS.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": []
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Teoría de Grafos I",
+        "file": "",
+        "url": "https://vjudge.net/contest/629519",
+        "comment": "password: FelizCumpleanios"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-05-04-grafos-2",
+    "title": "Teoría de Grafos II",
+    "date": "2024-05-18",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-05-25-grafos-2",
+    "speaker_ids": [
+      "shamir-teran"
+    ],
+    "summary": "Grafos 2: Algoritmo de Dijkstra, Floyd-Warshall, Árbol de expansión mínima de Kruskal.",
+    "status": "published",
+    "tags": [
+      "grafos",
+      "caminos mínimos",
+      "dijkstra",
+      "floyd-warshall",
+      "kruskal"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Teoría de Grafos II",
+          "file": "Grafos II.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones del contest",
+          "file": "Soluciones Grafos II.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Teoría de Grafos I",
+        "file": "",
+        "url": "https://vjudge.net/contest/630501",
+        "comment": "password: ioi2024"
       }
     ],
     "extra_links": [],
@@ -61,7 +241,8 @@
           "comment": ""
         }
       ],
-      "extra_pdfs": []
+      "extra_pdfs": [],
+      "extra_files": []
     },
     "problem_list": [
       {
@@ -121,7 +302,8 @@
           "url": "",
           "comment": ""
         }
-      ]
+      ],
+      "extra_files": []
     },
     "problem_list": [],
     "practice_contests": [
@@ -181,7 +363,8 @@
           "url": "",
           "comment": ""
         }
-      ]
+      ],
+      "extra_files": []
     },
     "problem_list": [],
     "practice_contests": [

@@ -23,6 +23,8 @@ materials:
       file: Antti_Laaksonen_Guide_to_Competitive_Programming_Learning_and_Improving.pdf
     
   
+  extra_files: []
+
 practice_contests:
   - title: Contest Introcucción
     url: https://vjudge.net/contest/800884

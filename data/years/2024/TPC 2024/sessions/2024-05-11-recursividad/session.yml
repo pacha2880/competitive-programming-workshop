@@ -1,0 +1,34 @@
+id: 2024-05-11-recursividad
+title: Recursividad y Backtracking
+date: 2024-05-11
+course_id: tpc-2024
+status: published
+
+summary: Recursividad y Backtracking
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - recursividad
+  - backtracking
+
+materials:
+  slides:
+    - title: Recursividad y Backtracking
+      file: "Recursividad y Backtracking.pdf"
+  
+  extra_files: []
+
+practice_contests:
+  - title: Contest de Introcucción
+    url: https://vjudge.net/contest/628091
+    comment: password: Valluna
+
+extra_notes:
+  - Buenas noches, una duda, Cómo debería manejar la entrada si me dice que tendrá "Any number of lines"?
+  - while(cin>> N){ }
+
+photos:
+  - file: ejemplo.jpg
+    comment: Any number of lines input

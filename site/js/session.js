@@ -71,6 +71,7 @@ async function renderSessionPage() {
   const materialsBlocks = [
     createResourceList("Diapositivas", session.materials?.slides || [], session.path),
     createResourceList("PDFs extra", session.materials?.extra_pdfs || [], session.path),
+    createResourceList("Archivos extra", session.materials?.extra_files || [], session.path),
     createResourceList("Enlaces extra", session.extra_links || [], session.path),
     Array.isArray(session.problem_list) && session.problem_list.length > 0
       ? createSectionCard("Lista de problemas", [
