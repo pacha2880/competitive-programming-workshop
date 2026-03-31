@@ -28,6 +28,20 @@
     }
   },
   {
+    "id": "jorge-nava",
+    "name": "Jorge Nava",
+    "role": "Expositor",
+    "bio": "3er lugar ICPC Nacional Bolivia.",
+    "photo": "data/speakers/photos/nava.jpg",
+    "contacts": {
+      "codeforces": "https://codeforces.com/profile/jnava1612",
+      "github": "https://github.com/jnava1612",
+      "linkedin": "https://www.linkedin.com/in/jorge-eduardo-nava-sejas-9875361ab/",
+      "email": "navajorgeeduardo@gmail.com",
+      "telegram": "https://t.me/jnava1612"
+    }
+  },
+  {
     "id": "juan-perez",
     "name": "Juan Perez",
     "role": "Expositor",
@@ -37,6 +51,20 @@
       "github": "https://github.com/example-juan",
       "linkedin": "https://linkedin.com/in/example-juan",
       "email": "juan@email.com"
+    }
+  },
+  {
+    "id": "juan-soto",
+    "name": "Juan Pablo Soto",
+    "role": "Expositor",
+    "bio": "3er lugar ICPC Nacional Bolivia.",
+    "photo": "data/speakers/photos/soto.jpg",
+    "contacts": {
+      "codeforces": "https://codeforces.com/profile/jp45",
+      "linkedin": "https://www.linkedin.com/in/juan-pablo-soto-mejia/",
+      "github": "https://github.com/eternalgredy",
+      "email": "soto.cespedes.juan.pablo@gmail.com",
+      "telegram": "https://t.me/jnava1612"
     }
   },
   {
@@ -76,7 +104,9 @@
     "contacts": {
       "codeforces": "https://codeforces.com/profile/HeReWeGoAgAiN123",
       "linkedin": "https://www.linkedin.com/in/oliver-pozo-flores-a8977830a/",
-      "email": "oliver.pozo10@gmail.com"
+      "github": "https://github.com/OliverPozo",
+      "email": "oliver.pozo10@gmail.com",
+      "telegram": "https://t.me/oliverpozo"
     }
   },
   {

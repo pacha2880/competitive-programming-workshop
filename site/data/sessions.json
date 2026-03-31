@@ -320,6 +320,88 @@
     "photos": []
   },
   {
+    "id": "2024-06-22-combinatoria",
+    "title": "Combinatoria",
+    "date": "2024-06-22",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-06-22-combinatoria",
+    "speaker_ids": [
+      "jorge-nava"
+    ],
+    "summary": "Combinatoria, Conteo y Probabilidad.",
+    "status": "published",
+    "tags": [
+      "combinatoria",
+      "conteo",
+      "probabilidad"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Combinatoria, Conteo y Probabilidad",
+          "file": "Combinatoria, Conteo y Probabilidad.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": []
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Combinatoria",
+        "file": "",
+        "url": "https://vjudge.net/contest/634196",
+        "comment": "password: sotonooo"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-06-29-numeros",
+    "title": "Teoría de Números",
+    "date": "2024-06-29",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-06-29-numeros",
+    "speaker_ids": [
+      "juan-soto"
+    ],
+    "summary": "Teoría de Números, divisibildad y primalidad.",
+    "status": "published",
+    "tags": [
+      "teoria-de-numeros",
+      "divisibilidad",
+      "primalidad"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Teoría de Números",
+          "file": "teoriadenumeros.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": []
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Teoría de Números",
+        "file": "",
+        "url": "https://vjudge.net/contest/637050",
+        "comment": "password: NavaEduardo"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
     "id": "2025-04-01-segment-tree",
     "title": "Segment Tree",
     "date": "2025-04-01",

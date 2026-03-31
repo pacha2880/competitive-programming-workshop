@@ -1,0 +1,24 @@
+id: 2024-06-22-combinatoria
+title: Combinatoria
+date: 2024-06-22
+course_id: tpc-2024
+status: published
+
+summary: Combinatoria, Conteo y Probabilidad.
+speaker_ids:
+  - jorge-nava
+
+tags:
+  - combinatoria
+  - conteo
+  - probabilidad
+
+materials:
+  slides:
+    - title: Combinatoria, Conteo y Probabilidad
+      file: "Combinatoria, Conteo y Probabilidad.pdf"
+
+practice_contests:
+  - title: Contest de Combinatoria
+    url: https://vjudge.net/contest/634196
+    comment: password: sotonooo

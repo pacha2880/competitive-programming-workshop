@@ -1,0 +1,24 @@
+id: 2024-06-29-numeros
+date: 2024-06-29
+title: Teoría de Números
+course_id: tpc-2024
+status: published
+
+summary: Teoría de Números, divisibildad y primalidad.
+speaker_ids:
+  - juan-soto
+
+tags:
+  - teoria-de-numeros
+  - divisibilidad
+  - primalidad
+
+materials:
+  slides:
+    - title: Teoría de Números
+      file: "teoriadenumeros.pdf"
+
+practice_contests:
+  - title: Contest de Teoría de Números
+    url: https://vjudge.net/contest/637050
+    comment: password: NavaEduardo
