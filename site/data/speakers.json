@@ -40,6 +40,20 @@
     }
   },
   {
+    "id": "mateo-valdivia",
+    "name": "Mateo Valdivia",
+    "role": "Expositor",
+    "bio": "Finalista Mundial ICPC; Finalista IOI.",
+    "photo": "data/speakers/photos/mateo.jpg",
+    "contacts": {
+      "codeforces": "https://codeforces.com/profile/el_programador",
+      "github": "https://github.com/elprogramadorr",
+      "linkedin": "https://www.linkedin.com/in/mateo-valdivia/",
+      "email": "mateovaldivia3000@gmail.com",
+      "telegram": "https://t.me/el_programadorr"
+    }
+  },
+  {
     "id": "nicolas-alba",
     "name": "Nicolas Alba",
     "role": "Expositor",
@@ -51,6 +65,18 @@
       "linkedin": "https://www.linkedin.com/in/nicolas-armando-alba-murillo-746b9818",
       "email": "nicolasalbamurillo@gmail.com",
       "telegram": "https://t.me/nicolasalba"
+    }
+  },
+  {
+    "id": "oliver-pozo",
+    "name": "Oliver Pozo",
+    "role": "Expositor",
+    "bio": "Finalista Mundial ICPC",
+    "photo": "data/speakers/photos/oliver.jpg",
+    "contacts": {
+      "codeforces": "https://codeforces.com/profile/HeReWeGoAgAiN123",
+      "linkedin": "https://www.linkedin.com/in/oliver-pozo-flores-a8977830a/",
+      "email": "oliver.pozo10@gmail.com"
     }
   },
   {
@@ -71,7 +97,7 @@
     "id": "shamir-teran",
     "name": "Shamir Terán",
     "role": "Expositor",
-    "bio": "Finalista IOI, 1er lugar ICPC Nacional Bolivia.",
+    "bio": "1er lugar ICPC Nacional Bolivia; Finalista IOI.",
     "photo": "data/speakers/photos/shamir.jpg",
     "contacts": {
       "codeforces": "https://codeforces.com/profile/shezitt",

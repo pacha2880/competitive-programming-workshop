@@ -25,6 +25,6 @@ materials:
   
 
 practice_contests:
-  - title: Contest de Teoría de Grafos I
+  - title: Contest de Teoría de Grafos II
     url: https://vjudge.net/contest/630501
     comment: password: ioi2024

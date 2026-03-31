@@ -1,0 +1,27 @@
+id: 2024-06-08-greedy
+title: Algoritmos Glotones (Greedy)
+date: 2024-06-08
+course_id: tpc-2024
+status: published
+
+summary: Algoritmos Glotones (Greedy).
+speaker_ids:
+  - mateo-valdivia
+
+tags:
+  - greedy
+  - algoritmos glotones
+
+materials:
+  slides:
+    - title: Greedy Taller de Programación Competitiva UMSS 2024
+      file: "Greedy Taller de Programación Competitiva UMSS 2024.pdf"
+  extra_files:
+    - title: Problema de desafio
+      file: problema.jpg
+  
+
+practice_contests:
+  - title: Contest Greedy
+    url: https://vjudge.net/contest/632982
+    comment: password: voraz

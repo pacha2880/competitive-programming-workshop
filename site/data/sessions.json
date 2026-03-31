@@ -207,10 +207,112 @@
     "problem_list": [],
     "practice_contests": [
       {
-        "title": "Contest de Teoría de Grafos I",
+        "title": "Contest de Teoría de Grafos II",
         "file": "",
         "url": "https://vjudge.net/contest/630501",
         "comment": "password: ioi2024"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-06-01-grafos-3",
+    "title": "Teoría de Grafos III",
+    "date": "2024-06-01",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-06-01-grafos-3",
+    "speaker_ids": [
+      "oliver-pozo"
+    ],
+    "summary": "Grafos 3: Ordenamiento topológico, Componentes fuertemente conexas, Algoritmo de Tarjan.",
+    "status": "published",
+    "tags": [
+      "grafos",
+      "ordenamiento topológico",
+      "componentes fuertemente conexas",
+      "tarjan"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Teoría de Grafos III",
+          "file": "Grafos III (Topological Sort, SCC, 2-SAT).pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Códigos expuestos en la clase",
+          "file": "Grafos III.zip",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Soluciones del contest",
+          "file": "Contest Grafos III.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Teoría de Grafos III",
+        "file": "",
+        "url": "https://vjudge.net/contest/632009",
+        "comment": "password: compresion"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-06-08-greedy",
+    "title": "Algoritmos Glotones (Greedy)",
+    "date": "2024-06-08",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-06-08-greedy",
+    "speaker_ids": [
+      "mateo-valdivia"
+    ],
+    "summary": "Algoritmos Glotones (Greedy).",
+    "status": "published",
+    "tags": [
+      "greedy",
+      "algoritmos glotones"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Greedy Taller de Programación Competitiva UMSS 2024",
+          "file": "Greedy Taller de Programación Competitiva UMSS 2024.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Problema de desafio",
+          "file": "problema.jpg",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Greedy",
+        "file": "",
+        "url": "https://vjudge.net/contest/632982",
+        "comment": "password: voraz"
       }
     ],
     "extra_links": [],

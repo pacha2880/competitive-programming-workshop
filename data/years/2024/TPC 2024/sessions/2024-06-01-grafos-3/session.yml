@@ -1,0 +1,31 @@
+id: 2024-06-01-grafos-3
+title: Teoría de Grafos III
+date: 2024-06-01
+course_id: tpc-2024
+status: published
+
+summary: Grafos 3: Ordenamiento topológico, Componentes fuertemente conexas, Algoritmo de Tarjan.
+speaker_ids:
+  - oliver-pozo
+
+tags:
+  - grafos
+  - ordenamiento topológico
+  - componentes fuertemente conexas
+  - tarjan
+
+materials:
+  slides:
+    - title: Teoría de Grafos III
+      file: "Grafos III (Topological Sort, SCC, 2-SAT).pdf"
+  extra_files:
+    - title: Códigos expuestos en la clase
+      file: "Grafos III.zip"
+    - title: Soluciones del contest
+      file: "Contest Grafos III.zip"
+  
+
+practice_contests:
+  - title: Contest de Teoría de Grafos III
+    url: https://vjudge.net/contest/632009
+    comment: password: compresion
