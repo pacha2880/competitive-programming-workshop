@@ -1,0 +1,24 @@
+id: 2024-04-27-introduccion-g2
+title: Introduccion a la Programacion Competitiva
+date: 2024-04-27
+course_id: tpc-2024
+status: published
+
+summary: Generalidades de las Competencias de Programación: Introducción a las competencias, jueces online, competencias, beneficios y requisitos.
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - introduccion
+
+materials:
+  slides:
+    - title: Introducción al taller de Programación Competitiva
+      file: "introdución taller de PC UMSS.pdf"
+  
+practice_contests:
+  - title: Contest de Introcucción
+    url: https://vjudge.net/contest/625425
+    comment: password: vengadores
+

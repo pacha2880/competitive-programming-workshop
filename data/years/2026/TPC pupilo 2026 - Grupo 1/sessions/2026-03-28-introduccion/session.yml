@@ -1,35 +1,35 @@
-id: 2024-03-02-greedy
-title: Introduccion a Greedy
-date: 2024-03-02
+id: 2026-03-28-introduccion-g1
+title: Introduccion a la Programacion Competitiva
+date: 2026-03-28
 course_id: pupilo-2026-g1
 status: published
 
-summary: Introduccion al enfoque greedy.
+summary: Competencias, jueces online, competencias, beneficios, requisitos, como subir un problema, lecutra y salida rápida, cálculo de complejidad notación big O.
 
 speaker_ids:
-  - rodrigo-salguero
+  - ignacio-jaldin
 
 tags:
-  - greedy
+  - introduccion
+
+practice_contests:
+  - title: Contest Introcucción
+    url: https://vjudge.net/contest/800805
+    comment: password: LetDown
 
 materials:
   slides:
-    - title: Slides
-      file: slides.pdf
+    - title: Introducción
+      file: Introduccion.pdf
   extra_pdfs:
-    - title: Notes
-      file: notes.pdf
+    - title: Texto Halim
+      file: textoHalim.pdf
+    - title: Guide to competitive programming
+      file: guide_to_competitive_programming.pdf
 
-problem_list:
-  - title: Problem A
-    url: https://codeforces.com/problemset/problem/1/A
-    comment: basico
-
-practice_contests:
-  - title: Contest Greedy
-    url: https://codeforces.com
-    comment: ejemplo
+extra_links:
+  - title: Cp-algorithms
+    url: https://cp-algorithms.com/index.html
 
 extra_notes:
-  - Practicar implementaciones simples.
-
+  - Buenas noches les paso las diapositivas de la clase y unos cuantos recursos que les seran de ayuda.

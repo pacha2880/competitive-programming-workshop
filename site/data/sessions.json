@@ -1,107 +1,40 @@
 [
   {
-    "id": "2024-03-02-greedy",
-    "title": "Introduccion a Greedy",
-    "date": "2024-03-02",
-    "course_id": "curso-inicial-2024",
-    "path": "data/years/2024/curso-inicial-2024/sessions/2024-03-02-greedy",
+    "id": "2024-04-27-introduccion-g2",
+    "title": "Introduccion a la Programacion Competitiva",
+    "date": "2024-04-27",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-04-27-introduccion",
     "speaker_ids": [
       "rodrigo-salguero"
     ],
-    "summary": "Introduccion al enfoque greedy.",
+    "summary": "Generalidades de las Competencias de Programación: Introducción a las competencias, jueces online, competencias, beneficios y requisitos.",
     "status": "published",
     "tags": [
-      "greedy"
+      "introduccion"
     ],
     "materials": {
       "slides": [
         {
-          "title": "Slides",
-          "file": "slides.pdf",
-          "url": "",
-          "comment": ""
-        }
-      ],
-      "extra_pdfs": [
-        {
-          "title": "Notes",
-          "file": "notes.pdf",
-          "url": "",
-          "comment": ""
-        }
-      ]
-    },
-    "problem_list": [
-      {
-        "title": "Problem A",
-        "file": "",
-        "url": "https://codeforces.com/problemset/problem/1/A",
-        "comment": "basico"
-      }
-    ],
-    "practice_contests": [
-      {
-        "title": "Contest Greedy",
-        "file": "",
-        "url": "https://codeforces.com",
-        "comment": "ejemplo"
-      }
-    ],
-    "extra_links": [],
-    "extra_notes": [
-      "Practicar implementaciones simples.",
-      "Pensar en contraejemplos para cada paso greedy."
-    ],
-    "photos": []
-  },
-  {
-    "id": "2024-03-09-bfs-dfs",
-    "title": "BFS y DFS",
-    "date": "2024-03-09",
-    "course_id": "curso-inicial-2024",
-    "path": "data/years/2024/curso-inicial-2024/sessions/2024-03-09-bfs-dfs",
-    "speaker_ids": [
-      "juan-perez",
-      "rodrigo-salguero"
-    ],
-    "summary": "Recorrido de grafos con busquedas clasicas.",
-    "status": "published",
-    "tags": [
-      "graphs",
-      "bfs",
-      "dfs"
-    ],
-    "materials": {
-      "slides": [
-        {
-          "title": "Slides",
-          "file": "slides.pdf",
+          "title": "Introducción al taller de Programación Competitiva",
+          "file": "introdución taller de PC UMSS.pdf",
           "url": "",
           "comment": ""
         }
       ],
       "extra_pdfs": []
     },
-    "problem_list": [
-      {
-        "title": "Graph Traversal Intro",
-        "file": "",
-        "url": "https://codeforces.com",
-        "comment": "practica guiada"
-      }
-    ],
+    "problem_list": [],
     "practice_contests": [
       {
-        "title": "Contest Grafos",
+        "title": "Contest de Introcucción",
         "file": "",
-        "url": "https://codeforces.com",
-        "comment": "conjunto sugerido"
+        "url": "https://vjudge.net/contest/625425",
+        "comment": "password: vengadores"
       }
     ],
     "extra_links": [],
-    "extra_notes": [
-      "Repasar representaciones de grafos."
-    ],
+    "extra_notes": [],
     "photos": []
   },
   {
@@ -153,56 +86,62 @@
     "photos": []
   },
   {
-    "id": "2024-03-02-greedy",
-    "title": "Introduccion a Greedy",
-    "date": "2024-03-02",
+    "id": "2026-03-28-introduccion-g1",
+    "title": "Introduccion a la Programacion Competitiva",
+    "date": "2026-03-28",
     "course_id": "pupilo-2026-g1",
     "path": "data/years/2026/TPC pupilo 2026 - Grupo 1/sessions/2026-03-28-introduccion",
     "speaker_ids": [
-      "rodrigo-salguero"
+      "ignacio-jaldin"
     ],
-    "summary": "Introduccion al enfoque greedy.",
+    "summary": "Competencias, jueces online, competencias, beneficios, requisitos, como subir un problema, lecutra y salida rápida, cálculo de complejidad notación big O.",
     "status": "published",
     "tags": [
-      "greedy"
+      "introduccion"
     ],
     "materials": {
       "slides": [
         {
-          "title": "Slides",
-          "file": "slides.pdf",
+          "title": "Introducción",
+          "file": "Introduccion.pdf",
           "url": "",
           "comment": ""
         }
       ],
       "extra_pdfs": [
         {
-          "title": "Notes",
-          "file": "notes.pdf",
+          "title": "Texto Halim",
+          "file": "textoHalim.pdf",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Guide to competitive programming",
+          "file": "guide_to_competitive_programming.pdf",
           "url": "",
           "comment": ""
         }
       ]
     },
-    "problem_list": [
-      {
-        "title": "Problem A",
-        "file": "",
-        "url": "https://codeforces.com/problemset/problem/1/A",
-        "comment": "basico"
-      }
-    ],
+    "problem_list": [],
     "practice_contests": [
       {
-        "title": "Contest Greedy",
+        "title": "Contest Introcucción",
         "file": "",
-        "url": "https://codeforces.com",
-        "comment": "ejemplo"
+        "url": "https://vjudge.net/contest/800805",
+        "comment": "password: LetDown"
       }
     ],
-    "extra_links": [],
+    "extra_links": [
+      {
+        "title": "Cp-algorithms",
+        "file": "",
+        "url": "https://cp-algorithms.com/index.html",
+        "comment": ""
+      }
+    ],
     "extra_notes": [
-      "Practicar implementaciones simples."
+      "Buenas noches les paso las diapositivas de la clase y unos cuantos recursos que les seran de ayuda."
     ],
     "photos": []
   },

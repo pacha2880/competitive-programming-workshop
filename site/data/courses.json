@@ -1,14 +1,12 @@
 [
   {
-    "id": "curso-inicial-2024",
-    "title": "Curso Inicial 2024",
+    "id": "tpc-2024",
+    "title": "Taller de Programación Competitiva 2024",
     "year": "2024",
-    "description": "Curso introductorio.",
-    "status": "active",
-    "tags": [
-      "inicial"
-    ],
-    "path": "data/years/2024/curso-inicial-2024"
+    "description": "Curso completo.",
+    "status": "Finalizado",
+    "tags": [],
+    "path": "data/years/2024/TPC 2024"
   },
   {
     "id": "curso-avanzado-2025",

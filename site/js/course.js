@@ -12,7 +12,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330e";
+} from "./shared.js?v=20260330f";
 
 async function renderCoursePage() {
   const data = await loadSiteData();

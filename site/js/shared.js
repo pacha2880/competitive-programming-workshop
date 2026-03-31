@@ -1,5 +1,6 @@
 const SITE_TITLE = "Taller de Programación Competitiva";
 const SITE_VERSION = "v1.2.0";
+const MOBILE_NAV_BREAKPOINT = 760;
 const NAV_ITEMS = [
   { key: "home", label: "Inicio", href: "index.html" },
   { key: "years", label: "Años", href: "years.html" },
@@ -19,6 +20,68 @@ function renderSiteVersion() {
     node.setAttribute("aria-label", `Versión del sitio ${SITE_VERSION}`);
     node.setAttribute("title", `Versión del sitio ${SITE_VERSION}`);
   });
+}
+
+function ensureResponsiveNav(navRoot) {
+  if (!navRoot) return;
+
+  const topbarInner = navRoot.closest(".topbar__inner");
+  if (!topbarInner) return;
+
+  let toggleButton = document.getElementById("nav-toggle");
+  if (!toggleButton) {
+    toggleButton = el(
+      "button",
+      {
+        id: "nav-toggle",
+        className: "nav-toggle",
+        ariaLabel: "Abrir menú de navegación",
+        attributes: {
+          type: "button",
+          "aria-controls": "nav-root",
+          "aria-expanded": "false",
+        },
+      },
+      [
+        el("span", { className: "nav-toggle__bar" }),
+        el("span", { className: "nav-toggle__bar" }),
+        el("span", { className: "nav-toggle__bar" }),
+      ]
+    );
+    topbarInner.insertBefore(toggleButton, navRoot);
+  }
+
+  const closeMenu = () => {
+    navRoot.classList.remove("site-nav--open");
+    toggleButton.classList.remove("is-open");
+    toggleButton.setAttribute("aria-expanded", "false");
+    toggleButton.setAttribute("aria-label", "Abrir menú de navegación");
+  };
+
+  const toggleMenu = () => {
+    const willOpen = !navRoot.classList.contains("site-nav--open");
+    navRoot.classList.toggle("site-nav--open", willOpen);
+    toggleButton.classList.toggle("is-open", willOpen);
+    toggleButton.setAttribute("aria-expanded", willOpen ? "true" : "false");
+    toggleButton.setAttribute("aria-label", willOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación");
+  };
+
+  if (!navRoot.dataset.responsiveBound) {
+    toggleButton.addEventListener("click", toggleMenu);
+    navRoot.addEventListener("click", (event) => {
+      if (window.innerWidth <= MOBILE_NAV_BREAKPOINT && event.target.closest(".site-nav__link")) {
+        closeMenu();
+      }
+    });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > MOBILE_NAV_BREAKPOINT) {
+        closeMenu();
+      }
+    });
+    navRoot.dataset.responsiveBound = "true";
+  }
+
+  closeMenu();
 }
 
 renderSiteVersion();
@@ -97,6 +160,7 @@ export function setPageChrome({ current, title, subtitle = "", breadcrumbs = [],
         })
       );
     });
+    ensureResponsiveNav(navRoot);
   }
 
   if (breadcrumbsRoot) {
