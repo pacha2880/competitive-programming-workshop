@@ -17,6 +17,10 @@ materials:
   slides:
     - title: Presentación de Búsqueda Binaria y Ternaria
       file: "Búsqueda Binaria_Ternaria.pdf"
+  extra_files:
+    - title: Mis soluciones del contest de binary search
+      file: "BinarySearchTCUMSS2024.zip"
+  
 practice_contests:
   - title: Contest Binary/Ternary Search
     url: https://vjudge.net/contest/642724

@@ -548,7 +548,14 @@
         }
       ],
       "extra_pdfs": [],
-      "extra_files": []
+      "extra_files": [
+        {
+          "title": "Mis soluciones del contest de binary search",
+          "file": "BinarySearchTCUMSS2024.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
     },
     "problem_list": [],
     "practice_contests": [
