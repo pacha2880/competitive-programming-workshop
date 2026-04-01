@@ -1,0 +1,29 @@
+id: 2024-07-06-dp
+title: Programación Dinámica
+date: 2024-07-06
+course_id: tpc-2024
+status: published
+
+summary: Programación Dinámica: Problemas Clásicos
+speaker_ids:
+  - mateo-valdivia
+
+tags:
+  - dp
+
+materials:
+  slides:
+    - title: Programación Dinámica
+      file: "programacion dinamica.pdf"
+  
+
+practice_contests:
+  - title: Contest de Programación Dinámica
+    url: https://vjudge.net/contest/638873
+    comment: password: aña
+  - title: AtCoder Educational DP Contest
+    url: https://atcoder.jp/contests/dp/tasks
+    comment: también les recomiendo este contest
+
+extra_notes:
+  - Si se trancan en algún problema pueden buscar soluciones, pero asegúrense de entender completamente y no copien código.

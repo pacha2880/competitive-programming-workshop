@@ -1,0 +1,23 @@
+id: 2024-07-20-binary-search
+title: Binary Search
+date: 2024-07-20
+course_id: tpc-2024
+status: published
+
+summary: Búsqueda Binaria y Ternaria.
+
+speaker_ids:
+  - oliver-pozo
+
+tags:
+  - binary-search
+  - ternary-search
+
+materials:
+  slides:
+    - title: Presentación de Búsqueda Binaria y Ternaria
+      file: "Búsqueda Binaria_Ternaria.pdf"
+practice_contests:
+  - title: Contest Binary/Ternary Search
+    url: https://vjudge.net/contest/642724
+    comment: password: 20DollarsInMyPocket

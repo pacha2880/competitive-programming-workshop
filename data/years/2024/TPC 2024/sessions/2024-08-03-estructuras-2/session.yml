@@ -1,0 +1,35 @@
+id: 2024-08-03-estructuras-2
+title: Estructuras de Datos II
+date: 2024-08-03
+course_id: tpc-2024
+status: published
+
+summary: Estructuras de Datos II: Suma de prefijos, Fenwick Tree, Segment Tree.
+speaker_ids:
+  - nicolas-alba
+
+tags:
+  - estructuras de datos
+  - fenwick tree
+  - segment tree
+
+materials:
+  slides:
+    - title: Estructuras de Datos II
+      file: "Presentacion PF BIT SegTree.pdf"
+  extra_pdfs:
+    - title: PDF contexto soluciones y archivos extras
+      file: "Soluciones-PF-BIT-ST.pdf"
+  extra_files:
+    - title: Mi librería de Segment Tree, Fenwick Tree y Suma de Prefijos
+      file: "mi-libreria-segtree-pfsum-bit.zip"
+    - title: Envíos del contest grupo 1 mas mis soluciones
+      file: "envios-del-contest-grupo-1.zip"
+    - title: Envíos del contest grupo 2
+      file: "envios-del-contest-grupo-2.zip"
+  
+
+practice_contests:
+  - title: Contest de Estructuras de Datos II
+    url: https://vjudge.net/contest/646096
+    comment: password: HastaPronto2880

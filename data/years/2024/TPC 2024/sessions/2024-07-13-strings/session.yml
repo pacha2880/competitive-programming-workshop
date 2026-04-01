@@ -1,0 +1,41 @@
+id: 2024-07-13-strings
+title: Strings
+date: 2024-07-13  
+course_id: tpc-2024
+status: published
+
+summary: Procesamiento de Cadenas: KMP y Hashing.
+
+speaker_ids:
+  - alex-alvarez
+
+tags:
+  - strings
+  - kmp
+  - hashing
+  - algoritmo-z
+
+materials:
+  slides:
+    - title: Presentación de Strings
+      file: Strings.pdf
+practice_contests:
+  - title: Contest Strings
+    url: https://vjudge.net/contest/640805
+    comment: password: untrolleomas
+
+extra_links:
+  - title: Código KMP
+    url: https://github.com/pacha2880/los-anticuchos/blob/main/strings/KMP.cpp
+  - title: Código Hashing
+    url: https://github.com/pacha2880/los-anticuchos/blob/main/strings/hashing.cpp
+  - title: Código Hashing 128
+    url: https://github.com/pacha2880/los-anticuchos/blob/main/strings/hsh-128.cpp
+  - title: Código Algoritmo Z
+    url: https://github.com/pacha2880/los-anticuchos/blob/main/strings/AlgoritmoZ.cpp
+  - title: Enlace didáctico de KMP
+    url: https://cmps-people.ok.ubc.ca/ylucet/DS/KnuthMorrisPratt.html
+
+
+extra_notes:
+  - Hola a todos, en los enlaces extra están las implementaciones de los algoritmos presentados

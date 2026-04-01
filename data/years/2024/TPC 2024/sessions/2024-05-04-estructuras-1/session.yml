@@ -1,0 +1,26 @@
+id: 2024-05-04-estructuras-1
+title: Estructuras de Datos I
+date: 2024-05-04
+course_id: tpc-2024
+status: published
+
+summary: Estructuras de Datos I: Arreglos, Vector, Pilas, Colas, Set, Map.
+
+speaker_ids:
+  - anghelo-pena
+
+tags:
+  - estructuras de datos
+  - stl
+
+materials:
+  slides:
+    - title: Estructuras de Datos
+      file: "Estructuras de datos Taller de PC UMSS.pdf"
+  
+  extra_files: []
+
+practice_contests:
+  - title: Contest de Estructuras de Datos
+    url: https://vjudge.net/contest/626716
+    comment: password: SpookyMonth

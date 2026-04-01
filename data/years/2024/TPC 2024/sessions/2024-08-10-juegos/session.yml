@@ -1,0 +1,24 @@
+id: 2024-08-10-juegos
+title: Teoría de Juegos
+date: 2024-08-10
+course_id: tpc-2024
+status: published
+
+summary: Teoría de Juegos: Grundy numbers y Suma de juegos.
+speaker_ids:
+  - mateo-valdivia
+
+tags:
+  - teoria de juegos
+  - grundy numbers
+  - suma de juegos
+
+materials:
+  slides:
+    - title: Teoría de Juegos
+      file: "Taller de Programación Competitiva UMSS 2024.pdf"
+
+practice_contests:
+  - title: Contest de Teoría de Juegos
+    url: https://vjudge.net/contest/648213
+    comment: password: selfie

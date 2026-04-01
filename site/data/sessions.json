@@ -39,15 +39,15 @@
     "photos": []
   },
   {
-    "id": "2024-05-04-estructuras",
-    "title": "Estructuras de Datos",
+    "id": "2024-05-04-estructuras-1",
+    "title": "Estructuras de Datos I",
     "date": "2024-05-04",
     "course_id": "tpc-2024",
-    "path": "data/years/2024/TPC 2024/sessions/2024-05-04-estructuras",
+    "path": "data/years/2024/TPC 2024/sessions/2024-05-04-estructuras-1",
     "speaker_ids": [
       "anghelo-pena"
     ],
-    "summary": "Estructuras de Datos: Arreglos, Vector, Pilas, Colas, Set, Map.",
+    "summary": "Estructuras de Datos I: Arreglos, Vector, Pilas, Colas, Set, Map.",
     "status": "published",
     "tags": [
       "estructuras de datos",
@@ -395,6 +395,338 @@
         "file": "",
         "url": "https://vjudge.net/contest/637050",
         "comment": "password: NavaEduardo"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-07-06-dp",
+    "title": "Programación Dinámica",
+    "date": "2024-07-06",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-07-06-dp",
+    "speaker_ids": [
+      "mateo-valdivia"
+    ],
+    "summary": "Programación Dinámica: Problemas Clásicos",
+    "status": "published",
+    "tags": [
+      "dp"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Programación Dinámica",
+          "file": "programacion dinamica.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": []
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Programación Dinámica",
+        "file": "",
+        "url": "https://vjudge.net/contest/638873",
+        "comment": "password: aña"
+      },
+      {
+        "title": "AtCoder Educational DP Contest",
+        "file": "",
+        "url": "https://atcoder.jp/contests/dp/tasks",
+        "comment": "también les recomiendo este contest"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [
+      "Si se trancan en algún problema pueden buscar soluciones, pero asegúrense de entender completamente y no copien código."
+    ],
+    "photos": []
+  },
+  {
+    "id": "2024-07-13-strings",
+    "title": "Strings",
+    "date": "2024-07-13",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-07-13-strings",
+    "speaker_ids": [
+      "alex-alvarez"
+    ],
+    "summary": "Procesamiento de Cadenas: KMP y Hashing.",
+    "status": "published",
+    "tags": [
+      "strings",
+      "kmp",
+      "hashing",
+      "algoritmo-z"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Presentación de Strings",
+          "file": "Strings.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": []
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Strings",
+        "file": "",
+        "url": "https://vjudge.net/contest/640805",
+        "comment": "password: untrolleomas"
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Código KMP",
+        "file": "",
+        "url": "https://github.com/pacha2880/los-anticuchos/blob/main/strings/KMP.cpp",
+        "comment": ""
+      },
+      {
+        "title": "Código Hashing",
+        "file": "",
+        "url": "https://github.com/pacha2880/los-anticuchos/blob/main/strings/hashing.cpp",
+        "comment": ""
+      },
+      {
+        "title": "Código Hashing 128",
+        "file": "",
+        "url": "https://github.com/pacha2880/los-anticuchos/blob/main/strings/hsh-128.cpp",
+        "comment": ""
+      },
+      {
+        "title": "Código Algoritmo Z",
+        "file": "",
+        "url": "https://github.com/pacha2880/los-anticuchos/blob/main/strings/AlgoritmoZ.cpp",
+        "comment": ""
+      },
+      {
+        "title": "Enlace didáctico de KMP",
+        "file": "",
+        "url": "https://cmps-people.ok.ubc.ca/ylucet/DS/KnuthMorrisPratt.html",
+        "comment": ""
+      }
+    ],
+    "extra_notes": [
+      "Hola a todos, en los enlaces extra están las implementaciones de los algoritmos presentados"
+    ],
+    "photos": []
+  },
+  {
+    "id": "2024-07-20-binary-search",
+    "title": "Binary Search",
+    "date": "2024-07-20",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-07-20-binary-search",
+    "speaker_ids": [
+      "oliver-pozo"
+    ],
+    "summary": "Búsqueda Binaria y Ternaria.",
+    "status": "published",
+    "tags": [
+      "binary-search",
+      "ternary-search"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Presentación de Búsqueda Binaria y Ternaria",
+          "file": "Búsqueda Binaria_Ternaria.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": []
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Binary/Ternary Search",
+        "file": "",
+        "url": "https://vjudge.net/contest/642724",
+        "comment": "password: 20DollarsInMyPocket"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-07-27-geometria",
+    "title": "Geometría Computacional",
+    "date": "2024-07-27",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-07-27-geometria",
+    "speaker_ids": [
+      "poly-bolivar"
+    ],
+    "summary": "Geometría computacional: Producto Punto, Producto Cruz, Convex Hull.",
+    "status": "published",
+    "tags": [
+      "geometria computacional",
+      "producto punto",
+      "producto cruz",
+      "convex hull"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Geometría Computacional",
+          "file": "GEOMETRÍA, PRODPUNTOCRUZCONVEX.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [
+        {
+          "title": "Varias de las implementaciones las saque de este libro",
+          "file": "cp-geo.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_files": [
+        {
+          "title": "Solucion a Ice Sculptures",
+          "file": "Ice Sculptures.cpp",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Las soluciones del contest",
+          "file": "SolGeo.rar",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Geometría Computacional",
+        "file": "",
+        "url": "https://vjudge.net/contest/644140",
+        "comment": "password: saleConvex?"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-08-03-estructuras-2",
+    "title": "Estructuras de Datos II",
+    "date": "2024-08-03",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-08-03-estructuras-2",
+    "speaker_ids": [
+      "nicolas-alba"
+    ],
+    "summary": "Estructuras de Datos II: Suma de prefijos, Fenwick Tree, Segment Tree.",
+    "status": "published",
+    "tags": [
+      "estructuras de datos",
+      "fenwick tree",
+      "segment tree"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Estructuras de Datos II",
+          "file": "Presentacion PF BIT SegTree.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [
+        {
+          "title": "PDF contexto soluciones y archivos extras",
+          "file": "Soluciones-PF-BIT-ST.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_files": [
+        {
+          "title": "Mi librería de Segment Tree, Fenwick Tree y Suma de Prefijos",
+          "file": "mi-libreria-segtree-pfsum-bit.zip",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Envíos del contest grupo 1 mas mis soluciones",
+          "file": "envios-del-contest-grupo-1.zip",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Envíos del contest grupo 2",
+          "file": "envios-del-contest-grupo-2.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Estructuras de Datos II",
+        "file": "",
+        "url": "https://vjudge.net/contest/646096",
+        "comment": "password: HastaPronto2880"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2024-08-10-juegos",
+    "title": "Teoría de Juegos",
+    "date": "2024-08-10",
+    "course_id": "tpc-2024",
+    "path": "data/years/2024/TPC 2024/sessions/2024-08-10-juegos",
+    "speaker_ids": [
+      "mateo-valdivia"
+    ],
+    "summary": "Teoría de Juegos: Grundy numbers y Suma de juegos.",
+    "status": "published",
+    "tags": [
+      "teoria de juegos",
+      "grundy numbers",
+      "suma de juegos"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Teoría de Juegos",
+          "file": "Taller de Programación Competitiva UMSS 2024.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": []
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de Teoría de Juegos",
+        "file": "",
+        "url": "https://vjudge.net/contest/648213",
+        "comment": "password: selfie"
       }
     ],
     "extra_links": [],

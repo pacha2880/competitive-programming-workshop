@@ -1,0 +1,34 @@
+id: 2024-07-27-geometria
+title: Geometría Computacional
+date: 2024-07-27
+course_id: tpc-2024
+status: published
+
+summary: Geometría computacional: Producto Punto, Producto Cruz, Convex Hull.
+speaker_ids:
+  - poly-bolivar
+
+tags:
+  - geometria computacional
+  - producto punto
+  - producto cruz
+  - convex hull
+
+materials:
+  slides:
+    - title: Geometría Computacional
+      file: "GEOMETRÍA, PRODPUNTOCRUZCONVEX.pdf"
+  extra_pdfs:
+    - title: Varias de las implementaciones las saque de este libro
+      file: "cp-geo.pdf"
+  extra_files:
+    - title: Solucion a Ice Sculptures
+      file: "Ice Sculptures.cpp"
+    - title: Las soluciones del contest
+      file: "SolGeo.rar"
+  
+
+practice_contests:
+  - title: Contest de Geometría Computacional
+    url: https://vjudge.net/contest/644140
+    comment: password: saleConvex?
