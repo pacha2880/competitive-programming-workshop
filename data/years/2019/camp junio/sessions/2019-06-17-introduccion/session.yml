@@ -1,0 +1,73 @@
+﻿id: 2019-06-17-introduccion
+title: Introducción
+date: 2019-06-17
+course_id: jul-2019
+status: published
+
+summary: Introducción al campamento, jueces online, type fast, STL, estructuras basicas y manejo de bits.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - introduccion
+  - type-fast
+  - stl
+  - complejidad
+  - bits
+
+materials:
+  slides: []
+  extra_pdfs: []
+  extra_files: []
+
+problem_list: []
+
+practice_contests:
+  - title: Contest dia 1
+    url: https://vjudge.net/contest/306970
+    comment: password: icpcumss
+  - title: Upsolve del dia 1
+    url: https://vjudge.net/contest/306990
+    comment: se añadieron los problemas del dia
+
+extra_links:
+  - title: Typing test
+    url: https://www.typingtest.com/
+    comment: recurso compartido para type fast
+  - title: Codeforces
+    url: https://codeforces.com/
+    comment: el mejor en nuestra opinion
+  - title: AtCoder
+    url: https://atcoder.jp/
+  - title: Codechef
+    url: https://www.codechef.com/
+  - title: UVa Online Judge
+    url: https://uva.onlinejudge.org/
+  - title: uHunt
+    url: https://uhunt.onlinejudge.org/
+    comment: problemas de UVa separados por temas y seguimiento de progreso
+  - title: Topcoder
+    url: https://www.topcoder.com/
+  - title: SPOJ
+    url: https://bo.spoj.com/
+  - title: Cola en C++
+    url: http://www.cplusplus.com/reference/queue/queue/
+  - title: Pila en C++
+    url: http://www.cplusplus.com/reference/stack/stack/
+  - title: Cola de prioridad en C++
+    url: http://www.cplusplus.com/reference/queue/priority_queue/
+  - title: Set en C++
+    url: http://www.cplusplus.com/reference/set/set/
+  - title: Map en C++
+    url: http://www.cplusplus.com/reference/map/map/
+  - title: A beginner's guide to Big O notation
+    url: https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/
+  - title: Big O en Wikipedia
+    url: https://en.wikipedia.org/wiki/Big_O_notation
+  - title: Hackerearth - bit manipulation
+    url: https://www.hackerearth.com/practice/notes/bit-manipulation/
+
+

@@ -16,7 +16,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260408d";
+} from "./shared.js?v=20260408e";
 
 async function renderSessionPage() {
   const data = await loadSiteData();
@@ -71,8 +71,6 @@ async function renderSessionPage() {
   const materialsBlocks = [
     createResourceList("Diapositivas", session.materials?.slides || [], session.path),
     createResourceList("PDFs extra", session.materials?.extra_pdfs || [], session.path),
-    createResourceList("Archivos extra", session.materials?.extra_files || [], session.path),
-    createResourceList("Enlaces extra", session.extra_links || [], session.path),
     Array.isArray(session.problem_list) && session.problem_list.length > 0
       ? createSectionCard("Lista de problemas", [
           el(
@@ -112,6 +110,8 @@ async function renderSessionPage() {
         ])
       : null,
     createPlainListSection("Notas extra", session.extra_notes || []),
+    createResourceList("Archivos extra", session.materials?.extra_files || [], session.path),
+    createResourceList("Enlaces extra", session.extra_links || [], session.path),
   ].filter(Boolean);
 
   const localPhotos = Array.isArray(session.photos) ? session.photos : [];

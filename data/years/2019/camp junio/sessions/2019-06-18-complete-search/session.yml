@@ -1,0 +1,37 @@
+﻿id: 2019-06-18-complete-search
+title: Complete search, busqueda binaria y recursividad
+date: 2019-06-18
+course_id: jul-2019
+status: published
+
+summary: Complete search, busqueda binaria, busqueda ternaria y recursividad.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - complete-search
+  - binary-search
+  - ternary-search
+  - recursividad
+
+materials:
+  slides: []
+  extra_pdfs: []
+  extra_files: []
+
+problem_list: []
+
+practice_contests:
+  - title: Contest dia 2
+    url: https://vjudge.net/contest/307066
+    comment: password: icpcumss
+
+extra_links: []
+
+extra_notes: []
+
+photos: []
+

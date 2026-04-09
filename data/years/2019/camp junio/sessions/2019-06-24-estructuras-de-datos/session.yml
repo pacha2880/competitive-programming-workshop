@@ -1,0 +1,38 @@
+﻿id: 2019-06-24-estructuras-de-datos
+title: Estructuras de datos
+date: 2019-06-24
+course_id: jul-2019
+status: published
+
+summary: Union find, Fenwick tree y segment tree.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - estructuras-de-datos
+  - union-find
+  - fenwick-tree
+  - segment-tree
+
+materials:
+  slides: []
+  extra_pdfs: []
+  extra_files: []
+
+problem_list: []
+
+practice_contests:
+  - title: Contest dia 4
+    url: https://vjudge.net/contest/307675
+
+extra_links:
+  - title: Explicacion de BIT y Fenwick Tree
+    url: https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees
+
+extra_notes: []
+
+photos: []
+

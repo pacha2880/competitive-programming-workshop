@@ -1,0 +1,52 @@
+﻿id: 2019-06-27-aritmetica-modular-y-strings
+title: Aritmetica modular, probabilidad y strings
+date: 2019-06-27
+course_id: jul-2019
+status: published
+
+summary: Aritmetica modular, inverso modular, probabilidad, KMP, algoritmo Z y hashing.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - aritmetica-modular
+  - probabilidad
+  - strings
+  - kmp
+  - algoritmo-z
+  - hashing
+
+materials:
+  slides: []
+  extra_pdfs: []
+  extra_files: []
+
+problem_list: []
+
+practice_contests:
+  - title: Contest dia 7
+    url: https://vjudge.net/contest/308009
+    comment: dura hasta las 19:30
+
+extra_links:
+  - title: Prefix function y KMP
+    url: https://cp-algorithms.com/string/prefix-function.html
+  - title: Algoritmo Z
+    url: https://cp-algorithms.com/string/z-function.html
+  - title: String hashing
+    url: https://cp-algorithms.com/string/string-hashing.html
+  - title: Ideone ejemplo 1
+    url: https://ideone.com/o1K8jR
+  - title: Tutorial de probabilidades
+    url: https://www.topcoder.com/community/competitive-programming/tutorials/understanding-probabilities/
+  - title: Ideone ejemplo 2
+    url: https://ideone.com/5hxGJq
+
+extra_notes:
+  - "En Topcoder, para ver los envios hay ciertas peculiaridades a tomar en cuenta."
+
+photos: []
+

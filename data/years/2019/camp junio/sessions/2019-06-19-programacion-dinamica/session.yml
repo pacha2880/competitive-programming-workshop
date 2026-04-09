@@ -1,0 +1,38 @@
+﻿id: 2019-06-19-programacion-dinamica
+title: Potenciacion binaria y programacion dinamica
+date: 2019-06-19
+course_id: jul-2019
+status: published
+
+summary: Potenciacion binaria, introduccion a programacion dinamica, LIS, mochila y coin change.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - binary-exponentiation
+  - dynamic-programming
+  - lis
+  - mochila
+  - coin-change
+
+materials:
+  slides: []
+  extra_pdfs: []
+  extra_files: []
+
+problem_list: []
+
+practice_contests:
+  - title: Contest dia 3
+    url: https://vjudge.net/contest/307212
+    comment: password: icpcumss
+
+extra_links: []
+
+extra_notes: []
+
+photos: []
+
