@@ -1,0 +1,30 @@
+id: 2018-12-11-grafos-3
+title: Grafos 3
+date: 2018-12-11
+course_id: dic-2018
+status: published
+
+summary: Puntos de articulacion, puentes, componentes y arbol de expansion minima.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - grafos
+  - mst
+  - scc
+  - puentes
+  - puntos-de-articulacion
+
+materials:
+  extra_files:
+    - title: Solucion de UVa 10199 - Tourist Guide
+      file: "Tarjan-Puntos_de_Articulacion y Puentes.cpp"
+
+practice_contests:
+  - title: Contest de grafos 3
+    url: https://vjudge.net/contest/275454
+    comment: minimum spanning tree, SCC y puentes
+

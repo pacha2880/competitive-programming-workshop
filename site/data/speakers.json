@@ -96,6 +96,20 @@
     }
   },
   {
+    "id": "miguel-ortiz",
+    "name": "Miguel Ortiz",
+    "role": "Expositor",
+    "bio": "Finalista Mundial ICPC; Finalista IOI.",
+    "photo": "data/speakers/photos/micky.jpg",
+    "contacts": {
+      "codeforces": "https://codeforces.com/profile/mickyor",
+      "github": "https://github.com/mickyor",
+      "linkedin": "https://www.linkedin.com/in/miguelortizmerida/",
+      "email": "MickyOr97@gmail.com",
+      "telegram": "https://t.me/MickyOr"
+    }
+  },
+  {
     "id": "nicolas-alba",
     "name": "Nicolas Alba",
     "role": "Expositor",
@@ -149,6 +163,20 @@
       "linkedin": "https://www.linkedin.com/in/rodrigo-salguero-a9899b220/",
       "email": "pacha2881@gmail.com",
       "telegram": "https://t.me/pacha2880"
+    }
+  },
+  {
+    "id": "ronaldo-franco",
+    "name": "Ronaldo Franco",
+    "role": "Expositor",
+    "bio": "Finalista Mundial ICPC; Finalista IOI.",
+    "photo": "data/speakers/photos/ronaldo.jpg",
+    "contacts": {
+      "codeforces": "https://codeforces.com/profile/cr8",
+      "github": "https://github.com/mruniverse8",
+      "linkedin": "https://www.linkedin.com/in/ronaldo-franco-jaldin-2282311a3/",
+      "email": "ronaldofj83@gmail.com",
+      "telegram": "https://t.me/odlanor8"
     }
   },
   {

@@ -13,7 +13,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330f";
+} from "./shared.js?v=20260408d";
 
 async function renderSpeakerPage() {
   const data = await loadSiteData();

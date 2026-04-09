@@ -1,0 +1,40 @@
+id: 2018-12-19-geometria
+title: Geometria
+date: 2018-12-19
+course_id: dic-2018
+status: published
+
+summary: Puntos, lineas, triangulos, circulos, poligonos, rotacion, producto cruz y convex hull.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - geometria
+  - convex-hull
+  - points-and-lines
+  - polygons
+  - circles
+
+materials:
+  extra_files:
+    - title: Convex Hull con Graham Scan
+      file: "ConvexHull(Graham's Scan).cpp"
+    - title: Convex Hull con Monotone Chain
+      file: "ConvexHull(Monotone Chain).cpp"
+    - title: Points and Lines
+      file: "Points and Lines.cpp"
+    - title: Polygons
+      file: "Polygons.cpp"
+    - title: Triangles and Circles
+      file: "Triangles and Circles.cpp"
+
+practice_contests:
+  - title: Contest de geometria
+    url: https://vjudge.net/contest/276595
+
+extra_links:
+  - title: Teambook compartido
+    url: https://github.com/MickyOR/Que-Perdio-Teambook

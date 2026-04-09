@@ -1,0 +1,74 @@
+id: 2018-12-06-introduccion
+title: Introducción
+date: 2018-12-06
+course_id: dic-2018
+status: published
+
+summary: Introducción al campamento, herramientas básicas de C++, práctica de tipeo y estrategias iniciales para competir en ICPC.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - introduccion
+  - debugging
+  - c++
+
+materials:
+  slides:
+    - title: Introduccion en C++ a la programacion competitiva
+      file: "Introduccion en C++ a la Programacion Competitiva.pdf"
+  extra_pdfs:
+    - title: Competitive Programming 3
+      file: "Competitive Programming 3.pdf"
+  extra_files:
+    - title: Template basico de C++ que contiene STL basico y estructuras lineales.
+      file: "template.cpp"
+
+problem_list:
+  - title: Codeforces 370A
+    url: https://codeforces.com/problemset/problem/370/A
+    comment: ejercicio de la primera clase
+  - title: Codeforces 617A
+    url: https://codeforces.com/problemset/problem/617/A
+    comment: ejercicio de la primera clase
+  - title: Codeforces 710B
+    url: https://codeforces.com/contest/710/problem/B
+    comment: ejercicio de la primera clase
+  - title: Codeforces 1061B
+    url: http://codeforces.com/contest/1061/problem/B
+    comment: ejercicio de la primera clase
+
+extra_links:
+  - title: Typing Test
+    url: https://www.typingtest.com/
+    comment: practica para type faster
+  - title: Codeforces
+    url: https://codeforces.com/
+    comment: juez online recomendado
+  - title: UVa Online Judge
+    url: https://uva.onlinejudge.org/
+    comment: contenido del libro de Halim
+  - title: uHunt
+    url: https://uhunt.onlinejudge.org
+    comment: complemento para UVa
+  - title: Red Programacion Competitiva
+    url: https://registro.redprogramacioncompetitiva.com/
+  - title: Red Programacion Competitiva en Facebook
+    url: https://www.facebook.com/RedProgramacionCompetitiva/?ref=br_rs
+  - title: Referencia de C++
+    url: http://www.cplusplus.com/reference/
+  - title: Vector en C++
+    url: http://pastebin.com/SZmUHZ5H
+    comment: explicacion breve
+  - title: Map en C++
+    url: http://pastebin.com/FPXeqiai
+    comment: explicacion breve
+  - title: Set en C++
+    url: http://pastebin.com/4XU81mi1
+    comment: explicacion breve
+  - title: Referencia de C++
+    url: https://cplusplus.com/reference/
+    comment: Para mas informacion y referencias de C++.

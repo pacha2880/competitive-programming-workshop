@@ -7,7 +7,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330f";
+} from "./shared.js?v=20260408d";
 
 async function renderYearsPage() {
   const data = await loadSiteData();

@@ -1,12 +1,28 @@
 [
   {
+    "id": "dic-2018",
+    "title": "ICPC UMSS - camp diciembre :v 2018",
+    "year": "2018",
+    "description": "Campamento interno de capacitacion de ACM ICPC UMSS.",
+    "status": "Finalizado",
+    "tags": [],
+    "path": "data/years/2018/camp diciembre",
+    "photos": [
+      {
+        "file": "photo_1@07-12-2018_11-14-16.jpg",
+        "comment": "Afiche del campamento interno de diciembre 2018"
+      }
+    ]
+  },
+  {
     "id": "tpc-2024",
     "title": "Taller de Programación Competitiva 2024",
     "year": "2024",
     "description": "Curso completo.",
     "status": "Finalizado",
     "tags": [],
-    "path": "data/years/2024/TPC 2024"
+    "path": "data/years/2024/TPC 2024",
+    "photos": []
   },
   {
     "id": "curso-avanzado-2025",
@@ -18,7 +34,8 @@
       "avanzado",
       "estructuras-de-datos"
     ],
-    "path": "data/years/2025/curso-avanzado-2025"
+    "path": "data/years/2025/curso-avanzado-2025",
+    "photos": []
   },
   {
     "id": "pupilo-2026-g1",
@@ -29,7 +46,8 @@
     "tags": [
       "inicial"
     ],
-    "path": "data/years/2026/TPC pupilo 2026 - Grupo 1"
+    "path": "data/years/2026/TPC pupilo 2026 - Grupo 1",
+    "photos": []
   },
   {
     "id": "pupilo-2026-g2",
@@ -40,6 +58,7 @@
     "tags": [
       "inicial"
     ],
-    "path": "data/years/2026/TPC pupilo 2026 - Grupo 2"
+    "path": "data/years/2026/TPC pupilo 2026 - Grupo 2",
+    "photos": []
   }
 ]

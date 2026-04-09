@@ -1,5 +1,713 @@
 [
   {
+    "id": "2018-12-06-introduccion",
+    "title": "Introducción",
+    "date": "2018-12-06",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-06-introduccion",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Introducción al campamento, herramientas básicas de C++, práctica de tipeo y estrategias iniciales para competir en ICPC.",
+    "status": "published",
+    "tags": [
+      "introduccion",
+      "debugging",
+      "c++"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Introduccion en C++ a la programacion competitiva",
+          "file": "Introduccion en C++ a la Programacion Competitiva.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [
+        {
+          "title": "Competitive Programming 3",
+          "file": "Competitive Programming 3.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_files": [
+        {
+          "title": "Template basico de C++ que contiene STL basico y estructuras lineales.",
+          "file": "template.cpp",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [
+      {
+        "title": "Codeforces 370A",
+        "file": "",
+        "url": "https://codeforces.com/problemset/problem/370/A",
+        "comment": "ejercicio de la primera clase"
+      },
+      {
+        "title": "Codeforces 617A",
+        "file": "",
+        "url": "https://codeforces.com/problemset/problem/617/A",
+        "comment": "ejercicio de la primera clase"
+      },
+      {
+        "title": "Codeforces 710B",
+        "file": "",
+        "url": "https://codeforces.com/contest/710/problem/B",
+        "comment": "ejercicio de la primera clase"
+      },
+      {
+        "title": "Codeforces 1061B",
+        "file": "",
+        "url": "http://codeforces.com/contest/1061/problem/B",
+        "comment": "ejercicio de la primera clase"
+      }
+    ],
+    "practice_contests": [],
+    "extra_links": [
+      {
+        "title": "Typing Test",
+        "file": "",
+        "url": "https://www.typingtest.com/",
+        "comment": "practica para type faster"
+      },
+      {
+        "title": "Codeforces",
+        "file": "",
+        "url": "https://codeforces.com/",
+        "comment": "juez online recomendado"
+      },
+      {
+        "title": "UVa Online Judge",
+        "file": "",
+        "url": "https://uva.onlinejudge.org/",
+        "comment": "contenido del libro de Halim"
+      },
+      {
+        "title": "uHunt",
+        "file": "",
+        "url": "https://uhunt.onlinejudge.org",
+        "comment": "complemento para UVa"
+      },
+      {
+        "title": "Red Programacion Competitiva",
+        "file": "",
+        "url": "https://registro.redprogramacioncompetitiva.com/",
+        "comment": ""
+      },
+      {
+        "title": "Red Programacion Competitiva en Facebook",
+        "file": "",
+        "url": "https://www.facebook.com/RedProgramacionCompetitiva/?ref=br_rs",
+        "comment": ""
+      },
+      {
+        "title": "Referencia de C++",
+        "file": "",
+        "url": "http://www.cplusplus.com/reference/",
+        "comment": ""
+      },
+      {
+        "title": "Vector en C++",
+        "file": "",
+        "url": "http://pastebin.com/SZmUHZ5H",
+        "comment": "explicacion breve"
+      },
+      {
+        "title": "Map en C++",
+        "file": "",
+        "url": "http://pastebin.com/FPXeqiai",
+        "comment": "explicacion breve"
+      },
+      {
+        "title": "Set en C++",
+        "file": "",
+        "url": "http://pastebin.com/4XU81mi1",
+        "comment": "explicacion breve"
+      },
+      {
+        "title": "Referencia de C++",
+        "file": "",
+        "url": "https://cplusplus.com/reference/",
+        "comment": "Para mas informacion y referencias de C++."
+      }
+    ],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-07-grafos-1",
+    "title": "Grafos 1",
+    "date": "2018-12-07",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-07-grafos-1",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Representacion de grafos, recorridos DFS y BFS, y flood fill.",
+    "status": "published",
+    "tags": [
+      "grafos",
+      "dfs",
+      "bfs",
+      "flood-fill"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Presentacion de grafos 1",
+          "file": "",
+          "url": "https://algo.is/aflv16/aflv_07_graphs_1.pdf",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones de contest de grafos 1",
+          "file": "solucionesPachaGrafos1.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de grafos 1",
+        "file": "",
+        "url": "https://vjudge.net/contest/274958",
+        "comment": ""
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "DFS y BFS en C++",
+        "file": "",
+        "url": "https://pastebin.com/eCZ6HvHD",
+        "comment": ""
+      }
+    ],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-10-grafos-2",
+    "title": "Grafos 2",
+    "date": "2018-12-10",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-10-grafos-2",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Topological sort, bipartite check y propiedades de aristas.",
+    "status": "published",
+    "tags": [
+      "grafos",
+      "topological-sort",
+      "bipartite-check"
+    ],
+    "materials": {
+      "slides": [],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones del contest de grafos 2",
+          "file": "Soluciones Grafos 2.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de grafos 2",
+        "file": "",
+        "url": "https://vjudge.net/contest/275287",
+        "comment": ""
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-11-grafos-3",
+    "title": "Grafos 3",
+    "date": "2018-12-11",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-11-grafos-3",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Puntos de articulacion, puentes, componentes y arbol de expansion minima.",
+    "status": "published",
+    "tags": [
+      "grafos",
+      "mst",
+      "scc",
+      "puentes",
+      "puntos-de-articulacion"
+    ],
+    "materials": {
+      "slides": [],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Solucion de UVa 10199 - Tourist Guide",
+          "file": "Tarjan-Puntos_de_Articulacion y Puentes.cpp",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de grafos 3",
+        "file": "",
+        "url": "https://vjudge.net/contest/275454",
+        "comment": "minimum spanning tree, SCC y puentes"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-12-caminos-minimos",
+    "title": "Caminos minimos",
+    "date": "2018-12-12",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-12-caminos-minimos",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Dijkstra, Bellman-Ford y Floyd-Warshall.",
+    "status": "published",
+    "tags": [
+      "grafos",
+      "caminos-minimos",
+      "dijkstra",
+      "bellman-ford",
+      "floyd-warshall"
+    ],
+    "materials": {
+      "slides": [],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Implementacion de Dijkstra",
+          "file": "implementacionDijkstra.cpp",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de caminos minimos",
+        "file": "",
+        "url": "https://vjudge.net/contest/275606",
+        "comment": ""
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-13-flujos",
+    "title": "Flujos",
+    "date": "2018-12-13",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-13-flujos",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Ford-Fulkerson, Edmonds-Karp y Dinic.",
+    "status": "published",
+    "tags": [
+      "flujos",
+      "ford-fulkerson",
+      "edmonds-karp",
+      "dinic"
+    ],
+    "materials": {
+      "slides": [],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Implementacion de Edmonds-Karp",
+          "file": "edmonds karp.cpp",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de flujos",
+        "file": "",
+        "url": "https://vjudge.net/contest/275757",
+        "comment": ""
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Video corto sobre flujos",
+        "file": "",
+        "url": "https://www.youtube.com/watch?v=K1i-wP82Zdo",
+        "comment": ""
+      }
+    ],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-14-estructuras-de-datos-avanzadas",
+    "title": "Estructuras de datos avanzadas",
+    "date": "2018-12-14",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-14-estructuras-de-datos-avanzadas",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Union find, segment tree, BIT y sparse table.",
+    "status": "published",
+    "tags": [
+      "estructuras-de-datos",
+      "segment-tree",
+      "bit",
+      "fenwick-tree",
+      "sparse-table"
+    ],
+    "materials": {
+      "slides": [],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Implementacion de segment tree",
+          "file": "segmentTree.cpp",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Implementacion de BIT",
+          "file": "BIT.cpp",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de estructuras de datos avanzadas",
+        "file": "",
+        "url": "https://vjudge.net/contest/275880",
+        "comment": ""
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Video de segment tree",
+        "file": "",
+        "url": "https://www.youtube.com/watch?v=ZBHKZF5w4YU",
+        "comment": ""
+      },
+      {
+        "title": "Blog de BIT",
+        "file": "",
+        "url": "https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/",
+        "comment": ""
+      }
+    ],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-17-tecnicas-de-sp",
+    "title": "Tecnicas de SP",
+    "date": "2018-12-17",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-17-tecnicas-de-sp",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Divide y venceras, busqueda binaria, programacion dinamica, Fibonacci, LIS, mochila y coin change.",
+    "status": "published",
+    "tags": [
+      "tecnicas",
+      "binary-search",
+      "dynamic-programming",
+      "lis",
+      "mochila"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Presentacion de programacion dinamica",
+          "file": "Programacion dinamica.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones de binary search y DP",
+          "file": "Soluciones Binary Search - DP.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de binary search y DP",
+        "file": "",
+        "url": "https://vjudge.net/contest/276298",
+        "comment": ""
+      },
+      {
+        "title": "Problemas extra de binary search",
+        "file": "",
+        "url": "https://vjudge.net/contest/276317",
+        "comment": ""
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Tutorial extenso de binary search",
+        "file": "",
+        "url": "https://www.topcoder.com/community/competitive-programming/tutorials/binary-search/",
+        "comment": ""
+      },
+      {
+        "title": "Tutorial de programacion dinamica",
+        "file": "",
+        "url": "https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/",
+        "comment": ""
+      },
+      {
+        "title": "Tutorial de programación dinámica de codechef",
+        "file": "",
+        "url": "https://www.codechef.com/learn/course/dynamic-programming",
+        "comment": ""
+      },
+      {
+        "title": "Tutorial de programación dinámica de GeeksforGeeks",
+        "file": "",
+        "url": "https://www.geeksforgeeks.org/dsa/dynamic-programming/",
+        "comment": ""
+      }
+    ],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-18-matematicas",
+    "title": "Matematicas",
+    "date": "2018-12-18",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-18-matematicas",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Combinatoria, primos, gcd y lcm, factorial, aritmetica modular, ecuaciones diofanticas, probabilidad y teoria de juegos.",
+    "status": "published",
+    "tags": [
+      "matematicas",
+      "aritmetica-modular",
+      "number-theory",
+      "fermat"
+    ],
+    "materials": {
+      "slides": [],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Euler Phi y criba",
+          "file": "EulerPhi y Criba.cpp",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [],
+    "extra_links": [
+      {
+        "title": "Aritmetica modular",
+        "file": "",
+        "url": "https://pastebin.com/pDXpmAhk",
+        "comment": ""
+      },
+      {
+        "title": "Explicacion de inverso modular",
+        "file": "",
+        "url": "https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/",
+        "comment": ""
+      },
+      {
+        "title": "Explicacion del pequeno teorema de Fermat",
+        "file": "",
+        "url": "https://primes.utm.edu/notes/proofs/FermatsLittleTheorem.html",
+        "comment": ""
+      }
+    ],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-19-geometria",
+    "title": "Geometria",
+    "date": "2018-12-19",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-19-geometria",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "Puntos, lineas, triangulos, circulos, poligonos, rotacion, producto cruz y convex hull.",
+    "status": "published",
+    "tags": [
+      "geometria",
+      "convex-hull",
+      "points-and-lines",
+      "polygons",
+      "circles"
+    ],
+    "materials": {
+      "slides": [],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Convex Hull con Graham Scan",
+          "file": "ConvexHull(Graham's Scan).cpp",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Convex Hull con Monotone Chain",
+          "file": "ConvexHull(Monotone Chain).cpp",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Points and Lines",
+          "file": "Points and Lines.cpp",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Polygons",
+          "file": "Polygons.cpp",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Triangles and Circles",
+          "file": "Triangles and Circles.cpp",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de geometria",
+        "file": "",
+        "url": "https://vjudge.net/contest/276595",
+        "comment": ""
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Teambook compartido",
+        "file": "",
+        "url": "https://github.com/MickyOR/Que-Perdio-Teambook",
+        "comment": ""
+      }
+    ],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
+    "id": "2018-12-20-strings",
+    "title": "Strings",
+    "date": "2018-12-20",
+    "course_id": "dic-2018",
+    "path": "data/years/2018/camp diciembre/sessions/2018-12-20-strings",
+    "speaker_ids": [
+      "rodrigo-salguero",
+      "miguel-ortiz",
+      "ronaldo-franco"
+    ],
+    "summary": "String basics, KMP, longest common subsequence, trie, hash, algoritmo Z y FFT.",
+    "status": "published",
+    "tags": [
+      "strings",
+      "kmp",
+      "trie",
+      "hashing",
+      "algoritmo-z"
+    ],
+    "materials": {
+      "slides": [],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Implementacion del algoritmo Z",
+          "file": "AlgoritmoZ.cpp",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest de strings",
+        "file": "",
+        "url": "https://vjudge.net/contest/276701",
+        "comment": ""
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": []
+  },
+  {
     "id": "2024-04-27-introduccion",
     "title": "Introduccion a la Programacion Competitiva",
     "date": "2024-04-27",

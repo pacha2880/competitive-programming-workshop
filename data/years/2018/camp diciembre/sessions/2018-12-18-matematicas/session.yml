@@ -1,0 +1,31 @@
+id: 2018-12-18-matematicas
+title: Matematicas
+date: 2018-12-18
+course_id: dic-2018
+status: published
+
+summary: Combinatoria, primos, gcd y lcm, factorial, aritmetica modular, ecuaciones diofanticas, probabilidad y teoria de juegos.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - matematicas
+  - aritmetica-modular
+  - number-theory
+  - fermat
+
+materials:
+  extra_files:
+    - title: Euler Phi y criba
+      file: "EulerPhi y Criba.cpp"
+
+extra_links:
+  - title: Aritmetica modular
+    url: https://pastebin.com/pDXpmAhk
+  - title: Explicacion de inverso modular
+    url: https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/
+  - title: Explicacion del pequeno teorema de Fermat
+    url: https://primes.utm.edu/notes/proofs/FermatsLittleTheorem.html

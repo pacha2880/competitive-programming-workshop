@@ -1,0 +1,26 @@
+id: 2018-12-10-grafos-2
+title: Grafos 2
+date: 2018-12-10
+course_id: dic-2018
+status: published
+
+summary: Topological sort, bipartite check y propiedades de aristas.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - grafos
+  - topological-sort
+  - bipartite-check
+
+materials:
+  extra_files:
+    - title: Soluciones del contest de grafos 2
+      file: "Soluciones Grafos 2.zip"
+
+practice_contests:
+  - title: Contest de grafos 2
+    url: https://vjudge.net/contest/275287

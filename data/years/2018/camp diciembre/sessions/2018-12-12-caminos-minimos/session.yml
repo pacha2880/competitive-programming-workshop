@@ -1,0 +1,28 @@
+id: 2018-12-12-caminos-minimos
+title: Caminos minimos
+date: 2018-12-12
+course_id: dic-2018
+status: published
+
+summary: Dijkstra, Bellman-Ford y Floyd-Warshall.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - grafos
+  - caminos-minimos
+  - dijkstra
+  - bellman-ford
+  - floyd-warshall
+
+materials:
+  extra_files:
+    - title: Implementacion de Dijkstra
+      file: "implementacionDijkstra.cpp"
+
+practice_contests:
+  - title: Contest de caminos minimos
+    url: https://vjudge.net/contest/275606

@@ -292,6 +292,13 @@ def build_years_courses_sessions(
 
             course = load_yaml(course_file)
             course_id = course.get("id", course_dir.name)
+            course_photos = normalize_photos(course.get("photos", []))
+
+            for photo in course_photos:
+                source_path = resolve_local_reference(photo.get("file", ""), course_dir)
+                if source_path is not None:
+                    copy_asset(source_path, missing_assets, copied_assets)
+
             courses.append(
                 {
                     "id": normalize_scalar(course_id, course_dir.name),
@@ -301,6 +308,7 @@ def build_years_courses_sessions(
                     "status": normalize_text(course.get("status", ""), ""),
                     "tags": normalize_string_list(course.get("tags", [])),
                     "path": relative_path(course_dir),
+                    "photos": course_photos,
                 }
             )
 

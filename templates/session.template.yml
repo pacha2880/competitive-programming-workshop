@@ -19,6 +19,9 @@ materials:
   extra_pdfs:
     - title:
       file:
+  extra_files:
+    - title:
+      file:
 
 problem_list:
   - title:

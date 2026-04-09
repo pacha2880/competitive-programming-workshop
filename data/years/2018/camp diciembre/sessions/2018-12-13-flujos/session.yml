@@ -1,0 +1,31 @@
+id: 2018-12-13-flujos
+title: Flujos
+date: 2018-12-13
+course_id: dic-2018
+status: published
+
+summary: Ford-Fulkerson, Edmonds-Karp y Dinic.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - flujos
+  - ford-fulkerson
+  - edmonds-karp
+  - dinic
+
+materials:
+  extra_files:
+    - title: Implementacion de Edmonds-Karp
+      file: "edmonds karp.cpp"
+
+practice_contests:
+  - title: Contest de flujos
+    url: https://vjudge.net/contest/275757
+
+extra_links:
+  - title: Video corto sobre flujos
+    url: https://www.youtube.com/watch?v=K1i-wP82Zdo

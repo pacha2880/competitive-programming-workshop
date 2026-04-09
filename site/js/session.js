@@ -1,7 +1,7 @@
 import {
-  buildSessionAssetPath,
   createButtonLink,
   createNotFound,
+  createPhotoGallery,
   createPlainListSection,
   createResourceList,
   createSectionCard,
@@ -16,7 +16,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330f";
+} from "./shared.js?v=20260408d";
 
 async function renderSessionPage() {
   const data = await loadSiteData();
@@ -117,19 +117,7 @@ async function renderSessionPage() {
   const localPhotos = Array.isArray(session.photos) ? session.photos : [];
   const photosSection =
     localPhotos.length > 0
-      ? createSectionCard("Fotos", [
-          el(
-            "div",
-            { className: "photo-gallery" },
-            localPhotos.map((photo) => {
-              const photoPath = buildSessionAssetPath(session.path, photo.file);
-              return el("a", { className: "photo-gallery__item", href: photoPath }, [
-                el("img", { src: photoPath, alt: photo.comment || session.title }),
-                el("div", { className: "photo-gallery__caption", text: photo.comment || photo.file }),
-              ]);
-            })
-          ),
-        ])
+      ? createSectionCard("Fotos", [createPhotoGallery(localPhotos, session.path, session.title)])
       : null;
 
   const speakersSection =

@@ -1,0 +1,43 @@
+id: 2018-12-17-tecnicas-de-sp
+title: Tecnicas de SP
+date: 2018-12-17
+course_id: dic-2018
+status: published
+
+summary: Divide y venceras, busqueda binaria, programacion dinamica, Fibonacci, LIS, mochila y coin change.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - tecnicas
+  - binary-search
+  - dynamic-programming
+  - lis
+  - mochila
+
+materials:
+  slides:
+    - title: Presentacion de programacion dinamica
+      file: "Programacion dinamica.pdf"
+  extra_files:
+    - title: Soluciones de binary search y DP
+      file: "Soluciones Binary Search - DP.zip"
+
+practice_contests:
+  - title: Contest de binary search y DP
+    url: https://vjudge.net/contest/276298
+  - title: Problemas extra de binary search
+    url: https://vjudge.net/contest/276317
+
+extra_links:
+  - title: Tutorial extenso de binary search
+    url: https://www.topcoder.com/community/competitive-programming/tutorials/binary-search/
+  - title: Tutorial de programacion dinamica
+    url: https://www.hackerearth.com/practice/algorithms/dynamic-programming/introduction-to-dynamic-programming-1/tutorial/
+  - title: Tutorial de programación dinámica de codechef
+    url: https://www.codechef.com/learn/course/dynamic-programming
+  - title: Tutorial de programación dinámica de GeeksforGeeks
+    url: https://www.geeksforgeeks.org/dsa/dynamic-programming/

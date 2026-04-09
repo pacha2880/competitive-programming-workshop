@@ -1,0 +1,28 @@
+id: 2018-12-20-strings
+title: Strings
+date: 2018-12-20
+course_id: dic-2018
+status: published
+
+summary: String basics, KMP, longest common subsequence, trie, hash, algoritmo Z y FFT.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - strings
+  - kmp
+  - trie
+  - hashing
+  - algoritmo-z
+
+materials:
+  extra_files:
+    - title: Implementacion del algoritmo Z
+      file: "AlgoritmoZ.cpp"
+
+practice_contests:
+  - title: Contest de strings
+    url: https://vjudge.net/contest/276701

@@ -1,5 +1,5 @@
 const SITE_TITLE = "Taller de Programación Competitiva";
-const SITE_VERSION = "v1.2.0";
+const SITE_VERSION = "v1.2.3";
 const MOBILE_NAV_BREAKPOINT = 760;
 const NAV_ITEMS = [
   { key: "home", label: "Inicio", href: "index.html" },
@@ -222,10 +222,14 @@ export function normalizeAssetPath(path) {
   return path.replace(/^\/+/, "");
 }
 
-export function buildSessionAssetPath(sessionPath, file) {
-  const base = normalizeAssetPath(sessionPath).replace(/\/+$/, "");
+export function buildAssetPath(basePath, file) {
+  const base = normalizeAssetPath(basePath).replace(/\/+$/, "");
   const relative = String(file || "").replace(/^\/+/, "");
   return relative ? `${base}/${relative}` : base;
+}
+
+export function buildSessionAssetPath(sessionPath, file) {
+  return buildAssetPath(sessionPath, file);
 }
 
 export function isExternalUrl(value) {
@@ -402,5 +406,159 @@ export function createSpeakerImage(path, alt, className) {
     return el("div", { className: `${className} section-card`, text: "No hay foto disponible." });
   }
 
-  return el("div", { className }, [el("img", { src: normalizedPath, alt, className: "speaker-photo" })]);
+  const trigger = el(
+    "button",
+    {
+      className: "speaker-photo-trigger",
+      attributes: { type: "button", "aria-label": `Ver foto completa de ${alt || "expositor"}` },
+    },
+    [
+      el("img", { src: normalizedPath, alt, className: "speaker-photo" }),
+      el("span", { className: "speaker-photo-trigger__hint", text: "Ampliar" }),
+    ]
+  );
+
+  trigger.addEventListener("click", () => {
+    openPhotoLightbox(normalizedPath, alt, alt);
+  });
+
+  return el("div", { className }, [trigger]);
+}
+
+let photoLightbox = null;
+let photoLightboxUsesHistory = false;
+
+function hidePhotoLightbox() {
+  if (!photoLightbox) {
+    return;
+  }
+
+  photoLightbox.overlay.style.display = "none";
+  photoLightbox.overlay.setAttribute("hidden", "hidden");
+  document.body.classList.remove("is-lightbox-open");
+  photoLightboxUsesHistory = false;
+}
+
+function closePhotoLightbox() {
+  if (!photoLightbox || photoLightbox.overlay.hasAttribute("hidden")) {
+    return;
+  }
+
+  const shouldGoBack = photoLightboxUsesHistory;
+  hidePhotoLightbox();
+
+  if (shouldGoBack) {
+    window.history.back();
+  }
+}
+
+function ensurePhotoLightbox() {
+  if (photoLightbox) {
+    return photoLightbox;
+  }
+
+  const image = el("img", { className: "photo-lightbox__image", alt: "" });
+  const caption = el("p", { className: "photo-lightbox__caption" });
+  const closeButton = el(
+    "button",
+    {
+      className: "photo-lightbox__close",
+      text: "Cerrar",
+      attributes: { type: "button", "aria-label": "Cerrar imagen completa" },
+    }
+  );
+  const surface = el("div", { className: "photo-lightbox__surface" }, [closeButton, image, caption]);
+  const overlay = el(
+    "div",
+    {
+      className: "photo-lightbox",
+      attributes: { hidden: "hidden", role: "dialog", "aria-modal": "true", "aria-label": "Imagen completa" },
+    },
+    [surface]
+  );
+
+  overlay.addEventListener("click", (event) => {
+    if (!event.target.closest(".photo-lightbox__image")) {
+      closePhotoLightbox();
+    }
+  });
+
+  closeButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    closePhotoLightbox();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !overlay.hasAttribute("hidden")) {
+      closePhotoLightbox();
+    }
+  });
+
+  window.addEventListener("popstate", () => {
+    if (photoLightbox && !photoLightbox.overlay.hasAttribute("hidden")) {
+      hidePhotoLightbox();
+    }
+  });
+
+  document.body.appendChild(overlay);
+  photoLightbox = { overlay, image, caption };
+  return photoLightbox;
+}
+
+export function openPhotoLightbox(src, captionText = "", alt = "") {
+  if (!src) return;
+  const lightbox = ensurePhotoLightbox();
+  lightbox.image.src = src;
+  lightbox.image.alt = alt || captionText || "Imagen completa";
+  lightbox.caption.textContent = captionText || alt || "";
+  if (captionText || alt) {
+    lightbox.caption.removeAttribute("hidden");
+  } else {
+    lightbox.caption.setAttribute("hidden", "hidden");
+  }
+  if (!photoLightboxUsesHistory) {
+    window.history.pushState({ photoLightbox: true }, "");
+    photoLightboxUsesHistory = true;
+  }
+  lightbox.overlay.style.display = "grid";
+  lightbox.overlay.removeAttribute("hidden");
+  document.body.classList.add("is-lightbox-open");
+}
+
+export function createPhotoGallery(items = [], basePath = "", fallbackTitle = "Imagen") {
+  if (!Array.isArray(items) || items.length === 0) {
+    return null;
+  }
+
+  return el(
+    "div",
+    { className: "photo-gallery" },
+    items.map((photo) => {
+      const photoPath = buildAssetPath(basePath, photo.file);
+      const captionText = photo.comment || photo.file || fallbackTitle;
+      const link = el(
+        "a",
+        {
+          className: "photo-gallery__item",
+          href: photoPath,
+          attributes: { "aria-label": `Ver imagen completa: ${captionText}` },
+        },
+        [
+          el("div", { className: "photo-gallery__thumb" }, [
+            el("img", { src: photoPath, alt: captionText }),
+            el("span", { className: "photo-gallery__hint", text: "Ver completa" }),
+          ]),
+          el("div", { className: "photo-gallery__caption", text: captionText }),
+        ]
+      );
+
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        openPhotoLightbox(photoPath, captionText, fallbackTitle);
+      });
+
+      return link;
+    })
+  );
 }

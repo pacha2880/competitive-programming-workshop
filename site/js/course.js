@@ -3,6 +3,7 @@ import {
   createCard,
   createEmptyState,
   createNotFound,
+  createPhotoGallery,
   createSectionCard,
   getQueryParam,
   getSpeakerNames,
@@ -12,7 +13,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260330f";
+} from "./shared.js?v=20260408d";
 
 async function renderCoursePage() {
   const data = await loadSiteData();
@@ -78,7 +79,14 @@ async function renderCoursePage() {
         )
       : createEmptyState("Este curso existe, pero todavía no tiene sesiones.");
 
-  setMainContent(el("div", { className: "stack-lg" }, [createSectionCard("Sesiones", [sessionList])]));
+  const coursePhotos = createPhotoGallery(course.photos || [], course.path, course.title);
+
+  setMainContent(
+    el("div", { className: "stack-lg" }, [
+      coursePhotos ? createSectionCard("Fotos del curso", [coursePhotos]) : null,
+      createSectionCard("Sesiones", [sessionList]),
+    ])
+  );
 }
 
 renderCoursePage().catch((error) => {

@@ -1,0 +1,38 @@
+id: 2018-12-14-estructuras-de-datos-avanzadas
+title: Estructuras de datos avanzadas
+date: 2018-12-14
+course_id: dic-2018
+status: published
+
+summary: Union find, segment tree, BIT y sparse table.
+
+speaker_ids:
+  - rodrigo-salguero
+  - miguel-ortiz
+  - ronaldo-franco
+
+tags:
+  - estructuras-de-datos
+  - segment-tree
+  - bit
+  - fenwick-tree
+  - sparse-table
+
+materials:
+  extra_files:
+    - title: Implementacion de segment tree
+      file: "segmentTree.cpp"
+    - title: Implementacion de BIT
+      file: "BIT.cpp"
+
+practice_contests:
+  - title: Contest de estructuras de datos avanzadas
+    url: https://vjudge.net/contest/275880
+
+extra_links:
+  - title: Video de segment tree
+    url: https://www.youtube.com/watch?v=ZBHKZF5w4YU
+  - title: Blog de BIT
+    url: https://www.topcoder.com/community/competitive-programming/tutorials/binary-indexed-trees/
+  
+
