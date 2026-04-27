@@ -548,7 +548,7 @@ export function createPhotoGallery(items = [], basePath = "", fallbackTitle = "I
     return null;
   }
 
-  return el(
+  const galleryEl = el(
     "div",
     { className: "photo-gallery" },
     items.map((photo) => {
@@ -578,4 +578,23 @@ export function createPhotoGallery(items = [], basePath = "", fallbackTitle = "I
       return link;
     })
   );
+
+  const STEP = 220 + 16;
+
+  const btnLeft = el("button", { className: "photo-gallery-arrow photo-gallery-arrow--left", ariaLabel: "Anterior", text: "‹" });
+  const btnRight = el("button", { className: "photo-gallery-arrow photo-gallery-arrow--right", ariaLabel: "Siguiente", text: "›" });
+
+  const updateArrows = () => {
+    const atStart = galleryEl.scrollLeft <= 0;
+    const atEnd = galleryEl.scrollLeft + galleryEl.clientWidth >= galleryEl.scrollWidth - 1;
+    btnLeft.classList.toggle("photo-gallery-arrow--hidden", atStart);
+    btnRight.classList.toggle("photo-gallery-arrow--hidden", atEnd);
+  };
+
+  btnLeft.addEventListener("click", () => galleryEl.scrollBy({ left: -STEP, behavior: "smooth" }));
+  btnRight.addEventListener("click", () => galleryEl.scrollBy({ left: STEP, behavior: "smooth" }));
+  galleryEl.addEventListener("scroll", updateArrows, { passive: true });
+  setTimeout(updateArrows, 50);
+
+  return el("div", { className: "photo-gallery-wrap" }, [btnLeft, galleryEl, btnRight]);
 }

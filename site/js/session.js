@@ -17,7 +17,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260426a";
+} from "./shared.js?v=20260426b";
 
 async function renderSessionPage() {
   const data = await loadSiteData();

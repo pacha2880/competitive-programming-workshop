@@ -6,7 +6,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260408d";
+} from "./shared.js?v=20260426b";
 
 async function renderSpeakersPage() {
   const data = await loadSiteData();
