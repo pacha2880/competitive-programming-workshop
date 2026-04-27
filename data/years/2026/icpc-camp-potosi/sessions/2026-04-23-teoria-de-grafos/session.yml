@@ -1,0 +1,98 @@
+id: 2026-04-23-teoria-de-grafos
+title: Teoría de Grafos
+date: 2026-04-23
+course_id: icpc-camp-potosi-2026
+status: published
+
+summary: "Representación de grafos, BFS, DFS, Dijkstra, Floyd-Warshall, Kruskal, Prim y ordenamiento topológico."
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - grafos
+  - dijkstra
+  - bfs
+  - dfs
+  - kruskal
+  - floyd-warshall
+  - topological-sort
+
+materials:
+  slides:
+    - title: Teoría de Grafos
+      file: slides.pdf
+  extra_pdfs: []
+  extra_files:
+    - title: Soluciones Contest Día 4
+      file: soluciones-contest-4.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 4
+    url: https://vjudge.net/contest/807268
+    comment: "Pass: refrigerio"
+
+extra_links: []
+
+extra_notes:
+  - El contest incluye un problema combinado de grafos, bitmasks y DP (Hamiltonian Flights).
+
+photos: []
+
+solution_notes:
+  - problem: A - Gothec
+    spoiler: |
+      Hardcodear los 5 pares válidos en un set y verificar si (a,b) está en él
+  - problem: B - Shortest Routes I
+    spoiler: |
+      Dijkstra desde nodo 1, imprimir distancias mínimas a todos los nodos
+  - problem: C - Building Teams
+    spoiler: |
+      Bipartiteness check: colorear el grafo con 2 colores via DFS
+      si hay conflicto de colores → IMPOSSIBLE
+  - problem: D - Hamiltonian Flights
+    spoiler: |
+      dp[pos][mask] = formas de llegar al nodo pos habiendo visitado exactamente mask
+      f(pos, mask) = sum(f(x, mask - (1<<pos))) para cada vecino x desde pos
+      contar caminos hamiltonianos de 0 a n-1
+  - problem: E - Repdigit
+    spoiler: |
+      Verificar si los 3 caracteres del string son iguales
+  - problem: F - Labyrinth
+    spoiler: |
+      BFS desde A guardando dirección de llegada a cada celda
+      reconstruir camino de B hacia A siguiendo las direcciones en reversa
+  - problem: G - Game Routes
+    spoiler: |
+      dp[pos] = número de caminos desde pos hasta n en un DAG
+      f(pos) = sum(f(x)) para cada vecino x, caso base f(n) = 1
+  - problem: H - illegal
+    spoiler: |
+      Verificar si la longitud del string es divisible entre 5
+  - problem: I - Message Route
+    spoiler: |
+      BFS desde nodo 1 guardando padre de cada nodo
+      reconstruir e imprimir el camino mínimo hasta nodo n
+  - problem: J - Counting Rooms
+    spoiler: |
+      Contar componentes conexas en grilla: flood fill DFS desde cada '.' no visitado
+  - problem: K - Octave
+    spoiler: |
+      Imprimir a << b (a multiplicado por 2^b)
+  - problem: L - Road Reparation
+    spoiler: |
+      Kruskal: ordenar aristas por peso y unir componentes con Union-Find
+      si al final no hay n-1 aristas → IMPOSSIBLE
+  - problem: M - Course Schedule
+    spoiler: |
+      Topological sort: BFS por grados de entrada
+      si no se procesan todos los nodos → IMPOSSIBLE (hay ciclo)
+  - problem: N - Shortest Routes II
+    spoiler: |
+      Floyd-Warshall para all-pairs shortest path, responder queries en O(1)
+  - problem: O - Building Roads
+    spoiler: |
+      DFS para encontrar componentes conexas, conectar un nodo representante
+      de cada componente con el anterior, imprimir n_componentes - 1 aristas

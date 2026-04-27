@@ -1,0 +1,99 @@
+id: 2026-04-24-estructuras-de-datos
+title: Estructuras de Datos Avanzadas
+date: 2026-04-24
+course_id: icpc-camp-potosi-2026
+status: published
+
+summary: Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree.
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - sparse-table
+  - fenwick-tree
+  - segment-tree
+  - estructuras-de-datos
+
+materials:
+  slides:
+    - title: Estructuras de Datos Avanzadas
+      file: slides.pdf
+  extra_pdfs: []
+  extra_files:
+    - title: Soluciones Contest Día 5
+      file: soluciones-contest-5.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 5 (Competencia final recopilación de problemas de competencias oficiales)
+    url: https://vjudge.net/contest/807265
+    comment: "Pass: adios. Competencia especial en equipos de hasta 3 personas, una computadora por equipo."
+
+extra_links:
+  - title: Librería de código del expositor
+    url: https://github.com/pacha2880/los-anticuchos
+    comment: Repositorio personal de Rodrigo Salguero con su notebook de competencia
+  - title: CSES Problem Set (Guide to Competitive Programming)
+    url: https://cses.fi/problemset
+    comment: Problemas recomendados del Competitive Programmer's Handbook
+  - title: Codeforces Gym - Contests oficiales ICPC
+    url: https://codeforces.com/gyms?filterContestType=Official+ACM-ICPC+Contest&filterDifficultyUpperBorder=3&order=ID_DESC
+    comment: Contests de práctica recomendados
+
+extra_notes: []
+photos: []
+
+solution_notes:
+  - problem: A - Sala de Escape
+    spoiler: |
+      BFS desde la celda 'E'
+      para cada celda '.' alcanzable, asignar la dirección que lleva hacia el origen más cercano
+  - problem: B - Uvas Pasas
+    spoiler: |
+      Matemática con casos: distribuir c uvas en grupos de tamaño s con r raisins por grupo
+      varios casos borde (c=0, r=0, s=1)
+  - problem: "C - Círculo del Polígono"
+    spoiler: |
+      Radio del circuncírculo de polígono regular: r = s / (2 * sin(π/v))
+      respuesta = π * r²
+  - problem: D - Leonel y las potencias de dos
+    spoiler: |
+      Recursión: si x==1 → "2", si x par → "(f(x/2))^2", si x impar → "(2*f(x-1))"
+      construye la expresión con solo 2's y operaciones
+  - problem: E - Sopa de Letras
+    spoiler: |
+      dp[i][j] = longitud máxima de secuencia consecutiva de letras terminando en (i,j)
+      f(i,j) = 1 + max(f(xx,yy)) para vecinos en 8 direcciones donde tab[xx][yy] == tab[i][j]+1
+  - problem: F - Sobras
+    spoiler: |
+      Imprimir 1 si a >= b, 0 si no
+  - problem: "G - Niños en la Fiesta"
+    spoiler: |
+      Aplicar reglas de divisibilidad para 2, 3, 4, 5 y 6 sobre el número dado como string
+      imprimir los divisores que aplican, -1 si ninguno
+  - problem: H - Persistencia Multiplicativa
+    spoiler: |
+      Simular: multiplicar dígitos de x repetidamente hasta que quede un solo dígito
+      contar cuántas iteraciones toma
+  - problem: I - Desperdicio de Arroz
+    spoiler: |
+      dp[i] = true si se puede formar exactamente la suma i con las porciones dadas
+      para cada query x, buscar el mínimo i >= x donde dp[i] == true, respuesta = i - x
+  - problem: J - Cortar la Baraja
+    spoiler: |
+      Prefix sum de +1 (negro) y -1 (rojo), encontrar la primera suma negativa que sea igual al mínimo prefijo, imprimir ese índice
+  - problem: K - Cerca de Cerdos
+    spoiler: |
+      Fórmula: x/2 postes por lado, maximizar floor(p/2) * ceil(p/2) con p = x/2
+  - problem: "L - Muñecas Matryoshka"
+    spoiler: |
+      Simular divisiones sucesivas: contar cuántas veces se puede dividir n entre x hasta que n < x
+  - problem: M - Divisiones de Isabel
+    spoiler: |
+      Para cada dígito d de x (no cero), verificar si x % d == 0 y contar
+  - problem: N - Decifrando el cifrado
+    spoiler: |
+      Criba de Eratóstenes + prefix sum de primos
+      responder queries de conteo de primos en rango [a,b] en O(1)

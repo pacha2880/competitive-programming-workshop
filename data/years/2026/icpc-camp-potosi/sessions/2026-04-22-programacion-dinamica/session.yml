@@ -1,0 +1,100 @@
+id: 2026-04-22-programacion-dinamica
+title: Programación Dinámica
+date: 2026-04-22
+course_id: icpc-camp-potosi-2026
+status: published
+
+summary: "Memoización, tabulación y problemas clásicos: knapsack, LCS y coin change."
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - dp
+  - programacion-dinamica
+  - knapsack
+  - lcs
+  - coin-combinations
+
+materials:
+  slides:
+    - title: Programación Dinámica
+      file: slides.pdf
+  extra_pdfs: []
+  extra_files:
+    - title: Soluciones Contest Día 3
+      file: soluciones-contest-3.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 3
+    url: https://vjudge.net/contest/806979
+    comment: "Pass: mochila"
+
+extra_links: []
+extra_notes: []
+photos: []
+
+solution_notes:
+  - problem: A - Dice Combinations
+    spoiler: |
+      dp[i] = formas de sumar exactamente i con dados de 1-6
+      dp[i] = dp[i-1] + dp[i-2] + dp[i-3] + dp[i-4] + dp[i-5] + dp[i-6]
+  - problem: B - Knapsack 2
+    spoiler: |
+      dp[pos][valor] = mínimo peso para obtener exactamente 'valor' usando items desde pos
+      dp[pos][v] = min(saltar item, tomar item: dp[pos+1][v-val[pos]] + peso[pos])
+      respuesta = máximo v tal que dp[0][v] <= W
+  - problem: C - Grid Paths I
+    spoiler: |
+      dp[i][j] = caminos para llegar a celda (i,j) moviéndose solo derecha o abajo
+      dp[i][j] = dp[i-1][j] + dp[i][j-1] si no es obstáculo, 0 si lo es
+  - problem: D - Frog 1
+    spoiler: |
+      dp[i] = mínimo costo para llegar a piedra i
+      dp[i] = min(dp[i-1] + |a[i]-a[i-1]|, dp[i-2] + |a[i]-a[i-2]|)
+  - problem: E - Coin Combinations I
+    spoiler: |
+      dp[i] = número de formas ordenadas de sumar exactamente i
+      loop externo por monto, interno por moneda → cuenta permutaciones distintas
+      dp[i] += dp[i - c] para cada moneda c
+  - problem: F - Edit Distance
+    spoiler: |
+      dp[i][j] = mínimas operaciones para convertir prefijo i de A en prefijo j de B
+      dp[i][j] = min(dp[i][j-1]+1, dp[i-1][j]+1, dp[i-1][j-1] + (a[i]!=b[j]))
+  - problem: G - Vacation
+    spoiler: |
+      dp[i][j] = máxima felicidad hasta día i habiendo hecho actividad j ese día
+      dp[i][j] = max sobre k≠j de (dp[i-1][k] + valor[i][j])
+  - problem: H - Minimizing Coins
+    spoiler: |
+      dp[i] = mínimo de monedas para sumar exactamente i
+      dp[i] = min(dp[i - c] + 1) para cada moneda c, INF si es imposible
+  - problem: I - LCS
+    spoiler: |
+      dp[i][j] = longitud del LCS entre prefijo i de A y prefijo j de B
+      dp[i][j] = dp[i-1][j-1]+1 si a[i]==b[j], sino max(dp[i-1][j], dp[i][j-1])
+      reconstruye el string retrocediendo por la tabla
+  - problem: J - Removing Digits
+    spoiler: |
+      dp[i] = mínimos pasos para reducir i a 0
+      dp[i] = min(dp[i - d] + 1) para cada dígito d presente en i
+  - problem: K - Frog 2
+    spoiler: |
+      dp[i] = mínimo costo para llegar a piedra i pudiendo saltar hasta k posiciones
+      dp[i] = min sobre j en [1,k] de (dp[i-j] + |a[i] - a[i-j]|)
+  - problem: L - Increasing Subsequence
+    spoiler: |
+      dp[i] = menor valor con que termina una subsecuencia creciente de longitud i
+      para cada elemento: lower_bound para encontrar posición, reemplazar si mejora
+  - problem: M - Knapsack 1
+    spoiler: |
+      dp[i][w] = máximo valor usando primeros i items con capacidad w
+      dp[i][w] = max(dp[i-1][w], dp[i-1][w-peso[i]] + val[i])
+      versión 1D: recorrer pesos de mayor a menor para no reusar el mismo item
+  - problem: N - Coin Combinations II
+    spoiler: |
+      dp[i] = número de formas no ordenadas de sumar exactamente i
+      loop externo por moneda, interno por monto → cada combinación se cuenta una sola vez
+      dp[j + c] += dp[j] para cada moneda c

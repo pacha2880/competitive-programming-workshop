@@ -138,6 +138,9 @@ Useful pages:
 
 - `scripts/build_data.py` is tolerant of some imperfect YAML and attempts minor repairs before parsing.
 - The build script normalizes dates, strings, lists, notes, links, and asset references.
+- The `status` field on courses and sessions is normalized to one of three canonical values: `draft`, `ongoing`, `published`. Common variants like `finalizado` or `en curso` are mapped automatically. Unrecognized values pass through with a `[WARN]` printed to stdout.
+- The build script validates that every `speaker_id` referenced in sessions exists in `data/speakers/`. Missing references print a `[WARN]` but do not abort the build.
+- Sessions support a `solution_notes` field: a list of `{problem, spoiler}` objects shown as a collapsible accordion ("Soluciones del contest") in the session page. Spoilers support multiline text using YAML `|` block scalars.
 - Local assets referenced from sessions and speakers are copied into `site/data/`.
 - Frontend pages load data through `site/js/shared.js`, which fetches the four generated JSON files and builds the UI client-side.
 

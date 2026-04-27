@@ -400,6 +400,23 @@ export function createPlainListSection(title, items) {
   ]);
 }
 
+export function createSpoilerList(title, items = []) {
+  if (!Array.isArray(items) || items.length === 0) return null;
+  return el("section", { className: "section-card stack" }, [
+    el("h2", { className: "section-title", text: title }),
+    el(
+      "div",
+      { className: "spoiler-list" },
+      items.map((item) =>
+        el("details", { className: "spoiler-item" }, [
+          el("summary", { className: "spoiler-item__summary", text: item.problem || "Problema" }),
+          el("div", { className: "spoiler-item__content", text: item.spoiler || "" }),
+        ])
+      )
+    ),
+  ]);
+}
+
 export function createSpeakerImage(path, alt, className) {
   const normalizedPath = normalizeAssetPath(path);
   if (!normalizedPath) {

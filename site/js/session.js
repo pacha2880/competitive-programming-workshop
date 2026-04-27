@@ -6,6 +6,7 @@ import {
   createResourceList,
   createSectionCard,
   createSpeakerImage,
+  createSpoilerList,
   getCourseMap,
   getQueryParam,
   getSpeakerMap,
@@ -16,7 +17,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260408e";
+} from "./shared.js?v=20260426a";
 
 async function renderSessionPage() {
   const data = await loadSiteData();
@@ -51,13 +52,10 @@ async function renderSessionPage() {
   const course = courseMap.get(session.course_id);
   const speakerCards = (session.speaker_ids || []).map((speakerId) => speakerMap.get(speakerId)).filter(Boolean);
 
-  const summaryLine =
-    session.summary && session.summary.length > 100 ? `${session.summary.slice(0, 97).trim()}...` : session.summary;
-
   setPageChrome({
     current: "years",
     title: session.title,
-    subtitle: `${session.date || "Fecha pendiente"}${summaryLine ? ` · ${summaryLine}` : ""}`,
+    subtitle: `${session.date || "Fecha pendiente"}${session.summary ? ` · ${session.summary}` : ""}`,
     breadcrumbs: [
       { label: "Inicio", href: "index.html" },
       { label: "Años", href: "years.html" },
@@ -154,6 +152,7 @@ async function renderSessionPage() {
             : [el("p", { className: "section-text", text: "No se listaron materiales para esta sesión." })],
           "materials-section"
         ),
+        createSpoilerList("Soluciones del contest", session.solution_notes || []),
         photosSection,
         speakersSection,
       ].filter(Boolean)

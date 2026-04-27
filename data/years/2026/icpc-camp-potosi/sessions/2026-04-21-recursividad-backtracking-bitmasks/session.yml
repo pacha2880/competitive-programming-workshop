@@ -1,0 +1,81 @@
+id: 2026-04-21-recursividad-backtracking-bitmasks
+title: Recursividad, Backtracking y Máscaras de Bits
+date: 2026-04-21
+course_id: icpc-camp-potosi-2026
+status: published
+
+summary: Recursividad, backtracking y máscaras de bits.
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - recursividad
+  - backtracking
+  - bitmasks
+  - bitmask-dp
+
+materials:
+  slides:
+    - title: Recursividad y Backtracking
+      file: slides-recursividad.pdf
+    - title: Máscaras de Bits
+      file: slides-bitmasks.pdf
+  extra_pdfs: []
+  extra_files:
+    - title: Código de ejemplo - Recursividad
+      file: recursividad2880.cpp
+    - title: Soluciones Contest Día 2
+      file: soluciones-contest-2.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 2
+    url: https://vjudge.net/contest/806757
+    comment: "Pass: empanadas"
+
+extra_links: []
+extra_notes: []
+photos: []
+
+solution_notes:
+  - problem: A - Apple Division
+    spoiler: |
+      Bitmask sobre 2^n subconjuntos, minimizar |suma_grupo1 - suma_grupo2|
+  - problem: B - Petr and a Combination Lock
+    spoiler: |
+      Bitmask sobre 2^n subconjuntos, verificar si alguna combinación de sumas/restas de ángulos es divisible entre 360
+  - problem: C - Maximizing XOR
+    spoiler: |
+      Fuerza bruta doble loop en [L,R], encontrar el máximo XOR entre cualquier par
+  - problem: D - Chessboard and Queens
+    spoiler: |
+      Backtracking de N-Queens con celdas bloqueadas en el tablero
+  - problem: E - Theatre Square
+    spoiler: |
+      Dividir filas y columnas por tamaño de baldosa redondeando hacia arriba: ((n+a-1)/a)
+  - problem: F - Sum It Up
+    spoiler: |
+      Backtracking evitando repetidos: encontrar todos los subconjuntos que sumen exactamente T. Igual se puede resolver recorriendo los Bitmasks.
+  - problem: G - Tower of Hanoi
+    spoiler: |
+      Recursión clásica de Hanoi, imprimir 2^n - 1 movimientos con origen y destino
+  - problem: H - Binary Cafe
+    spoiler: |
+      min(a+1, 2^b), con caso especial si b > 32 para evitar overflow
+  - problem: I - Elephant
+    spoiler: |
+      Dividir n entre 5 redondeando hacia arriba: (n+4)/5
+  - problem: J - Flipping bits
+    spoiler: |
+      Aplicar NOT a nivel de bits (~x) sobre unsigned int para invertir los 32 bits
+  - problem: K - CD
+    spoiler: |
+      Backtracking subset sum: maximizar suma sin exceder el límite, guardando el subconjunto
+  - problem: L - Creating Strings
+    spoiler: |
+      Ordenar el string y usar next_permutation para generar todas las permutaciones únicas
+  - problem: M - Preparing Olympiad
+    spoiler: |
+      Bitmask sobre 2^n subconjuntos (tamaño ≥ 2), contar los que cumplen condiciones de suma y diferencia

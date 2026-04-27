@@ -139,7 +139,8 @@
       }
     ],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-07-grafos-1",
@@ -197,7 +198,8 @@
       }
     ],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-10-grafos-2",
@@ -240,7 +242,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-11-grafos-3",
@@ -285,7 +288,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-12-caminos-minimos",
@@ -330,7 +334,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-13-flujos",
@@ -381,7 +386,8 @@
       }
     ],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-14-estructuras-de-datos-avanzadas",
@@ -445,7 +451,8 @@
       }
     ],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-17-tecnicas-de-sp",
@@ -528,7 +535,8 @@
       }
     ],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-18-matematicas",
@@ -584,7 +592,8 @@
       }
     ],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-19-geometria",
@@ -660,7 +669,8 @@
       }
     ],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2018-12-20-strings",
@@ -705,14 +715,15 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2019-06-17-introduccion",
     "title": "Introducción",
     "date": "2019-06-17",
     "course_id": "jul-2019",
-    "path": "data/years/2019/camp junio/sessions/2019-06-17-introduccion",
+    "path": "data/years/2019/camp julio/sessions/2019-06-17-introduccion",
     "speaker_ids": [
       "rodrigo-salguero",
       "miguel-ortiz",
@@ -846,14 +857,15 @@
       }
     ],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2019-06-18-complete-search",
     "title": "Complete search, busqueda binaria y recursividad",
     "date": "2019-06-18",
     "course_id": "jul-2019",
-    "path": "data/years/2019/camp junio/sessions/2019-06-18-complete-search",
+    "path": "data/years/2019/camp julio/sessions/2019-06-18-complete-search",
     "speaker_ids": [
       "rodrigo-salguero",
       "miguel-ortiz",
@@ -883,14 +895,15 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2019-06-19-programacion-dinamica",
     "title": "Potenciacion binaria y programacion dinamica",
     "date": "2019-06-19",
     "course_id": "jul-2019",
-    "path": "data/years/2019/camp junio/sessions/2019-06-19-programacion-dinamica",
+    "path": "data/years/2019/camp julio/sessions/2019-06-19-programacion-dinamica",
     "speaker_ids": [
       "rodrigo-salguero",
       "miguel-ortiz",
@@ -921,14 +934,15 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2019-06-24-estructuras-de-datos",
     "title": "Estructuras de datos",
     "date": "2019-06-24",
     "course_id": "jul-2019",
-    "path": "data/years/2019/camp junio/sessions/2019-06-24-estructuras-de-datos",
+    "path": "data/years/2019/camp julio/sessions/2019-06-24-estructuras-de-datos",
     "speaker_ids": [
       "rodrigo-salguero",
       "miguel-ortiz",
@@ -965,14 +979,15 @@
       }
     ],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2019-06-27-aritmetica-modular-y-strings",
     "title": "Aritmetica modular, probabilidad y strings",
     "date": "2019-06-27",
     "course_id": "jul-2019",
-    "path": "data/years/2019/camp junio/sessions/2019-06-27-aritmetica-modular-y-strings",
+    "path": "data/years/2019/camp julio/sessions/2019-06-27-aritmetica-modular-y-strings",
     "speaker_ids": [
       "rodrigo-salguero",
       "miguel-ortiz",
@@ -1043,7 +1058,8 @@
     "extra_notes": [
       "En Topcoder, para ver los envios hay ciertas peculiaridades a tomar en cuenta."
     ],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-04-27-introduccion",
@@ -1082,7 +1098,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-05-04-estructuras-1",
@@ -1122,7 +1139,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-05-11-recursividad",
@@ -1170,7 +1188,8 @@
         "file": "ejemplo.jpg",
         "comment": "Any number of lines input"
       }
-    ]
+    ],
+    "solution_notes": []
   },
   {
     "id": "2024-05-04-grafos-1",
@@ -1211,7 +1230,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-05-04-grafos-2",
@@ -1261,7 +1281,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-06-01-grafos-3",
@@ -1316,7 +1337,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-06-08-greedy",
@@ -1363,7 +1385,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-06-22-combinatoria",
@@ -1404,7 +1427,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-06-29-numeros",
@@ -1445,7 +1469,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-07-06-dp",
@@ -1492,7 +1517,8 @@
     "extra_notes": [
       "Si se trancan en algún problema pueden buscar soluciones, pero asegúrense de entender completamente y no copien código."
     ],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-07-13-strings",
@@ -1567,7 +1593,8 @@
     "extra_notes": [
       "Hola a todos, en los enlaces extra están las implementaciones de los algoritmos presentados"
     ],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-07-20-binary-search",
@@ -1614,7 +1641,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-07-27-geometria",
@@ -1676,7 +1704,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-08-03-estructuras-2",
@@ -1743,7 +1772,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2024-08-10-juegos",
@@ -1784,7 +1814,8 @@
     ],
     "extra_links": [],
     "extra_notes": [],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2025-04-01-segment-tree",
@@ -1833,7 +1864,601 @@
     "extra_notes": [
       "Implementar versiones iterativa y recursiva."
     ],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
+  },
+  {
+    "id": "2026-04-20-introduccion",
+    "title": "Introducción a la Programación Competitiva",
+    "date": "2026-04-20",
+    "course_id": "icpc-camp-potosi-2026",
+    "path": "data/years/2026/icpc-camp-potosi/sessions/2026-04-20-introduccion",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Introducción al ICPC, jueces online, Estructuras de datos básicas (STL c++), Ordered Set y Rope.",
+    "status": "published",
+    "tags": [
+      "introduccion",
+      "icpc",
+      "estructuras-de-datos",
+      "stl"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Introducción al ICPC y Programación Competitiva",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones Contest Día 1",
+          "file": "soluciones-contest-1.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 1",
+        "file": "",
+        "url": "https://vjudge.net/contest/806674",
+        "comment": "Pass: intro"
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Ordered Set (PBDS)",
+        "file": "",
+        "url": "https://www.geeksforgeeks.org/cpp/ordered-set-gnu-c-pbds/",
+        "comment": "Estructura para resolver uno de los problemas del contest"
+      },
+      {
+        "title": "STL Rope",
+        "file": "",
+        "url": "https://www.geeksforgeeks.org/stl-ropes-in-c/",
+        "comment": "Estructura adicional para uno de los problemas del contest"
+      }
+    ],
+    "extra_notes": [],
+    "photos": [],
+    "solution_notes": [
+      {
+        "problem": "A - Intercepting Information",
+        "spoiler": "Leer 8 números, si alguno es 9 → \"F\", si no → \"S\""
+      },
+      {
+        "problem": "B - Tea Queue",
+        "spoiler": "Por cada minuto, encolar estudiantes que llegan y atender al primero que no llegó tarde"
+      },
+      {
+        "problem": "C - Okabe and Boxes",
+        "spoiler": "Stack: si el top coincide con el siguiente esperado se saca, si no se vacía y cuenta un error"
+      },
+      {
+        "problem": "D - Five Variables",
+        "spoiler": "Leer 5 números, imprimir la posición (1-based) del que es 0"
+      },
+      {
+        "problem": "E - Plug-in",
+        "spoiler": "Stack de caracteres: si el tope es igual al actual, se cancela (tipo Zuma)"
+      },
+      {
+        "problem": "F - CD",
+        "spoiler": "Insertar lista 1 en un set, contar cuántos de la lista 2 están en ese set"
+      },
+      {
+        "problem": "G - Indian Summer",
+        "spoiler": "Contar pares (a, b) distintos usando un set de pairs"
+      },
+      {
+        "problem": "H - Crane and Turtle",
+        "spoiler": "Verificar si y es par y está en el rango [2x, 4x]"
+      },
+      {
+        "problem": "I - Minimum Stocks",
+        "spoiler": "Simular operaciones sobre un map+set ordenado por valor para sacar el mínimo eficientemente"
+      },
+      {
+        "problem": "J - Multiplication 1",
+        "spoiler": "Leer dos números e imprimir su producto"
+      },
+      {
+        "problem": "K - Ada and List",
+        "spoiler": "Usar rope para inserción, borrado y acceso en O(log n) por índice"
+      },
+      {
+        "problem": "L - Ballot evaluation",
+        "spoiler": "Parsear expresiones de votación, usar map<string, int> y comparar suma acumulada contra umbral con el operador dado"
+      },
+      {
+        "problem": "M - Petya and Strings",
+        "spoiler": "Convertir ambas strings a minúsculas y comparar lexicográficamente"
+      },
+      {
+        "problem": "N - Tom Riddle's Diary",
+        "spoiler": "Set de strings: si ya existe → YES, si no → NO e insertarla"
+      },
+      {
+        "problem": "O - List Removals",
+        "spoiler": "Usar ordered_set de pairs para encontrar y eliminar el k-ésimo elemento en O(log n)"
+      },
+      {
+        "problem": "P - Game Show!",
+        "spoiler": "Prefix sum del arreglo, la respuesta es 100 + el máximo prefijo alcanzado"
+      }
+    ]
+  },
+  {
+    "id": "2026-04-21-recursividad-backtracking-bitmasks",
+    "title": "Recursividad, Backtracking y Máscaras de Bits",
+    "date": "2026-04-21",
+    "course_id": "icpc-camp-potosi-2026",
+    "path": "data/years/2026/icpc-camp-potosi/sessions/2026-04-21-recursividad-backtracking-bitmasks",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Recursividad, backtracking y máscaras de bits.",
+    "status": "published",
+    "tags": [
+      "recursividad",
+      "backtracking",
+      "bitmasks",
+      "bitmask-dp"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Recursividad y Backtracking",
+          "file": "slides-recursividad.pdf",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Máscaras de Bits",
+          "file": "slides-bitmasks.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Código de ejemplo - Recursividad",
+          "file": "recursividad2880.cpp",
+          "url": "",
+          "comment": ""
+        },
+        {
+          "title": "Soluciones Contest Día 2",
+          "file": "soluciones-contest-2.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 2",
+        "file": "",
+        "url": "https://vjudge.net/contest/806757",
+        "comment": "Pass: empanadas"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": [],
+    "solution_notes": [
+      {
+        "problem": "A - Apple Division",
+        "spoiler": "Bitmask sobre 2^n subconjuntos, minimizar |suma_grupo1 - suma_grupo2|"
+      },
+      {
+        "problem": "B - Petr and a Combination Lock",
+        "spoiler": "Bitmask sobre 2^n subconjuntos, verificar si alguna combinación de sumas/restas de ángulos es divisible entre 360"
+      },
+      {
+        "problem": "C - Maximizing XOR",
+        "spoiler": "Fuerza bruta doble loop en [L,R], encontrar el máximo XOR entre cualquier par"
+      },
+      {
+        "problem": "D - Chessboard and Queens",
+        "spoiler": "Backtracking de N-Queens con celdas bloqueadas en el tablero"
+      },
+      {
+        "problem": "E - Theatre Square",
+        "spoiler": "Dividir filas y columnas por tamaño de baldosa redondeando hacia arriba: ((n+a-1)/a)"
+      },
+      {
+        "problem": "F - Sum It Up",
+        "spoiler": "Backtracking evitando repetidos: encontrar todos los subconjuntos que sumen exactamente T. Igual se puede resolver recorriendo los Bitmasks."
+      },
+      {
+        "problem": "G - Tower of Hanoi",
+        "spoiler": "Recursión clásica de Hanoi, imprimir 2^n - 1 movimientos con origen y destino"
+      },
+      {
+        "problem": "H - Binary Cafe",
+        "spoiler": "min(a+1, 2^b), con caso especial si b > 32 para evitar overflow"
+      },
+      {
+        "problem": "I - Elephant",
+        "spoiler": "Dividir n entre 5 redondeando hacia arriba: (n+4)/5"
+      },
+      {
+        "problem": "J - Flipping bits",
+        "spoiler": "Aplicar NOT a nivel de bits (~x) sobre unsigned int para invertir los 32 bits"
+      },
+      {
+        "problem": "K - CD",
+        "spoiler": "Backtracking subset sum: maximizar suma sin exceder el límite, guardando el subconjunto"
+      },
+      {
+        "problem": "L - Creating Strings",
+        "spoiler": "Ordenar el string y usar next_permutation para generar todas las permutaciones únicas"
+      },
+      {
+        "problem": "M - Preparing Olympiad",
+        "spoiler": "Bitmask sobre 2^n subconjuntos (tamaño ≥ 2), contar los que cumplen condiciones de suma y diferencia"
+      }
+    ]
+  },
+  {
+    "id": "2026-04-22-programacion-dinamica",
+    "title": "Programación Dinámica",
+    "date": "2026-04-22",
+    "course_id": "icpc-camp-potosi-2026",
+    "path": "data/years/2026/icpc-camp-potosi/sessions/2026-04-22-programacion-dinamica",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Memoización, tabulación y problemas clásicos: knapsack, LCS y coin change.",
+    "status": "published",
+    "tags": [
+      "dp",
+      "programacion-dinamica",
+      "knapsack",
+      "lcs",
+      "coin-combinations"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Programación Dinámica",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones Contest Día 3",
+          "file": "soluciones-contest-3.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 3",
+        "file": "",
+        "url": "https://vjudge.net/contest/806979",
+        "comment": "Pass: mochila"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": [],
+    "solution_notes": [
+      {
+        "problem": "A - Dice Combinations",
+        "spoiler": "dp[i] = formas de sumar exactamente i con dados de 1-6\ndp[i] = dp[i-1] + dp[i-2] + dp[i-3] + dp[i-4] + dp[i-5] + dp[i-6]"
+      },
+      {
+        "problem": "B - Knapsack 2",
+        "spoiler": "dp[pos][valor] = mínimo peso para obtener exactamente 'valor' usando items desde pos\ndp[pos][v] = min(saltar item, tomar item: dp[pos+1][v-val[pos]] + peso[pos])\nrespuesta = máximo v tal que dp[0][v] <= W"
+      },
+      {
+        "problem": "C - Grid Paths I",
+        "spoiler": "dp[i][j] = caminos para llegar a celda (i,j) moviéndose solo derecha o abajo\ndp[i][j] = dp[i-1][j] + dp[i][j-1] si no es obstáculo, 0 si lo es"
+      },
+      {
+        "problem": "D - Frog 1",
+        "spoiler": "dp[i] = mínimo costo para llegar a piedra i\ndp[i] = min(dp[i-1] + |a[i]-a[i-1]|, dp[i-2] + |a[i]-a[i-2]|)"
+      },
+      {
+        "problem": "E - Coin Combinations I",
+        "spoiler": "dp[i] = número de formas ordenadas de sumar exactamente i\nloop externo por monto, interno por moneda → cuenta permutaciones distintas\ndp[i] += dp[i - c] para cada moneda c"
+      },
+      {
+        "problem": "F - Edit Distance",
+        "spoiler": "dp[i][j] = mínimas operaciones para convertir prefijo i de A en prefijo j de B\ndp[i][j] = min(dp[i][j-1]+1, dp[i-1][j]+1, dp[i-1][j-1] + (a[i]!=b[j]))"
+      },
+      {
+        "problem": "G - Vacation",
+        "spoiler": "dp[i][j] = máxima felicidad hasta día i habiendo hecho actividad j ese día\ndp[i][j] = max sobre k≠j de (dp[i-1][k] + valor[i][j])"
+      },
+      {
+        "problem": "H - Minimizing Coins",
+        "spoiler": "dp[i] = mínimo de monedas para sumar exactamente i\ndp[i] = min(dp[i - c] + 1) para cada moneda c, INF si es imposible"
+      },
+      {
+        "problem": "I - LCS",
+        "spoiler": "dp[i][j] = longitud del LCS entre prefijo i de A y prefijo j de B\ndp[i][j] = dp[i-1][j-1]+1 si a[i]==b[j], sino max(dp[i-1][j], dp[i][j-1])\nreconstruye el string retrocediendo por la tabla"
+      },
+      {
+        "problem": "J - Removing Digits",
+        "spoiler": "dp[i] = mínimos pasos para reducir i a 0\ndp[i] = min(dp[i - d] + 1) para cada dígito d presente en i"
+      },
+      {
+        "problem": "K - Frog 2",
+        "spoiler": "dp[i] = mínimo costo para llegar a piedra i pudiendo saltar hasta k posiciones\ndp[i] = min sobre j en [1,k] de (dp[i-j] + |a[i] - a[i-j]|)"
+      },
+      {
+        "problem": "L - Increasing Subsequence",
+        "spoiler": "dp[i] = menor valor con que termina una subsecuencia creciente de longitud i\npara cada elemento: lower_bound para encontrar posición, reemplazar si mejora"
+      },
+      {
+        "problem": "M - Knapsack 1",
+        "spoiler": "dp[i][w] = máximo valor usando primeros i items con capacidad w\ndp[i][w] = max(dp[i-1][w], dp[i-1][w-peso[i]] + val[i])\nversión 1D: recorrer pesos de mayor a menor para no reusar el mismo item"
+      },
+      {
+        "problem": "N - Coin Combinations II",
+        "spoiler": "dp[i] = número de formas no ordenadas de sumar exactamente i\nloop externo por moneda, interno por monto → cada combinación se cuenta una sola vez\ndp[j + c] += dp[j] para cada moneda c"
+      }
+    ]
+  },
+  {
+    "id": "2026-04-23-teoria-de-grafos",
+    "title": "Teoría de Grafos",
+    "date": "2026-04-23",
+    "course_id": "icpc-camp-potosi-2026",
+    "path": "data/years/2026/icpc-camp-potosi/sessions/2026-04-23-teoria-de-grafos",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Representación de grafos, BFS, DFS, Dijkstra, Floyd-Warshall, Kruskal, Prim y ordenamiento topológico.",
+    "status": "published",
+    "tags": [
+      "grafos",
+      "dijkstra",
+      "bfs",
+      "dfs",
+      "kruskal",
+      "floyd-warshall",
+      "topological-sort"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Teoría de Grafos",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones Contest Día 4",
+          "file": "soluciones-contest-4.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 4",
+        "file": "",
+        "url": "https://vjudge.net/contest/807268",
+        "comment": "Pass: refrigerio"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [
+      "El contest incluye un problema combinado de grafos, bitmasks y DP (Hamiltonian Flights)."
+    ],
+    "photos": [],
+    "solution_notes": [
+      {
+        "problem": "A - Gothec",
+        "spoiler": "Hardcodear los 5 pares válidos en un set y verificar si (a,b) está en él"
+      },
+      {
+        "problem": "B - Shortest Routes I",
+        "spoiler": "Dijkstra desde nodo 1, imprimir distancias mínimas a todos los nodos"
+      },
+      {
+        "problem": "C - Building Teams",
+        "spoiler": "Bipartiteness check: colorear el grafo con 2 colores via DFS\nsi hay conflicto de colores → IMPOSSIBLE"
+      },
+      {
+        "problem": "D - Hamiltonian Flights",
+        "spoiler": "dp[pos][mask] = formas de llegar al nodo pos habiendo visitado exactamente mask\nf(pos, mask) = sum(f(x, mask - (1<<pos))) para cada vecino x desde pos\ncontar caminos hamiltonianos de 0 a n-1"
+      },
+      {
+        "problem": "E - Repdigit",
+        "spoiler": "Verificar si los 3 caracteres del string son iguales"
+      },
+      {
+        "problem": "F - Labyrinth",
+        "spoiler": "BFS desde A guardando dirección de llegada a cada celda\nreconstruir camino de B hacia A siguiendo las direcciones en reversa"
+      },
+      {
+        "problem": "G - Game Routes",
+        "spoiler": "dp[pos] = número de caminos desde pos hasta n en un DAG\nf(pos) = sum(f(x)) para cada vecino x, caso base f(n) = 1"
+      },
+      {
+        "problem": "H - illegal",
+        "spoiler": "Verificar si la longitud del string es divisible entre 5"
+      },
+      {
+        "problem": "I - Message Route",
+        "spoiler": "BFS desde nodo 1 guardando padre de cada nodo\nreconstruir e imprimir el camino mínimo hasta nodo n"
+      },
+      {
+        "problem": "J - Counting Rooms",
+        "spoiler": "Contar componentes conexas en grilla: flood fill DFS desde cada '.' no visitado"
+      },
+      {
+        "problem": "K - Octave",
+        "spoiler": "Imprimir a << b (a multiplicado por 2^b)"
+      },
+      {
+        "problem": "L - Road Reparation",
+        "spoiler": "Kruskal: ordenar aristas por peso y unir componentes con Union-Find\nsi al final no hay n-1 aristas → IMPOSSIBLE"
+      },
+      {
+        "problem": "M - Course Schedule",
+        "spoiler": "Topological sort: BFS por grados de entrada\nsi no se procesan todos los nodos → IMPOSSIBLE (hay ciclo)"
+      },
+      {
+        "problem": "N - Shortest Routes II",
+        "spoiler": "Floyd-Warshall para all-pairs shortest path, responder queries en O(1)"
+      },
+      {
+        "problem": "O - Building Roads",
+        "spoiler": "DFS para encontrar componentes conexas, conectar un nodo representante\nde cada componente con el anterior, imprimir n_componentes - 1 aristas"
+      }
+    ]
+  },
+  {
+    "id": "2026-04-24-estructuras-de-datos",
+    "title": "Estructuras de Datos Avanzadas",
+    "date": "2026-04-24",
+    "course_id": "icpc-camp-potosi-2026",
+    "path": "data/years/2026/icpc-camp-potosi/sessions/2026-04-24-estructuras-de-datos",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree.",
+    "status": "published",
+    "tags": [
+      "sparse-table",
+      "fenwick-tree",
+      "segment-tree",
+      "estructuras-de-datos"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Estructuras de Datos Avanzadas",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones Contest Día 5",
+          "file": "soluciones-contest-5.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 5 (Competencia final recopilación de problemas de competencias oficiales)",
+        "file": "",
+        "url": "https://vjudge.net/contest/807265",
+        "comment": "Pass: adios. Competencia especial en equipos de hasta 3 personas, una computadora por equipo."
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Librería de código del expositor",
+        "file": "",
+        "url": "https://github.com/pacha2880/los-anticuchos",
+        "comment": "Repositorio personal de Rodrigo Salguero con su notebook de competencia"
+      },
+      {
+        "title": "CSES Problem Set (Guide to Competitive Programming)",
+        "file": "",
+        "url": "https://cses.fi/problemset",
+        "comment": "Problemas recomendados del Competitive Programmer's Handbook"
+      },
+      {
+        "title": "Codeforces Gym - Contests oficiales ICPC",
+        "file": "",
+        "url": "https://codeforces.com/gyms?filterContestType=Official+ACM-ICPC+Contest&filterDifficultyUpperBorder=3&order=ID_DESC",
+        "comment": "Contests de práctica recomendados"
+      }
+    ],
+    "extra_notes": [],
+    "photos": [],
+    "solution_notes": [
+      {
+        "problem": "A - Sala de Escape",
+        "spoiler": "BFS desde la celda 'E'\npara cada celda '.' alcanzable, asignar la dirección que lleva hacia el origen más cercano"
+      },
+      {
+        "problem": "B - Uvas Pasas",
+        "spoiler": "Matemática con casos: distribuir c uvas en grupos de tamaño s con r raisins por grupo\nvarios casos borde (c=0, r=0, s=1)"
+      },
+      {
+        "problem": "C - Círculo del Polígono",
+        "spoiler": "Radio del circuncírculo de polígono regular: r = s / (2 * sin(π/v))\nrespuesta = π * r²"
+      },
+      {
+        "problem": "D - Leonel y las potencias de dos",
+        "spoiler": "Recursión: si x==1 → \"2\", si x par → \"(f(x/2))^2\", si x impar → \"(2*f(x-1))\"\nconstruye la expresión con solo 2's y operaciones"
+      },
+      {
+        "problem": "E - Sopa de Letras",
+        "spoiler": "dp[i][j] = longitud máxima de secuencia consecutiva de letras terminando en (i,j)\nf(i,j) = 1 + max(f(xx,yy)) para vecinos en 8 direcciones donde tab[xx][yy] == tab[i][j]+1"
+      },
+      {
+        "problem": "F - Sobras",
+        "spoiler": "Imprimir 1 si a >= b, 0 si no"
+      },
+      {
+        "problem": "G - Niños en la Fiesta",
+        "spoiler": "Aplicar reglas de divisibilidad para 2, 3, 4, 5 y 6 sobre el número dado como string\nimprimir los divisores que aplican, -1 si ninguno"
+      },
+      {
+        "problem": "H - Persistencia Multiplicativa",
+        "spoiler": "Simular: multiplicar dígitos de x repetidamente hasta que quede un solo dígito\ncontar cuántas iteraciones toma"
+      },
+      {
+        "problem": "I - Desperdicio de Arroz",
+        "spoiler": "dp[i] = true si se puede formar exactamente la suma i con las porciones dadas\npara cada query x, buscar el mínimo i >= x donde dp[i] == true, respuesta = i - x"
+      },
+      {
+        "problem": "J - Cortar la Baraja",
+        "spoiler": "Prefix sum de +1 (negro) y -1 (rojo), encontrar la primera suma negativa que sea igual al mínimo prefijo, imprimir ese índice"
+      },
+      {
+        "problem": "K - Cerca de Cerdos",
+        "spoiler": "Fórmula: x/2 postes por lado, maximizar floor(p/2) * ceil(p/2) con p = x/2"
+      },
+      {
+        "problem": "L - Muñecas Matryoshka",
+        "spoiler": "Simular divisiones sucesivas: contar cuántas veces se puede dividir n entre x hasta que n < x"
+      },
+      {
+        "problem": "M - Divisiones de Isabel",
+        "spoiler": "Para cada dígito d de x (no cero), verificar si x % d == 0 y contar"
+      },
+      {
+        "problem": "N - Decifrando el cifrado",
+        "spoiler": "Criba de Eratóstenes + prefix sum de primos\nresponder queries de conteo de primos en rango [a,b] en O(1)"
+      }
+    ]
   },
   {
     "id": "2026-03-28-introduccion-g1",
@@ -1894,7 +2519,8 @@
     "extra_notes": [
       "Buenas noches les paso las diapositivas de la clase y unos cuantos recursos que les seran de ayuda."
     ],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   },
   {
     "id": "2026-03-28-introduccion-g2",
@@ -1956,6 +2582,7 @@
       "Tambien les paso el libro que me ayudo a aprender C++ cuando solo sabia Java (Guide to competitive programming de Anttti Laaksonen). Es muy bueno ya que aprenden C++ y repasan los temas. No se asusten si aun no lo entienden del todo, este libro me sirvio por varios años.",
       "Como vimos en clase eviten usar scanner."
     ],
-    "photos": []
+    "photos": [],
+    "solution_notes": []
   }
 ]

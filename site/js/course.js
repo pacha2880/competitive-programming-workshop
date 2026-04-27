@@ -83,8 +83,8 @@ async function renderCoursePage() {
 
   setMainContent(
     el("div", { className: "stack-lg" }, [
-      coursePhotos ? createSectionCard("Fotos del curso", [coursePhotos]) : null,
       createSectionCard("Sesiones", [sessionList]),
+      coursePhotos ? createSectionCard("Fotos del curso", [coursePhotos]) : null,
     ])
   );
 }

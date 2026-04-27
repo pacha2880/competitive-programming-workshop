@@ -204,6 +204,20 @@ def normalize_link_items(value: Any) -> list[dict[str, str]]:
     return items
 
 
+def normalize_solution_notes(value: Any) -> list[dict[str, str]]:
+    if not isinstance(value, list):
+        return []
+    items: list[dict[str, str]] = []
+    for item in value:
+        if not isinstance(item, dict):
+            continue
+        problem = normalize_text(item.get("problem", ""), "").strip()
+        spoiler = normalize_text(item.get("spoiler", ""), "").strip()
+        if problem or spoiler:
+            items.append({"problem": problem, "spoiler": spoiler})
+    return items
+
+
 def normalize_photos(value: Any) -> list[dict[str, str]]:
     if not isinstance(value, list):
         return []
@@ -219,6 +233,21 @@ def normalize_photos(value: Any) -> list[dict[str, str]]:
             }
         )
     return photos
+
+
+# Maps raw status strings to canonical values; warns on unrecognized inputs.
+def normalize_status(value: Any, label: str) -> str:
+    raw = normalize_text(value, "").strip().lower()
+    if not raw or raw == "draft":
+        return "draft"
+    if raw in ("ongoing", "en curso"):
+        return "ongoing"
+    if raw in ("published", "finalizado", "terminado", "completado"):
+        return "published"
+    original = normalize_text(value, "").strip()
+    if original:
+        print(f"[WARN] {label}: unrecognized status '{original}'")
+    return original
 
 
 def resolve_local_reference(reference: str, base_dir: Path) -> Path | None:
@@ -305,7 +334,7 @@ def build_years_courses_sessions(
                     "title": normalize_scalar(course.get("title", course_id), str(course_id)),
                     "year": str(normalize_scalar(course.get("year", year_dir.name), year_dir.name)),
                     "description": normalize_text(course.get("description", ""), ""),
-                    "status": normalize_text(course.get("status", ""), ""),
+                    "status": normalize_status(course.get("status"), f"Course '{course_id}'"),
                     "tags": normalize_string_list(course.get("tags", [])),
                     "path": relative_path(course_dir),
                     "photos": course_photos,
@@ -343,16 +372,17 @@ def build_years_courses_sessions(
                     if source_path is not None:
                         copy_asset(source_path, missing_assets, copied_assets)
 
+                session_id = normalize_scalar(session.get("id", session_dir.name), session_dir.name)
                 sessions.append(
                     {
-                        "id": normalize_scalar(session.get("id", session_dir.name), session_dir.name),
+                        "id": session_id,
                         "title": normalize_scalar(session.get("title", session_dir.name), session_dir.name),
                         "date": normalize_scalar(session.get("date", ""), ""),
                         "course_id": normalize_scalar(session.get("course_id", course_id), str(course_id)),
                         "path": relative_path(session_dir),
                         "speaker_ids": [speaker_id for speaker_id in speaker_ids if isinstance(speaker_id, str)],
                         "summary": normalize_text(session.get("summary", ""), ""),
-                        "status": normalize_text(session.get("status", ""), ""),
+                        "status": normalize_status(session.get("status"), f"Session '{session_id}'"),
                         "tags": normalize_string_list(session.get("tags", [])),
                         "materials": {
                             "slides": slides,
@@ -364,6 +394,7 @@ def build_years_courses_sessions(
                         "extra_links": extra_links,
                         "extra_notes": extra_notes,
                         "photos": photos,
+                        "solution_notes": normalize_solution_notes(session.get("solution_notes", [])),
                     }
                 )
 
@@ -384,6 +415,13 @@ def main() -> None:
 
     speakers = build_speakers(missing_assets, copied_assets)
     years, courses, sessions = build_years_courses_sessions(missing_assets, copied_assets)
+
+    # Validate that every speaker_id referenced in sessions exists in data/speakers/.
+    known_speaker_ids = {s["id"] for s in speakers}
+    for session in sessions:
+        for sid in session.get("speaker_ids", []):
+            if sid not in known_speaker_ids:
+                print(f"[WARN] Session '{session['id']}': speaker_id '{sid}' not found in data/speakers/")
 
     write_json("years.json", years)
     write_json("courses.json", courses)

@@ -101,7 +101,7 @@ Campos importantes:
 - `title`: nombre visible del curso.
 - `year`: anio del curso.
 - `description`: descripcion corta.
-- `status`: por ejemplo `published`, `Finalizado`, `draft`.
+- `status`: usa uno de los valores canónicos: `draft`, `ongoing`, `published`. El build normaliza automáticamente variantes como `finalizado` o `en curso`, pero advierte si el valor no es reconocido.
 - `tags`: lista simple de etiquetas.
 - `photos`: imagenes opcionales del curso, usando rutas relativas dentro de la carpeta del curso.
 
@@ -177,7 +177,7 @@ photos:
 - `title`: titulo visible.
 - `date`: fecha en formato `YYYY-MM-DD`.
 - `course_id`: debe coincidir con el `id` del `course.yml`.
-- `status`: normalmente `published`.
+- `status`: usa uno de los valores canónicos: `draft`, `ongoing`, `published`. Igual que en cursos, el build normaliza variantes y advierte si no reconoce el valor.
 - `summary`: resumen corto.
 - `speaker_ids`: lista de speakers que ya existen.
 - `tags`: etiquetas de la sesion.
@@ -197,6 +197,19 @@ Fuera de `materials`:
 - `extra_links`: enlaces utiles.
 - `extra_notes`: notas de texto libre.
 - `photos`: imagenes de la sesion.
+- `solution_notes`: soluciones colapsadas del contest, una por problema. Cada item tiene `problem` (nombre del problema) y `spoiler` (la solución, puede ser multilinea con `|`). Se muestran como acordeón en el sitio — el usuario debe hacer clic para revelar cada solución.
+
+Ejemplo:
+
+```yml
+solution_notes:
+  - problem: A - Nombre del problema
+    spoiler: Descripción corta de la solución
+  - problem: B - Problema con solución multilinea
+    spoiler: |
+      dp[i] = recurrencia principal
+      dp[i] = min(dp[i-1] + costo, dp[i-2] + costo)
+```
 
 ## Reglas De Rutas
 

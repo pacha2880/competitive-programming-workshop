@@ -1,0 +1,93 @@
+id: 2026-04-20-introduccion
+title: Introducción a la Programación Competitiva
+date: 2026-04-20
+course_id: icpc-camp-potosi-2026
+status: published
+
+summary: Introducción al ICPC, jueces online, Estructuras de datos básicas (STL c++), Ordered Set y Rope.
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - introduccion
+  - icpc
+  - estructuras-de-datos
+  - stl
+
+materials:
+  slides:
+    - title: Introducción al ICPC y Programación Competitiva
+      file: slides.pdf
+  extra_pdfs: []
+  extra_files:
+    - title: Soluciones Contest Día 1
+      file: soluciones-contest-1.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 1
+    url: https://vjudge.net/contest/806674
+    comment: "Pass: intro"
+
+extra_links:
+  - title: Ordered Set (PBDS)
+    url: https://www.geeksforgeeks.org/cpp/ordered-set-gnu-c-pbds/
+    comment: Estructura para resolver uno de los problemas del contest
+  - title: STL Rope
+    url: https://www.geeksforgeeks.org/stl-ropes-in-c/
+    comment: Estructura adicional para uno de los problemas del contest
+
+extra_notes: []
+photos: []
+
+solution_notes:
+  - problem: A - Intercepting Information
+    spoiler: |
+      Leer 8 números, si alguno es 9 → "F", si no → "S"
+  - problem: B - Tea Queue
+    spoiler: |
+      Por cada minuto, encolar estudiantes que llegan y atender al primero que no llegó tarde
+  - problem: C - Okabe and Boxes
+    spoiler: |
+      Stack: si el top coincide con el siguiente esperado se saca, si no se vacía y cuenta un error
+  - problem: D - Five Variables
+    spoiler: |
+      Leer 5 números, imprimir la posición (1-based) del que es 0
+  - problem: E - Plug-in
+    spoiler: |
+      Stack de caracteres: si el tope es igual al actual, se cancela (tipo Zuma)
+  - problem: F - CD
+    spoiler: |
+      Insertar lista 1 en un set, contar cuántos de la lista 2 están en ese set
+  - problem: G - Indian Summer
+    spoiler: |
+      Contar pares (a, b) distintos usando un set de pairs
+  - problem: H - Crane and Turtle
+    spoiler: |
+      Verificar si y es par y está en el rango [2x, 4x]
+  - problem: I - Minimum Stocks
+    spoiler: |
+      Simular operaciones sobre un map+set ordenado por valor para sacar el mínimo eficientemente
+  - problem: J - Multiplication 1
+    spoiler: |
+      Leer dos números e imprimir su producto
+  - problem: K - Ada and List
+    spoiler: |
+      Usar rope para inserción, borrado y acceso en O(log n) por índice
+  - problem: L - Ballot evaluation
+    spoiler: |
+      Parsear expresiones de votación, usar map<string, int> y comparar suma acumulada contra umbral con el operador dado
+  - problem: M - Petya and Strings
+    spoiler: |
+      Convertir ambas strings a minúsculas y comparar lexicográficamente
+  - problem: "N - Tom Riddle's Diary"
+    spoiler: |
+      Set de strings: si ya existe → YES, si no → NO e insertarla
+  - problem: O - List Removals
+    spoiler: |
+      Usar ordered_set de pairs para encontrar y eliminar el k-ésimo elemento en O(log n)
+  - problem: "P - Game Show!"
+    spoiler: |
+      Prefix sum del arreglo, la respuesta es 100 + el máximo prefijo alcanzado

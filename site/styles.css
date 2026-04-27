@@ -558,13 +558,31 @@ img {
 }
 
 .photo-gallery {
-  display: grid;
+  display: flex;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 220px));
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.75rem;
+}
+
+.photo-gallery::-webkit-scrollbar {
+  height: 5px;
+}
+
+.photo-gallery::-webkit-scrollbar-track {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.photo-gallery::-webkit-scrollbar-thumb {
+  background: var(--accent-green);
+  border-radius: 3px;
 }
 
 .photo-gallery__item {
   display: block;
+  flex: 0 0 220px;
+  scroll-snap-align: start;
   overflow: hidden;
   border-radius: 14px;
   border: 1px solid var(--border);
@@ -764,4 +782,64 @@ img {
     width: 132px;
     height: 132px;
   }
+}
+
+/* ── Spoiler list (contest solutions) ─────────────────────── */
+
+.spoiler-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.spoiler-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.spoiler-item[open] {
+  border-color: var(--accent-green);
+}
+
+.spoiler-item__summary {
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  user-select: none;
+}
+
+.spoiler-item__summary::-webkit-details-marker {
+  display: none;
+}
+
+.spoiler-item__summary::before {
+  content: "▶";
+  font-size: 0.65rem;
+  color: var(--accent-green);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.spoiler-item[open] .spoiler-item__summary::before {
+  transform: rotate(90deg);
+}
+
+.spoiler-item__summary:hover {
+  background: rgba(0, 212, 255, 0.05);
+}
+
+.spoiler-item__content {
+  padding: 0.7rem 1rem 0.8rem 2.1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  border-top: 1px solid var(--border);
+  line-height: 1.65;
 }
