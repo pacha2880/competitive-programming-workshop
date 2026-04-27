@@ -444,6 +444,17 @@ export function createSpeakerImage(path, alt, className) {
 
 let photoLightbox = null;
 let photoLightboxUsesHistory = false;
+let currentGallery = null; // { items: [{path, caption}], index }
+
+function navigateLightbox(dir) {
+  if (!currentGallery || currentGallery.items.length < 2) return;
+  currentGallery.index = (currentGallery.index + dir + currentGallery.items.length) % currentGallery.items.length;
+  const { path, caption } = currentGallery.items[currentGallery.index];
+  const lb = ensurePhotoLightbox();
+  lb.image.src = path;
+  lb.image.alt = caption;
+  lb.caption.textContent = caption;
+}
 
 function hidePhotoLightbox() {
   if (!photoLightbox) {
@@ -454,6 +465,7 @@ function hidePhotoLightbox() {
   photoLightbox.overlay.setAttribute("hidden", "hidden");
   document.body.classList.remove("is-lightbox-open");
   photoLightboxUsesHistory = false;
+  currentGallery = null;
 }
 
 function closePhotoLightbox() {
@@ -484,6 +496,9 @@ function ensurePhotoLightbox() {
       attributes: { type: "button", "aria-label": "Cerrar imagen completa" },
     }
   );
+  const prevBtn = el("button", { className: "photo-lightbox__arrow photo-lightbox__arrow--prev", ariaLabel: "Anterior", text: "‹", attributes: { hidden: "hidden" } });
+  const nextBtn = el("button", { className: "photo-lightbox__arrow photo-lightbox__arrow--next", ariaLabel: "Siguiente", text: "›", attributes: { hidden: "hidden" } });
+
   const surface = el("div", { className: "photo-lightbox__surface" }, [closeButton, image, caption]);
   const overlay = el(
     "div",
@@ -491,11 +506,11 @@ function ensurePhotoLightbox() {
       className: "photo-lightbox",
       attributes: { hidden: "hidden", role: "dialog", "aria-modal": "true", "aria-label": "Imagen completa" },
     },
-    [surface]
+    [prevBtn, surface, nextBtn]
   );
 
   overlay.addEventListener("click", (event) => {
-    if (!event.target.closest(".photo-lightbox__image")) {
+    if (!event.target.closest(".photo-lightbox__image") && !event.target.closest(".photo-lightbox__arrow")) {
       closePhotoLightbox();
     }
   });
@@ -506,10 +521,14 @@ function ensurePhotoLightbox() {
     closePhotoLightbox();
   });
 
+  prevBtn.addEventListener("click", (event) => { event.stopPropagation(); navigateLightbox(-1); });
+  nextBtn.addEventListener("click", (event) => { event.stopPropagation(); navigateLightbox(1); });
+
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && !overlay.hasAttribute("hidden")) {
-      closePhotoLightbox();
-    }
+    if (overlay.hasAttribute("hidden")) return;
+    if (event.key === "Escape") closePhotoLightbox();
+    if (event.key === "ArrowLeft") navigateLightbox(-1);
+    if (event.key === "ArrowRight") navigateLightbox(1);
   });
 
   window.addEventListener("popstate", () => {
@@ -519,7 +538,7 @@ function ensurePhotoLightbox() {
   });
 
   document.body.appendChild(overlay);
-  photoLightbox = { overlay, image, caption };
+  photoLightbox = { overlay, image, caption, prevBtn, nextBtn };
   return photoLightbox;
 }
 
@@ -548,53 +567,41 @@ export function createPhotoGallery(items = [], basePath = "", fallbackTitle = "I
     return null;
   }
 
-  const galleryEl = el(
+  const galleryItems = items.map((photo) => ({
+    path: buildAssetPath(basePath, photo.file),
+    caption: photo.comment || photo.file || fallbackTitle,
+  }));
+
+  return el(
     "div",
     { className: "photo-gallery" },
-    items.map((photo) => {
-      const photoPath = buildAssetPath(basePath, photo.file);
-      const captionText = photo.comment || photo.file || fallbackTitle;
+    galleryItems.map((item, index) => {
       const link = el(
         "a",
         {
           className: "photo-gallery__item",
-          href: photoPath,
-          attributes: { "aria-label": `Ver imagen completa: ${captionText}` },
+          href: item.path,
+          attributes: { "aria-label": `Ver imagen completa: ${item.caption}` },
         },
         [
           el("div", { className: "photo-gallery__thumb" }, [
-            el("img", { src: photoPath, alt: captionText }),
+            el("img", { src: item.path, alt: item.caption }),
             el("span", { className: "photo-gallery__hint", text: "Ver completa" }),
           ]),
-          el("div", { className: "photo-gallery__caption", text: captionText }),
+          el("div", { className: "photo-gallery__caption", text: item.caption }),
         ]
       );
 
       link.addEventListener("click", (event) => {
         event.preventDefault();
-        openPhotoLightbox(photoPath, captionText, fallbackTitle);
+        currentGallery = { items: galleryItems, index };
+        const lb = ensurePhotoLightbox();
+        lb.prevBtn[galleryItems.length > 1 ? "removeAttribute" : "setAttribute"]("hidden", "hidden");
+        lb.nextBtn[galleryItems.length > 1 ? "removeAttribute" : "setAttribute"]("hidden", "hidden");
+        openPhotoLightbox(item.path, item.caption, fallbackTitle);
       });
 
       return link;
     })
   );
-
-  const STEP = 220 + 16;
-
-  const btnLeft = el("button", { className: "photo-gallery-arrow photo-gallery-arrow--left", ariaLabel: "Anterior", text: "‹" });
-  const btnRight = el("button", { className: "photo-gallery-arrow photo-gallery-arrow--right", ariaLabel: "Siguiente", text: "›" });
-
-  const updateArrows = () => {
-    const atStart = galleryEl.scrollLeft <= 0;
-    const atEnd = galleryEl.scrollLeft + galleryEl.clientWidth >= galleryEl.scrollWidth - 1;
-    btnLeft.classList.toggle("photo-gallery-arrow--hidden", atStart);
-    btnRight.classList.toggle("photo-gallery-arrow--hidden", atEnd);
-  };
-
-  btnLeft.addEventListener("click", () => galleryEl.scrollBy({ left: -STEP, behavior: "smooth" }));
-  btnRight.addEventListener("click", () => galleryEl.scrollBy({ left: STEP, behavior: "smooth" }));
-  galleryEl.addEventListener("scroll", updateArrows, { passive: true });
-  setTimeout(updateArrows, 50);
-
-  return el("div", { className: "photo-gallery-wrap" }, [btnLeft, galleryEl, btnRight]);
 }
