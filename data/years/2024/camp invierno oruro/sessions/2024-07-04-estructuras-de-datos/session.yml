@@ -4,12 +4,13 @@ date: 2024-07-04
 course_id: camp-invierno-oruro-2024
 status: published
 
-summary: Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree. Operaciones sobre bits.
+summary: Tablas aditivas, Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree.
 
 speaker_ids:
   - rodrigo-salguero
 
 tags:
+  - tablas-aditivas
   - sparse-table
   - fenwick-tree
   - segment-tree

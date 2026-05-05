@@ -4,7 +4,7 @@ date: 2026-04-22
 course_id: icpc-camp-potosi-2026
 status: published
 
-summary: "Memoización, tabulación y problemas clásicos: knapsack, LCS y coin change."
+summary: "Memorización, tabulación y problemas clásicos: knapsack, LCS y coin change."
 
 speaker_ids:
   - rodrigo-salguero
@@ -12,9 +12,7 @@ speaker_ids:
 tags:
   - dp
   - programacion-dinamica
-  - knapsack
-  - lcs
-  - coin-combinations
+  - memorizacion
 
 materials:
   slides:

@@ -1254,9 +1254,10 @@
     "speaker_ids": [
       "rodrigo-salguero"
     ],
-    "summary": "Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree. Operaciones sobre bits.",
+    "summary": "Tablas aditivas, Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree.",
     "status": "published",
     "tags": [
+      "tablas-aditivas",
       "sparse-table",
       "fenwick-tree",
       "segment-tree",
@@ -1311,14 +1312,13 @@
     "speaker_ids": [
       "rodrigo-salguero"
     ],
-    "summary": "Memoización, tabulación y problemas clásicos: mochila, LCS y coin change.",
+    "summary": "Memorización, tabulación y problemas clásicos: mochila, LCS y coin change.",
     "status": "published",
     "tags": [
       "dp",
       "programacion-dinamica",
-      "knapsack",
-      "lcs",
-      "coin-combinations"
+      "recursividad",
+      "memorizacion"
     ],
     "materials": {
       "slides": [
@@ -2313,8 +2313,7 @@
     "tags": [
       "recursividad",
       "backtracking",
-      "bitmasks",
-      "bitmask-dp"
+      "bitmasks"
     ],
     "materials": {
       "slides": [
@@ -2423,14 +2422,12 @@
     "speaker_ids": [
       "rodrigo-salguero"
     ],
-    "summary": "Memoización, tabulación y problemas clásicos: knapsack, LCS y coin change.",
+    "summary": "Memorización, tabulación y problemas clásicos: knapsack, LCS y coin change.",
     "status": "published",
     "tags": [
       "dp",
       "programacion-dinamica",
-      "knapsack",
-      "lcs",
-      "coin-combinations"
+      "memorizacion"
     ],
     "materials": {
       "slides": [
@@ -2647,9 +2644,10 @@
     "speaker_ids": [
       "rodrigo-salguero"
     ],
-    "summary": "Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree.",
+    "summary": "Tablas aditivas, Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree.",
     "status": "published",
     "tags": [
+      "tablas-aditivas",
       "sparse-table",
       "fenwick-tree",
       "segment-tree",

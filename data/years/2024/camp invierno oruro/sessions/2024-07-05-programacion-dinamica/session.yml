@@ -4,7 +4,7 @@ date: 2024-07-05
 course_id: camp-invierno-oruro-2024
 status: published
 
-summary: "Memoización, tabulación y problemas clásicos: mochila, LCS y coin change."
+summary: "Memorización, tabulación y problemas clásicos: mochila, LCS y coin change."
 
 speaker_ids:
   - rodrigo-salguero
@@ -12,9 +12,8 @@ speaker_ids:
 tags:
   - dp
   - programacion-dinamica
-  - knapsack
-  - lcs
-  - coin-combinations
+  - recursividad
+  - memorizacion
 
 materials:
   slides:

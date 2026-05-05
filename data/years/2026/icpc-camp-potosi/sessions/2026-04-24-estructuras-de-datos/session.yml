@@ -4,12 +4,13 @@ date: 2026-04-24
 course_id: icpc-camp-potosi-2026
 status: published
 
-summary: Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree.
+summary: Tablas aditivas, Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree.
 
 speaker_ids:
   - rodrigo-salguero
 
 tags:
+  - tablas-aditivas
   - sparse-table
   - fenwick-tree
   - segment-tree
