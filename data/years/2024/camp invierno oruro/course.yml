@@ -1,0 +1,28 @@
+id: camp-invierno-oruro-2024
+title: Campamento de Programación de Invierno - Oruro 2024
+year: 2024
+status: published
+description: >
+  Campamento intensivo de 5 días organizado por HackLab Oruro, la Carrera de
+  Ingeniería de Sistemas e Informática y el Centro de Estudiantes TUXSI.
+  Impartido por Rodrigo Salguero (Pacha). Se cubrieron los temas fundamentales
+  de la programación competitiva con una competencia de práctica cada día.
+
+tags:
+  - programacion-competitiva
+  - icpc
+  - campamento
+  - oruro
+  - hacklab
+
+photos:
+  - file: photos/afiche.jpeg
+    comment: Afiche del campamento
+  - file: photos/participantes.jpeg
+    comment: Participantes del campamento
+  - file: photos/sesiones-practica.jpeg
+    comment: Sesiones de práctica de simulación de competencia
+  - file: photos/social.jpeg
+    comment: Comiendo milamores con Eddy Cael, Fernando Morales, Jorge Slime y Pacha
+  - file: photos/despedida.jpeg
+    comment: Jorge Slime y Fernando Morales despiden a Pacha en el aeropuerto

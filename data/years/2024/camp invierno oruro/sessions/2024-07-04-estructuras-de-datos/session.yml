@@ -1,0 +1,40 @@
+id: 2024-07-04-estructuras-de-datos
+title: Estructuras de Datos Avanzadas
+date: 2024-07-04
+course_id: camp-invierno-oruro-2024
+status: published
+
+summary: Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree. Operaciones sobre bits.
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - sparse-table
+  - fenwick-tree
+  - segment-tree
+  - estructuras-de-datos
+
+materials:
+  slides:
+    - title: Estructuras de Datos Avanzadas
+      file: slides.pdf
+  extra_pdfs: []
+  extra_files:
+    - title: Soluciones Contest Día 4
+      file: soluciones-contest-4.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 4 (Competencia especial ICPC)
+    url: https://codeforces.com/group/dayOoqr6Tn/contests
+    comment: Recopilación de problemas de competencias oficiales ICPC. Competencia con premios para los primeros lugares y sorteo para quienes resuelvan al menos un problema.
+
+extra_links:
+  - title: Operaciones y propiedades de representación binaria de enteros (video)
+    url: https://youtu.be/y3ev3hCWOaA?si=wekboAjPDfAebKtD
+    comment: Video complementario sobre operaciones a nivel de bits
+
+extra_notes: []
+photos: []

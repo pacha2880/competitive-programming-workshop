@@ -1,0 +1,44 @@
+id: 2024-07-05-programacion-dinamica
+title: Programación Dinámica
+date: 2024-07-05
+course_id: camp-invierno-oruro-2024
+status: published
+
+summary: "Memoización, tabulación y problemas clásicos: mochila, LCS y coin change."
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - dp
+  - programacion-dinamica
+  - knapsack
+  - lcs
+  - coin-combinations
+
+materials:
+  slides:
+    - title: Programación Dinámica
+      file: slides.pdf
+  extra_pdfs: []
+  extra_files:
+    - title: Soluciones Contest Día 5
+      file: soluciones-contest-5.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 5
+    url: https://vjudge.net/contest/637029
+    comment: "Pass: adios"
+
+extra_links:
+  - title: Video repaso de Programación Dinámica
+    url: https://www.youtube.com/watch?v=IfSpkI_AJs0&t=339s&ab_channel=pacha2880
+    comment: Video del expositor para repasar los temas de DP vistos en clase
+
+extra_notes: []
+
+photos:
+  - file: dp-clase.jpeg
+    comment: Pacha dando clases de Programación Dinámica

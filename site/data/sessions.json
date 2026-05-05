@@ -1062,6 +1062,310 @@
     "solution_notes": []
   },
   {
+    "id": "2024-07-01-introduccion",
+    "title": "Introducción a la Programación Competitiva",
+    "date": "2024-07-01",
+    "course_id": "camp-invierno-oruro-2024",
+    "path": "data/years/2024/camp invierno oruro/sessions/2024-07-01-introduccion",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Introducción al ICPC, jueces online, STL, estructuras básicas, Ordered Set (PBDS) y STL Rope.",
+    "status": "published",
+    "tags": [
+      "introduccion",
+      "icpc",
+      "stl",
+      "estructuras-de-datos"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Introducción al Taller de Programación Competitiva",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones Contest Día 1",
+          "file": "soluciones-contest-1.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 1",
+        "file": "",
+        "url": "https://vjudge.net/contest/637013",
+        "comment": "Pass: indroduccion"
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Ordered Set (PBDS)",
+        "file": "",
+        "url": "https://www.geeksforgeeks.org/ordered-set-gnu-c-pbds/",
+        "comment": "Estructura para resolver el último problema del contest"
+      },
+      {
+        "title": "STL Rope",
+        "file": "",
+        "url": "https://www.geeksforgeeks.org/stl-ropes-in-c/",
+        "comment": "Estructura adicional para uno de los problemas del contest"
+      }
+    ],
+    "extra_notes": [],
+    "photos": [
+      {
+        "file": "dia-1-complejidad.jpeg",
+        "comment": "Explicando complejidad y notación Big O (día 1)"
+      }
+    ],
+    "solution_notes": []
+  },
+  {
+    "id": "2024-07-02-busqueda-binaria",
+    "title": "Búsqueda Binaria y Ternaria",
+    "date": "2024-07-02",
+    "course_id": "camp-invierno-oruro-2024",
+    "path": "data/years/2024/camp invierno oruro/sessions/2024-07-02-busqueda-binaria",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Búsqueda binaria y ternaria sobre valores enteros y reales.",
+    "status": "published",
+    "tags": [
+      "binary-search",
+      "ternary-search",
+      "busqueda-binaria"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Búsqueda Binaria y Ternaria",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [
+        {
+          "title": "Introducción a C++ para Programación Competitiva",
+          "file": "intro-cpp.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_files": [
+        {
+          "title": "Soluciones Contest Día 2",
+          "file": "soluciones-contest-2.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 2",
+        "file": "",
+        "url": "https://vjudge.net/contest/637014",
+        "comment": "Pass: dia2"
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Presentación de Búsqueda Binaria (por Micky)",
+        "file": "",
+        "url": "https://www.canva.com/design/DAGJiWg_Mww/9MK_-W38EyVhjbLaF8Od6w/view",
+        "comment": "Presentación complementaria elaborada por un participante del campamento"
+      }
+    ],
+    "extra_notes": [],
+    "photos": [],
+    "solution_notes": []
+  },
+  {
+    "id": "2024-07-03-teoria-de-grafos",
+    "title": "Teoría de Grafos",
+    "date": "2024-07-03",
+    "course_id": "camp-invierno-oruro-2024",
+    "path": "data/years/2024/camp invierno oruro/sessions/2024-07-03-teoria-de-grafos",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Representación de grafos, BFS, DFS, Dijkstra, Floyd-Warshall, Kruskal, Prim y ordenamiento topológico.",
+    "status": "published",
+    "tags": [
+      "grafos",
+      "bfs",
+      "dfs",
+      "dijkstra",
+      "floyd-warshall",
+      "kruskal",
+      "topological-sort"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Teoría de Grafos",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones Contest Día 3",
+          "file": "soluciones-contest-3.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 3",
+        "file": "",
+        "url": "https://vjudge.net/contest/637025",
+        "comment": "Pass: grafos"
+      }
+    ],
+    "extra_links": [],
+    "extra_notes": [],
+    "photos": [],
+    "solution_notes": []
+  },
+  {
+    "id": "2024-07-04-estructuras-de-datos",
+    "title": "Estructuras de Datos Avanzadas",
+    "date": "2024-07-04",
+    "course_id": "camp-invierno-oruro-2024",
+    "path": "data/years/2024/camp invierno oruro/sessions/2024-07-04-estructuras-de-datos",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Sparse Table (RMQ), Fenwick Tree (BIT) y Segment Tree. Operaciones sobre bits.",
+    "status": "published",
+    "tags": [
+      "sparse-table",
+      "fenwick-tree",
+      "segment-tree",
+      "estructuras-de-datos"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Estructuras de Datos Avanzadas",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones Contest Día 4",
+          "file": "soluciones-contest-4.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 4 (Competencia especial ICPC)",
+        "file": "",
+        "url": "https://codeforces.com/group/dayOoqr6Tn/contests",
+        "comment": "Recopilación de problemas de competencias oficiales ICPC. Competencia con premios para los primeros lugares y sorteo para quienes resuelvan al menos un problema."
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Operaciones y propiedades de representación binaria de enteros (video)",
+        "file": "",
+        "url": "https://youtu.be/y3ev3hCWOaA?si=wekboAjPDfAebKtD",
+        "comment": "Video complementario sobre operaciones a nivel de bits"
+      }
+    ],
+    "extra_notes": [],
+    "photos": [],
+    "solution_notes": []
+  },
+  {
+    "id": "2024-07-05-programacion-dinamica",
+    "title": "Programación Dinámica",
+    "date": "2024-07-05",
+    "course_id": "camp-invierno-oruro-2024",
+    "path": "data/years/2024/camp invierno oruro/sessions/2024-07-05-programacion-dinamica",
+    "speaker_ids": [
+      "rodrigo-salguero"
+    ],
+    "summary": "Memoización, tabulación y problemas clásicos: mochila, LCS y coin change.",
+    "status": "published",
+    "tags": [
+      "dp",
+      "programacion-dinamica",
+      "knapsack",
+      "lcs",
+      "coin-combinations"
+    ],
+    "materials": {
+      "slides": [
+        {
+          "title": "Programación Dinámica",
+          "file": "slides.pdf",
+          "url": "",
+          "comment": ""
+        }
+      ],
+      "extra_pdfs": [],
+      "extra_files": [
+        {
+          "title": "Soluciones Contest Día 5",
+          "file": "soluciones-contest-5.zip",
+          "url": "",
+          "comment": ""
+        }
+      ]
+    },
+    "problem_list": [],
+    "practice_contests": [
+      {
+        "title": "Contest Día 5",
+        "file": "",
+        "url": "https://vjudge.net/contest/637029",
+        "comment": "Pass: adios"
+      }
+    ],
+    "extra_links": [
+      {
+        "title": "Video repaso de Programación Dinámica",
+        "file": "",
+        "url": "https://www.youtube.com/watch?v=IfSpkI_AJs0&t=339s&ab_channel=pacha2880",
+        "comment": "Video del expositor para repasar los temas de DP vistos en clase"
+      }
+    ],
+    "extra_notes": [],
+    "photos": [
+      {
+        "file": "dp-clase.jpeg",
+        "comment": "Pacha dando clases de Programación Dinámica"
+      }
+    ],
+    "solution_notes": []
+  },
+  {
     "id": "2024-04-27-introduccion",
     "title": "Introduccion a la Programacion Competitiva",
     "date": "2024-04-27",

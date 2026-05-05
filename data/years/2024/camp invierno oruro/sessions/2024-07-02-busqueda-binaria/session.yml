@@ -1,0 +1,41 @@
+id: 2024-07-02-busqueda-binaria
+title: Búsqueda Binaria y Ternaria
+date: 2024-07-02
+course_id: camp-invierno-oruro-2024
+status: published
+
+summary: Búsqueda binaria y ternaria sobre valores enteros y reales.
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - binary-search
+  - ternary-search
+  - busqueda-binaria
+
+materials:
+  slides:
+    - title: Búsqueda Binaria y Ternaria
+      file: slides.pdf
+  extra_pdfs:
+    - title: Introducción a C++ para Programación Competitiva
+      file: intro-cpp.pdf
+  extra_files:
+    - title: Soluciones Contest Día 2
+      file: soluciones-contest-2.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 2
+    url: https://vjudge.net/contest/637014
+    comment: "Pass: dia2"
+
+extra_links:
+  - title: Presentación de Búsqueda Binaria (por Micky)
+    url: https://www.canva.com/design/DAGJiWg_Mww/9MK_-W38EyVhjbLaF8Od6w/view
+    comment: Presentación complementaria elaborada por un participante del campamento
+
+extra_notes: []
+photos: []

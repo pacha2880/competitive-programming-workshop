@@ -1,0 +1,46 @@
+id: 2024-07-01-introduccion
+title: Introducción a la Programación Competitiva
+date: 2024-07-01
+course_id: camp-invierno-oruro-2024
+status: published
+
+summary: Introducción al ICPC, jueces online, STL, estructuras básicas, Ordered Set (PBDS) y STL Rope.
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - introduccion
+  - icpc
+  - stl
+  - estructuras-de-datos
+
+materials:
+  slides:
+    - title: Introducción al Taller de Programación Competitiva
+      file: slides.pdf
+  extra_pdfs: []
+  extra_files:
+    - title: Soluciones Contest Día 1
+      file: soluciones-contest-1.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 1
+    url: https://vjudge.net/contest/637013
+    comment: "Pass: indroduccion"
+
+extra_links:
+  - title: Ordered Set (PBDS)
+    url: https://www.geeksforgeeks.org/ordered-set-gnu-c-pbds/
+    comment: Estructura para resolver el último problema del contest
+  - title: STL Rope
+    url: https://www.geeksforgeeks.org/stl-ropes-in-c/
+    comment: Estructura adicional para uno de los problemas del contest
+
+extra_notes: []
+
+photos:
+  - file: dia-1-complejidad.jpeg
+    comment: Explicando complejidad y notación Big O (día 1)

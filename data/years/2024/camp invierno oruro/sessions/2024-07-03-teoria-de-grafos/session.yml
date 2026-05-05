@@ -1,0 +1,39 @@
+id: 2024-07-03-teoria-de-grafos
+title: Teoría de Grafos
+date: 2024-07-03
+course_id: camp-invierno-oruro-2024
+status: published
+
+summary: Representación de grafos, BFS, DFS, Dijkstra, Floyd-Warshall, Kruskal, Prim y ordenamiento topológico.
+
+speaker_ids:
+  - rodrigo-salguero
+
+tags:
+  - grafos
+  - bfs
+  - dfs
+  - dijkstra
+  - floyd-warshall
+  - kruskal
+  - topological-sort
+
+materials:
+  slides:
+    - title: Teoría de Grafos
+      file: slides.pdf
+  extra_pdfs: []
+  extra_files:
+    - title: Soluciones Contest Día 3
+      file: soluciones-contest-3.zip
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 3
+    url: https://vjudge.net/contest/637025
+    comment: "Pass: grafos"
+
+extra_links: []
+extra_notes: []
+photos: []
