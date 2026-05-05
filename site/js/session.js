@@ -59,7 +59,7 @@ async function renderSessionPage() {
   const nextSession = sessionIndex < courseSessions.length - 1 ? courseSessions[sessionIndex + 1] : null;
 
   const sessionNavActions = el("div", { className: "session-actions" }, [
-    course ? createButtonLink("Volver a vista principal del curso", pageUrl("course", { id: course.id })) : null,
+    course ? el("a", { href: pageUrl("course", { id: course.id }), text: "← Volver a vista principal del curso", className: "session-back-link" }) : null,
     el("div", { className: "session-actions__nav" }, [
       prevSession
         ? createButtonLink("← Sesión anterior", pageUrl("session", { id: prevSession.id }))
