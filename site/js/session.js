@@ -9,6 +9,7 @@ import {
   createSpoilerList,
   getCourseMap,
   getQueryParam,
+  getSessionsForCourse,
   getSpeakerMap,
   isExternalUrl,
   loadSiteData,
@@ -17,7 +18,7 @@ import {
   setMainContent,
   setPageChrome,
   el,
-} from "./shared.js?v=20260426b";
+} from "./shared.js?v=20260426c";
 
 async function renderSessionPage() {
   const data = await loadSiteData();
@@ -52,6 +53,23 @@ async function renderSessionPage() {
   const course = courseMap.get(session.course_id);
   const speakerCards = (session.speaker_ids || []).map((speakerId) => speakerMap.get(speakerId)).filter(Boolean);
 
+  const courseSessions = course ? getSessionsForCourse(data.sessions, course.id) : [];
+  const sessionIndex = courseSessions.findIndex((s) => s.id === session.id);
+  const prevSession = sessionIndex > 0 ? courseSessions[sessionIndex - 1] : null;
+  const nextSession = sessionIndex < courseSessions.length - 1 ? courseSessions[sessionIndex + 1] : null;
+
+  const sessionNavActions = el("div", { className: "session-actions" }, [
+    course ? createButtonLink("Volver a vista principal del curso", pageUrl("course", { id: course.id })) : null,
+    el("div", { className: "session-actions__nav" }, [
+      prevSession
+        ? createButtonLink("← Sesión anterior", pageUrl("session", { id: prevSession.id }))
+        : el("span", {}),
+      nextSession
+        ? createButtonLink("Siguiente sesión →", pageUrl("session", { id: nextSession.id }))
+        : el("span", {}),
+    ]),
+  ]);
+
   setPageChrome({
     current: "years",
     title: session.title,
@@ -63,7 +81,7 @@ async function renderSessionPage() {
       course ? { label: course.title, href: pageUrl("course", { id: course.id }) } : null,
       { label: session.title },
     ].filter(Boolean),
-    actions: course ? [createButtonLink("Volver al curso", pageUrl("course", { id: course.id }))] : [],
+    actions: [sessionNavActions],
   });
 
   const materialsBlocks = [

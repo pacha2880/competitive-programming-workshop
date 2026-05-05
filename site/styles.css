@@ -351,6 +351,18 @@ img {
   font-size: 0.82rem;
 }
 
+.session-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.session-actions__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
 .button,
 .button-link {
   background: transparent;
