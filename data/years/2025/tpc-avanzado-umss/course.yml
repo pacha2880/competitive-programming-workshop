@@ -1,0 +1,17 @@
+id: tpc-avanzado-umss-2025
+title: Taller de Programación Competitiva Avanzado - UMSS 2025
+year: 2025
+status: published
+description: >
+  Taller avanzado de programación competitiva dictado en el Auditorio del
+  MEMI, UMSS. Impartido por Ronaldo Franco Jaldin (mundialista ICPC Dhaka 2023,
+  competidor IOI 2014/2015/2017).
+
+tags:
+  - programacion-competitiva
+  - icpc
+  - avanzado
+
+photos:
+  - file: afiche.jpg
+    comment: Afiche del taller

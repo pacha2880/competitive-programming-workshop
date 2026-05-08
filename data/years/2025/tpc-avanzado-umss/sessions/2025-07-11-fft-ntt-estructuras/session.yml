@@ -1,0 +1,59 @@
+id: 2025-07-11-fft-ntt-estructuras
+title: FFT, NTT, Generating Functions y Estructuras Avanzadas
+date: 2025-07-11
+course_id: tpc-avanzado-umss-2025
+status: published
+
+summary: FFT y NTT para multiplicación de polinomios, Generating Functions, y estructuras avanzadas de árboles (Treap, Centroid Decomposition, Small-to-Large, DSU persistente).
+
+speaker_ids:
+  - ronaldo-franco
+
+tags:
+  - fft
+  - ntt
+  - generating-functions
+  - treap
+  - dsu
+  - small-to-large
+  - centroid-decomposition
+  - estructuras-de-datos
+
+materials:
+  slides: []
+  extra_pdfs: []
+  extra_files: []
+
+problem_list: []
+practice_contests: []
+
+extra_links:
+  - title: FFT - Tutorial (YouTube)
+    url: https://www.youtube.com/watch?v=iTMn0Kt18tg
+  - title: FFT - Codeforces blog
+    url: https://codeforces.com/blog/entry/43499
+  - title: NTT - Codeforces blog
+    url: https://codeforces.com/blog/entry/48798
+  - title: Small-to-Large Merging - USACO Guide
+    url: https://usaco.guide/plat/merging?lang=cpp
+  - title: DSU on Tree - Codeforces blog
+    url: https://codeforces.com/blog/entry/44351
+  - title: DSU - Codeforces blog
+    url: https://codeforces.com/blog/entry/67696
+  - title: Treaps - cp-algorithms
+    url: https://cp-algorithms.com/data_structures/treap.html
+  - title: Treaps - Tutorial (YouTube 1)
+    url: https://www.youtube.com/watch?v=6x0UlIBLRsc
+  - title: Treaps - Tutorial (YouTube 2)
+    url: https://www.youtube.com/watch?v=6wqg886qQyk
+  - title: Centroid Decomposition - Tutorial (YouTube)
+    url: https://www.youtube.com/watch?v=3pk02p1-weU
+  - title: Centroid Decomposition - USACO Guide
+    url: https://usaco.guide/plat/centroid?lang=cpp
+  - title: Persistent DSU - Codeforces blog
+    url: https://codeforces.com/blog/entry/119919
+  - title: Persistent DSU / Offline deletions - USACO Guide
+    url: https://usaco.guide/adv/offline-del?lang=cpp
+
+extra_notes: []
+photos: []

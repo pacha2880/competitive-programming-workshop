@@ -1,0 +1,50 @@
+id: 2025-07-08-dp-cht
+title: DP - Convex Hull Trick
+date: 2025-07-08
+course_id: tpc-avanzado-umss-2025
+status: published
+
+summary: "Optimización de DP con Convex Hull Trick (CHT): aplicación a problemas de costo cuadrático reducible a lineal."
+
+speaker_ids:
+  - ronaldo-franco
+
+tags:
+  - dp
+  - dp-cht
+  - convex-hull-trick
+  - optimizacion
+
+materials:
+  slides: []
+  extra_pdfs: []
+  extra_files: []
+
+problem_list:
+  - title: "CF 631E - Product Sum"
+    url: https://codeforces.com/contest/631/problem/E
+  - title: "CF 660F - Bear and Bowling"
+    url: https://codeforces.com/contest/660/problem/F
+  - title: "CF 311B - Cats Transport"
+    url: https://codeforces.com/contest/311/problem/B
+  - title: "CF 673E - Zigzag"
+    url: https://codeforces.com/contest/673/problem/E
+  - title: "CF 1179D - Fedor Runs for President"
+    url: https://codeforces.com/contest/1179/problem/D
+  - title: "CF 455E - Function"
+    url: https://codeforces.com/contest/455/problem/E
+
+practice_contests: []
+
+extra_links:
+  - title: DP-CHT - Tutorial (YouTube)
+    url: https://www.youtube.com/watch?v=OrH2ah4ylv4
+  - title: DP-CHT - Explicación (YouTube)
+    url: https://www.youtube.com/watch?v=HnZKQJtGeHs
+  - title: DP-CHT - Blog
+    url: https://www.yohandi.me/blog/convex-hull-trick/
+  - title: DP-CHT - Guía de problemas y tutorial
+    url: https://robert1003.github.io/2020/02/17/dp-opt-convex-hull-trick.html
+
+extra_notes: []
+photos: []

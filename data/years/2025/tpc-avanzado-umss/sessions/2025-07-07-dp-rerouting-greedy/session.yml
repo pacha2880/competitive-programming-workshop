@@ -1,0 +1,59 @@
+id: 2025-07-07-dp-rerouting-greedy
+title: DP Re-routing y Greedy / Exchange Argument
+date: 2025-07-07
+course_id: tpc-avanzado-umss-2025
+status: published
+
+summary: DP en árboles con re-enraizamiento, DP on Trees y técnica de Exchange Argument para greedy.
+
+speaker_ids:
+  - ronaldo-franco
+
+tags:
+  - dp
+  - dp-rerouting
+  - greedy
+  - exchange-argument
+  - arboles
+
+materials:
+  slides: []
+  extra_pdfs: []
+  extra_files: []
+
+problem_list: []
+
+practice_contests:
+  - title: Contest Día 1
+    url: https://vjudge.net/contest/729498
+    comment: "Pass: helloioi"
+
+extra_links:
+  - title: DP Re-routing - Tutorial (YouTube)
+    url: https://www.youtube.com/watch?v=7_huTWwl5jM
+  - title: DP Re-routing - Explicación visual (YouTube)
+    url: https://www.youtube.com/watch?v=Uae_H-H2U34
+  - title: DP Re-routing - USACO Guide
+    url: https://usaco.guide/gold/all-roots?lang=cpp
+  - title: DP Re-routing - Tutorial avanzado
+    url: https://codeforces.com/blog/entry/124286
+    comment: hard-tutorial
+  - title: DP on Trees - USACO Guide
+    url: https://usaco.guide/gold/dp-trees?lang=cpp
+  - title: DP on Trees - Codeforces blog
+    url: https://codeforces.com/blog/entry/20935
+  - title: DP on Trees - GeeksForGeeks
+    url: https://www.geeksforgeeks.org/competitive-programming/dp-on-trees-for-competitive-programming/
+  - title: DP on Trees (Combinatorial subtrees) - USACO Guide
+    url: https://usaco.guide/adv/comb-sub?lang=cpp
+  - title: Exchange Argument (YouTube 1)
+    url: https://www.youtube.com/watch?v=7hFWrKa6yRM
+  - title: Exchange Argument (YouTube 2)
+    url: https://www.youtube.com/watch?v=gXxu-Cr4b4c
+  - title: Exchange Argument - Playlist
+    url: https://www.youtube.com/watch?v=Oq1seKJvfQU&list=PLVL2sXYNduIoXBHEk4xD-hqELpKNrX0df
+  - title: Exchange Argument - Codeforces blog
+    url: https://codeforces.com/blog/entry/63533
+
+extra_notes: []
+photos: []

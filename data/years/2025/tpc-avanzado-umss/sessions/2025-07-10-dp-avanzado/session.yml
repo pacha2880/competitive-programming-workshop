@@ -1,0 +1,38 @@
+id: 2025-07-10-dp-avanzado
+title: DP Avanzado - Divide and Conquer y Knuth Optimization
+date: 2025-07-10
+course_id: tpc-avanzado-umss-2025
+status: published
+
+summary: Optimizaciones avanzadas de DP con Divide and Conquer DP y Knuth Optimization para reducir complejidad de O(n³) a O(n² log n) y O(n²).
+
+speaker_ids:
+  - ronaldo-franco
+
+tags:
+  - dp
+  - divide-and-conquer
+  - knuth-optimization
+  - optimizacion
+
+materials:
+  slides: []
+  extra_pdfs: []
+  extra_files: []
+
+problem_list: []
+practice_contests: []
+
+extra_links:
+  - title: DP Divide and Conquer - cp-algorithms
+    url: https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html
+    comment: Incluye problemas de práctica
+  - title: DP Divide and Conquer - USACO Guide
+    url: https://usaco.guide/plat/DC-DP?lang=cpp
+  - title: DP Knuth Optimization - USACO Guide
+    url: https://usaco.guide/adv/dp-more?lang=cpp
+  - title: DP Knuth Optimization - cp-algorithms
+    url: https://cp-algorithms.com/dynamic_programming/knuth-optimization.html
+
+extra_notes: []
+photos: []
